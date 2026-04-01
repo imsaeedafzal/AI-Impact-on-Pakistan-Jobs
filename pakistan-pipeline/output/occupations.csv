@@ -1,0 +1,207 @@
+title,slug,category,sector,type,median_pay_annual,median_pay_monthly,entry_education,num_jobs,outlook_desc,source_urls
+Farmer (Crop),farmer-crop,Agriculture & Livestock,Agriculture & Livestock,agricultural,,,No formal education,,,built-in-psco-taxonomy
+Livestock Farmer,livestock-farmer,Agriculture & Livestock,Agriculture & Livestock,agricultural,,,No formal education,,,built-in-psco-taxonomy
+Agricultural Laborer,agricultural-laborer,Agriculture & Livestock,Agriculture & Livestock,unskilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Tractor Operator,tractor-operator,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Irrigation Worker,irrigation-worker,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Fisherman,fisherman,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Poultry Farmer,poultry-farmer,Agriculture & Livestock,Agriculture & Livestock,agricultural,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Dairy Farmer,dairy-farmer,Agriculture & Livestock,Agriculture & Livestock,agricultural,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Agricultural Extension Officer,agricultural-extension-officer,Agriculture & Livestock,Agriculture & Livestock,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Veterinarian,veterinarian,Agriculture & Livestock,Healthcare & Medical,medical,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Floriculturist / Nursery Worker,floriculturist-nursery-worker,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Textile Mill Worker,textile-mill-worker,Textiles & Garments,Textiles & Garments,skilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Power Loom Operator,power-loom-operator,Textiles & Garments,Textiles & Garments,skilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Garment Stitcher / Tailor,garment-stitcher-tailor,Textiles & Garments,Textiles & Garments,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Textile Designer,textile-designer,Textiles & Garments,Textiles & Garments,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Quality Inspector (Textiles),quality-inspector-textiles,Textiles & Garments,Textiles & Garments,technical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Dyeing & Finishing Operator,dyeing-finishing-operator,Textiles & Garments,Textiles & Garments,skilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Embroidery Worker,embroidery-worker,Textiles & Garments,Textiles & Garments,trades,,,No formal education,,,built-in-psco-taxonomy
+Spinning Machine Operator,spinning-machine-operator,Textiles & Garments,Textiles & Garments,skilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Mason / Bricklayer,mason-bricklayer,Construction & Real Estate,Construction & Real Estate,trades,,,No formal education,,,built-in-psco-taxonomy
+Carpenter,carpenter,Construction & Real Estate,Construction & Real Estate,trades,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Plumber,plumber,Construction & Real Estate,Construction & Real Estate,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Electrician,electrician,Construction & Real Estate,Construction & Real Estate,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Painter (Building),painter-building,Construction & Real Estate,Construction & Real Estate,trades,,,No formal education,,,built-in-psco-taxonomy
+Welder,welder,Construction & Real Estate,Construction & Real Estate,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Steel Fixer / Iron Worker,steel-fixer-iron-worker,Construction & Real Estate,Construction & Real Estate,trades,,,No formal education,,,built-in-psco-taxonomy
+Civil Engineer,civil-engineer,Construction & Real Estate,Construction & Real Estate,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Architect,architect,Construction & Real Estate,Construction & Real Estate,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Construction Laborer,construction-laborer,Construction & Real Estate,Construction & Real Estate,unskilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Crane Operator,crane-operator,Construction & Real Estate,Construction & Real Estate,skilled-labor,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Real Estate Agent,real-estate-agent,Construction & Real Estate,Construction & Real Estate,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Surveyor,surveyor,Construction & Real Estate,Construction & Real Estate,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Factory Worker (General),factory-worker-general,Manufacturing & Industry,Manufacturing & Industry,unskilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Machine Operator,machine-operator,Manufacturing & Industry,Manufacturing & Industry,skilled-labor,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Production Supervisor,production-supervisor,Manufacturing & Industry,Manufacturing & Industry,managerial,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Quality Control Inspector,quality-control-inspector,Manufacturing & Industry,Manufacturing & Industry,technical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Industrial Engineer,industrial-engineer,Manufacturing & Industry,Manufacturing & Industry,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Mechanical Engineer,mechanical-engineer,Manufacturing & Industry,Manufacturing & Industry,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Chemical Engineer,chemical-engineer,Manufacturing & Industry,Manufacturing & Industry,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Electrical Engineer,electrical-engineer,Manufacturing & Industry,Manufacturing & Industry,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Electronics Technician,electronics-technician,Manufacturing & Industry,Manufacturing & Industry,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+CNC Machine Operator,cnc-machine-operator,Manufacturing & Industry,Manufacturing & Industry,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Packaging Worker,packaging-worker,Manufacturing & Industry,Manufacturing & Industry,unskilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Truck Driver,truck-driver,Transport & Logistics,Transport & Logistics,skilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Bus Driver,bus-driver,Transport & Logistics,Transport & Logistics,skilled-labor,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Rickshaw Driver,rickshaw-driver,Transport & Logistics,Transport & Logistics,services,,,No formal education,,,built-in-psco-taxonomy
+Taxi / Ride-hail Driver,taxi-ride-hail-driver,Transport & Logistics,Transport & Logistics,services,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Delivery Rider,delivery-rider,Transport & Logistics,Transport & Logistics,services,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Warehouse Worker,warehouse-worker,Transport & Logistics,Transport & Logistics,unskilled-labor,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Logistics Coordinator,logistics-coordinator,Transport & Logistics,Transport & Logistics,clerical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Customs Clearing Agent,customs-clearing-agent,Transport & Logistics,Transport & Logistics,clerical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Ship/Port Worker,shipport-worker,Transport & Logistics,Transport & Logistics,skilled-labor,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Airline Pilot,airline-pilot,Transport & Logistics,Transport & Logistics,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Train Driver,train-driver,Transport & Logistics,Transport & Logistics,skilled-labor,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Air Traffic Controller,air-traffic-controller,Transport & Logistics,Transport & Logistics,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Software Developer,software-developer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Web Developer,web-developer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Mobile App Developer,mobile-app-developer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Data Analyst,data-analyst,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Data Scientist,data-scientist,Information Technology,Information Technology,professional,,,Master's degree,,,built-in-psco-taxonomy
+Database Administrator,database-administrator,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Network Engineer,network-engineer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Cybersecurity Analyst,cybersecurity-analyst,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+IT Support Technician,it-support-technician,Information Technology,Information Technology,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+System Administrator,system-administrator,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+UI/UX Designer,uiux-designer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+DevOps Engineer,devops-engineer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+AI / Machine Learning Engineer,ai-machine-learning-engineer,Information Technology,Information Technology,professional,,,Master's degree,,,built-in-psco-taxonomy
+Cloud Engineer,cloud-engineer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+QA / Test Engineer,qa-test-engineer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Computer Hardware Technician,computer-hardware-technician,Information Technology,Information Technology,trades,,,Diploma / Certificate,,,built-in-psco-taxonomy
+SEO / Digital Marketing Specialist,seo-digital-marketing-specialist,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Graphic Designer,graphic-designer,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Freelance IT Worker,freelance-it-worker,Information Technology,Information Technology,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+E-commerce Specialist,e-commerce-specialist,Information Technology,Information Technology,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Doctor (MBBS),doctor-mbbs,Healthcare & Medical,Healthcare & Medical,medical,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Surgeon,surgeon,Healthcare & Medical,Healthcare & Medical,medical,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Dentist,dentist,Healthcare & Medical,Healthcare & Medical,medical,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Nurse,nurse,Healthcare & Medical,Healthcare & Medical,medical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Pharmacist,pharmacist,Healthcare & Medical,Healthcare & Medical,medical,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Lab Technician,lab-technician,Healthcare & Medical,Healthcare & Medical,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Paramedic / EMT,paramedic-emt,Healthcare & Medical,Healthcare & Medical,medical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Lady Health Worker,lady-health-worker,Healthcare & Medical,Healthcare & Medical,medical,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Physiotherapist,physiotherapist,Healthcare & Medical,Healthcare & Medical,medical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Radiologist / Imaging Technician,radiologist-imaging-technician,Healthcare & Medical,Healthcare & Medical,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Psychologist / Counselor,psychologist-counselor,Healthcare & Medical,Healthcare & Medical,professional,,,Master's degree,,,built-in-psco-taxonomy
+Homeopathic / Hakeem Practitioner,homeopathic-hakeem-practitioner,Healthcare & Medical,Healthcare & Medical,medical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Midwife / Dai,midwife-dai,Healthcare & Medical,Healthcare & Medical,medical,,,No formal education,,,built-in-psco-taxonomy
+Optician / Optometrist,optician-optometrist,Healthcare & Medical,Healthcare & Medical,medical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Medical Transcriptionist,medical-transcriptionist,Healthcare & Medical,Healthcare & Medical,clerical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Hospital Administrator,hospital-administrator,Healthcare & Medical,Healthcare & Medical,managerial,,,Master's degree,,,built-in-psco-taxonomy
+Primary School Teacher,primary-school-teacher,Education & Training,Education & Training,educational,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Secondary School Teacher,secondary-school-teacher,Education & Training,Education & Training,educational,,,Bachelor's degree,,,built-in-psco-taxonomy
+College / University Lecturer,college-university-lecturer,Education & Training,Education & Training,educational,,,Master's degree,,,built-in-psco-taxonomy
+University Professor,university-professor,Education & Training,Education & Training,educational,,,Doctorate / PhD,,,built-in-psco-taxonomy
+Madrasa Teacher,madrasa-teacher,Education & Training,Education & Training,educational,,,No formal education,,,built-in-psco-taxonomy
+Tuition / Coaching Teacher,tuition-coaching-teacher,Education & Training,Education & Training,educational,,,Bachelor's degree,,,built-in-psco-taxonomy
+Montessori / Early Childhood Teacher,montessori-early-childhood-teacher,Education & Training,Education & Training,educational,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Special Education Teacher,special-education-teacher,Education & Training,Education & Training,educational,,,Bachelor's degree,,,built-in-psco-taxonomy
+Vocational Trainer,vocational-trainer,Education & Training,Education & Training,educational,,,Diploma / Certificate,,,built-in-psco-taxonomy
+School Principal / Administrator,school-principal-administrator,Education & Training,Education & Training,managerial,,,Master's degree,,,built-in-psco-taxonomy
+Research Assistant,research-assistant,Education & Training,Education & Training,educational,,,Master's degree,,,built-in-psco-taxonomy
+Librarian,librarian,Education & Training,Education & Training,clerical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Bank Teller / Officer,bank-teller-officer,Banking & Finance,Banking & Finance,clerical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Accountant,accountant,Banking & Finance,Banking & Finance,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Chartered Accountant (CA),chartered-accountant-ca,Banking & Finance,Banking & Finance,professional,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Financial Analyst,financial-analyst,Banking & Finance,Banking & Finance,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Insurance Agent,insurance-agent,Banking & Finance,Banking & Finance,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Microfinance Officer,microfinance-officer,Banking & Finance,Banking & Finance,clerical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Tax Consultant,tax-consultant,Banking & Finance,Banking & Finance,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Auditor,auditor,Banking & Finance,Banking & Finance,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Stock Broker / Trader,stock-broker-trader,Banking & Finance,Banking & Finance,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Loan Officer,loan-officer,Banking & Finance,Banking & Finance,clerical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Investment Banker,investment-banker,Banking & Finance,Banking & Finance,professional,,,Master's degree,,,built-in-psco-taxonomy
+Civil Servant (BPS Officer),civil-servant-bps-officer,Government & Public Administration,Government & Public Administration,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Police Officer,police-officer,Government & Public Administration,Government & Public Administration,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Police Constable,police-constable,Government & Public Administration,Government & Public Administration,services,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Military Officer,military-officer,Government & Public Administration,Defence & Security,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Soldier / Jawan,soldier-jawan,Government & Public Administration,Defence & Security,services,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Patwari / Revenue Officer,patwari-revenue-officer,Government & Public Administration,Government & Public Administration,clerical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Postman,postman,Government & Public Administration,Government & Public Administration,services,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Court Clerk / Stenographer,court-clerk-stenographer,Government & Public Administration,Government & Public Administration,clerical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Railway Worker,railway-worker,Government & Public Administration,Transport & Logistics,skilled-labor,,,Middle (Grade 8),,,built-in-psco-taxonomy
+WAPDA / Electricity Line Worker,wapda-electricity-line-worker,Government & Public Administration,Energy & Utilities,skilled-labor,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Sui Gas Technician,sui-gas-technician,Government & Public Administration,Energy & Utilities,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Shopkeeper / Small Retailer,shopkeeper-small-retailer,Retail & Wholesale Trade,Retail & Wholesale Trade,services,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Wholesale Dealer,wholesale-dealer,Retail & Wholesale Trade,Retail & Wholesale Trade,services,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Sales Representative,sales-representative,Retail & Wholesale Trade,Retail & Wholesale Trade,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Cashier,cashier,Retail & Wholesale Trade,Retail & Wholesale Trade,clerical,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Supermarket Worker,supermarket-worker,Retail & Wholesale Trade,Retail & Wholesale Trade,services,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Street Vendor / Hawker,street-vendor-hawker,Retail & Wholesale Trade,Retail & Wholesale Trade,unskilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Procurement Officer,procurement-officer,Retail & Wholesale Trade,Retail & Wholesale Trade,clerical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Hotel Receptionist,hotel-receptionist,Hospitality & Tourism,Hospitality & Tourism,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Chef / Cook,chef-cook,Hospitality & Tourism,Hospitality & Tourism,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Waiter,waiter,Hospitality & Tourism,Hospitality & Tourism,services,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Tour Guide,tour-guide,Hospitality & Tourism,Hospitality & Tourism,services,,,Bachelor's degree,,,built-in-psco-taxonomy
+Hotel Manager,hotel-manager,Hospitality & Tourism,Hospitality & Tourism,managerial,,,Bachelor's degree,,,built-in-psco-taxonomy
+Housekeeper (Hotel),housekeeper-hotel,Hospitality & Tourism,Hospitality & Tourism,services,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Travel Agent,travel-agent,Hospitality & Tourism,Hospitality & Tourism,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Fast Food Worker,fast-food-worker,Hospitality & Tourism,Hospitality & Tourism,services,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Baker,baker,Hospitality & Tourism,Hospitality & Tourism,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Journalist / Reporter,journalist-reporter,Media & Communications,Media & Communications,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+TV Anchor / News Presenter,tv-anchor-news-presenter,Media & Communications,Media & Communications,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Cameraman / Videographer,cameraman-videographer,Media & Communications,Media & Communications,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Radio Host / RJ,radio-host-rj,Media & Communications,Media & Communications,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Content Writer / Copywriter,content-writer-copywriter,Media & Communications,Media & Communications,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Social Media Manager,social-media-manager,Media & Communications,Media & Communications,technical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Video Editor,video-editor,Media & Communications,Media & Communications,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Translator / Interpreter,translator-interpreter,Media & Communications,Media & Communications,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Public Relations Officer,public-relations-officer,Media & Communications,Media & Communications,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Advertising Executive,advertising-executive,Media & Communications,Media & Communications,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Lawyer / Advocate,lawyer-advocate,Legal & Judiciary,Legal & Judiciary,professional,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Judge,judge,Legal & Judiciary,Legal & Judiciary,professional,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Legal Advisor / Corporate Counsel,legal-advisor-corporate-counsel,Legal & Judiciary,Legal & Judiciary,professional,,,"Professional degree (MBBS, LLB, CA, etc.)",,,built-in-psco-taxonomy
+Paralegal / Legal Assistant,paralegal-legal-assistant,Legal & Judiciary,Legal & Judiciary,clerical,,,Bachelor's degree,,,built-in-psco-taxonomy
+Notary Public / Deed Writer,notary-public-deed-writer,Legal & Judiciary,Legal & Judiciary,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Power Plant Operator,power-plant-operator,Energy & Utilities,Energy & Utilities,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Solar Panel Installer / Technician,solar-panel-installer-technician,Energy & Utilities,Energy & Utilities,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Petroleum Engineer,petroleum-engineer,Energy & Utilities,Energy & Utilities,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Gas Fitter,gas-fitter,Energy & Utilities,Energy & Utilities,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Meter Reader,meter-reader,Energy & Utilities,Energy & Utilities,services,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Coal Miner,coal-miner,Mining & Quarrying,Mining & Quarrying,skilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Quarry Worker,quarry-worker,Mining & Quarrying,Mining & Quarrying,unskilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Mining Engineer,mining-engineer,Mining & Quarrying,Mining & Quarrying,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Gem Cutter / Stone Worker,gem-cutter-stone-worker,Mining & Quarrying,Mining & Quarrying,trades,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Domestic Worker / Maid,domestic-worker-maid,Domestic & Personal Services,Domestic & Personal Services,unskilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Guard / Chowkidar,guard-chowkidar,Domestic & Personal Services,Domestic & Personal Services,services,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Security Guard (Private),security-guard-private,Domestic & Personal Services,Domestic & Personal Services,services,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Driver (Private),driver-private,Domestic & Personal Services,Domestic & Personal Services,services,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Barber / Hairdresser,barber-hairdresser,Domestic & Personal Services,Domestic & Personal Services,trades,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Beautician,beautician,Domestic & Personal Services,Domestic & Personal Services,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Laundry Worker / Dhobi,laundry-worker-dhobi,Domestic & Personal Services,Domestic & Personal Services,services,,,No formal education,,,built-in-psco-taxonomy
+Sweeper / Sanitary Worker,sweeper-sanitary-worker,Domestic & Personal Services,Domestic & Personal Services,unskilled-labor,,,No formal education,,,built-in-psco-taxonomy
+Gardener / Mali,gardener-mali,Domestic & Personal Services,Domestic & Personal Services,services,,,No formal education,,,built-in-psco-taxonomy
+Nanny / Childcare Worker,nanny-childcare-worker,Domestic & Personal Services,Domestic & Personal Services,services,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Cobbler / Shoe Repairer,cobbler-shoe-repairer,Domestic & Personal Services,Domestic & Personal Services,trades,,,No formal education,,,built-in-psco-taxonomy
+Tailor (Local),tailor-local,Domestic & Personal Services,Domestic & Personal Services,trades,,,Primary (Grade 5),,,built-in-psco-taxonomy
+Mechanic (Auto),mechanic-auto,Domestic & Personal Services,Domestic & Personal Services,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Mechanic (Motorcycle),mechanic-motorcycle,Domestic & Personal Services,Domestic & Personal Services,trades,,,Primary (Grade 5),,,built-in-psco-taxonomy
+AC / Refrigeration Technician,ac-refrigeration-technician,Domestic & Personal Services,Domestic & Personal Services,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Mobile Phone Repair Technician,mobile-phone-repair-technician,Domestic & Personal Services,Domestic & Personal Services,trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Musician / Singer,musician-singer,"Arts, Culture & Sports","Arts, Culture & Sports",professional,,,No formal education,,,built-in-psco-taxonomy
+Actor / Performer,actor-performer,"Arts, Culture & Sports","Arts, Culture & Sports",professional,,,No formal education,,,built-in-psco-taxonomy
+Painter / Fine Artist,painter-fine-artist,"Arts, Culture & Sports","Arts, Culture & Sports",professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Calligrapher,calligrapher,"Arts, Culture & Sports","Arts, Culture & Sports",trades,,,Middle (Grade 8),,,built-in-psco-taxonomy
+Cricket Player (Professional),cricket-player-professional,"Arts, Culture & Sports","Arts, Culture & Sports",professional,,,No formal education,,,built-in-psco-taxonomy
+Sports Coach,sports-coach,"Arts, Culture & Sports","Arts, Culture & Sports",professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Photographer,photographer,"Arts, Culture & Sports","Arts, Culture & Sports",technical,,,Diploma / Certificate,,,built-in-psco-taxonomy
+Event Planner,event-planner,"Arts, Culture & Sports","Arts, Culture & Sports",services,,,Bachelor's degree,,,built-in-psco-taxonomy
+NGO Field Worker,ngo-field-worker,NGO & Development Sector,NGO & Development Sector,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Social Worker,social-worker,NGO & Development Sector,NGO & Development Sector,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+Community Health Worker,community-health-worker,NGO & Development Sector,NGO & Development Sector,services,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Development Program Manager,development-program-manager,NGO & Development Sector,NGO & Development Sector,managerial,,,Master's degree,,,built-in-psco-taxonomy
+Monitoring & Evaluation Officer,monitoring-evaluation-officer,NGO & Development Sector,NGO & Development Sector,professional,,,Master's degree,,,built-in-psco-taxonomy
+Human Rights Activist,human-rights-activist,NGO & Development Sector,NGO & Development Sector,professional,,,Bachelor's degree,,,built-in-psco-taxonomy
+HR Manager / Officer,hr-manager-officer,General,Banking & Finance,managerial,,,Bachelor's degree,,,built-in-psco-taxonomy
+Marketing Manager,marketing-manager,General,Retail & Wholesale Trade,managerial,,,Bachelor's degree,,,built-in-psco-taxonomy
+Office Clerk / Assistant,office-clerk-assistant,General,Government & Public Administration,clerical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Data Entry Operator,data-entry-operator,General,Information Technology,clerical,,,Matric (Grade 10),,,built-in-psco-taxonomy
+Receptionist,receptionist,General,Domestic & Personal Services,clerical,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Call Center Agent,call-center-agent,General,Information Technology,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Project Manager,project-manager,General,Information Technology,managerial,,,Bachelor's degree,,,built-in-psco-taxonomy
+Supply Chain Manager,supply-chain-manager,General,Transport & Logistics,managerial,,,Bachelor's degree,,,built-in-psco-taxonomy
+Import / Export Agent,import-export-agent,General,Retail & Wholesale Trade,services,,,Intermediate (Grade 12),,,built-in-psco-taxonomy
+Entrepreneur / Small Business Owner,entrepreneur-small-business-owner,General,Retail & Wholesale Trade,managerial,,,No formal education,,,built-in-psco-taxonomy
+Freelancer (General),freelancer-general,General,Information Technology,technical,,,Diploma / Certificate,,,built-in-psco-taxonomy

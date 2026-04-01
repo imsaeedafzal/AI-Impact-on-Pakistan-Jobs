@@ -1,0 +1,1650 @@
+[
+  {
+    "title": "Farmer (Crop)",
+    "slug": "farmer-crop",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "agricultural",
+    "education": "No formal education"
+  },
+  {
+    "title": "Livestock Farmer",
+    "slug": "livestock-farmer",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "agricultural",
+    "education": "No formal education"
+  },
+  {
+    "title": "Agricultural Laborer",
+    "slug": "agricultural-laborer",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "unskilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Tractor Operator",
+    "slug": "tractor-operator",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "skilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Irrigation Worker",
+    "slug": "irrigation-worker",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "skilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Fisherman",
+    "slug": "fisherman",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "skilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Poultry Farmer",
+    "slug": "poultry-farmer",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "agricultural",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Dairy Farmer",
+    "slug": "dairy-farmer",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "agricultural",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Agricultural Extension Officer",
+    "slug": "agricultural-extension-officer",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Veterinarian",
+    "slug": "veterinarian",
+    "category": "Agriculture & Livestock",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Floriculturist / Nursery Worker",
+    "slug": "floriculturist-nursery-worker",
+    "category": "Agriculture & Livestock",
+    "sector": "Agriculture & Livestock",
+    "type": "skilled-labor",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Textile Mill Worker",
+    "slug": "textile-mill-worker",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "skilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Power Loom Operator",
+    "slug": "power-loom-operator",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "skilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Garment Stitcher / Tailor",
+    "slug": "garment-stitcher-tailor",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Textile Designer",
+    "slug": "textile-designer",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Quality Inspector (Textiles)",
+    "slug": "quality-inspector-textiles",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "technical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Dyeing & Finishing Operator",
+    "slug": "dyeing-finishing-operator",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "skilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Embroidery Worker",
+    "slug": "embroidery-worker",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "trades",
+    "education": "No formal education"
+  },
+  {
+    "title": "Spinning Machine Operator",
+    "slug": "spinning-machine-operator",
+    "category": "Textiles & Garments",
+    "sector": "Textiles & Garments",
+    "type": "skilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Mason / Bricklayer",
+    "slug": "mason-bricklayer",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "trades",
+    "education": "No formal education"
+  },
+  {
+    "title": "Carpenter",
+    "slug": "carpenter",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "trades",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Plumber",
+    "slug": "plumber",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Electrician",
+    "slug": "electrician",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Painter (Building)",
+    "slug": "painter-building",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "trades",
+    "education": "No formal education"
+  },
+  {
+    "title": "Welder",
+    "slug": "welder",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Steel Fixer / Iron Worker",
+    "slug": "steel-fixer-iron-worker",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "trades",
+    "education": "No formal education"
+  },
+  {
+    "title": "Civil Engineer",
+    "slug": "civil-engineer",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Architect",
+    "slug": "architect",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Construction Laborer",
+    "slug": "construction-laborer",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "unskilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Crane Operator",
+    "slug": "crane-operator",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "skilled-labor",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Real Estate Agent",
+    "slug": "real-estate-agent",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Surveyor",
+    "slug": "surveyor",
+    "category": "Construction & Real Estate",
+    "sector": "Construction & Real Estate",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Factory Worker (General)",
+    "slug": "factory-worker-general",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "unskilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Machine Operator",
+    "slug": "machine-operator",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "skilled-labor",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Production Supervisor",
+    "slug": "production-supervisor",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "managerial",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Quality Control Inspector",
+    "slug": "quality-control-inspector",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "technical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Industrial Engineer",
+    "slug": "industrial-engineer",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Mechanical Engineer",
+    "slug": "mechanical-engineer",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Chemical Engineer",
+    "slug": "chemical-engineer",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Electrical Engineer",
+    "slug": "electrical-engineer",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Electronics Technician",
+    "slug": "electronics-technician",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "CNC Machine Operator",
+    "slug": "cnc-machine-operator",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Packaging Worker",
+    "slug": "packaging-worker",
+    "category": "Manufacturing & Industry",
+    "sector": "Manufacturing & Industry",
+    "type": "unskilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Truck Driver",
+    "slug": "truck-driver",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "skilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Bus Driver",
+    "slug": "bus-driver",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "skilled-labor",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Rickshaw Driver",
+    "slug": "rickshaw-driver",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "services",
+    "education": "No formal education"
+  },
+  {
+    "title": "Taxi / Ride-hail Driver",
+    "slug": "taxi-ride-hail-driver",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "services",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Delivery Rider",
+    "slug": "delivery-rider",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "services",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Warehouse Worker",
+    "slug": "warehouse-worker",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "unskilled-labor",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Logistics Coordinator",
+    "slug": "logistics-coordinator",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "clerical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Customs Clearing Agent",
+    "slug": "customs-clearing-agent",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "clerical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Ship/Port Worker",
+    "slug": "shipport-worker",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "skilled-labor",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Airline Pilot",
+    "slug": "airline-pilot",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Train Driver",
+    "slug": "train-driver",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "skilled-labor",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Air Traffic Controller",
+    "slug": "air-traffic-controller",
+    "category": "Transport & Logistics",
+    "sector": "Transport & Logistics",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Software Developer",
+    "slug": "software-developer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Web Developer",
+    "slug": "web-developer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Mobile App Developer",
+    "slug": "mobile-app-developer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Data Analyst",
+    "slug": "data-analyst",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Data Scientist",
+    "slug": "data-scientist",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "professional",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Database Administrator",
+    "slug": "database-administrator",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Network Engineer",
+    "slug": "network-engineer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "slug": "cybersecurity-analyst",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "IT Support Technician",
+    "slug": "it-support-technician",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "System Administrator",
+    "slug": "system-administrator",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "UI/UX Designer",
+    "slug": "uiux-designer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "DevOps Engineer",
+    "slug": "devops-engineer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "AI / Machine Learning Engineer",
+    "slug": "ai-machine-learning-engineer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "professional",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Cloud Engineer",
+    "slug": "cloud-engineer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "QA / Test Engineer",
+    "slug": "qa-test-engineer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Computer Hardware Technician",
+    "slug": "computer-hardware-technician",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "trades",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "SEO / Digital Marketing Specialist",
+    "slug": "seo-digital-marketing-specialist",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Graphic Designer",
+    "slug": "graphic-designer",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Freelance IT Worker",
+    "slug": "freelance-it-worker",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "E-commerce Specialist",
+    "slug": "e-commerce-specialist",
+    "category": "Information Technology",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Doctor (MBBS)",
+    "slug": "doctor-mbbs",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Surgeon",
+    "slug": "surgeon",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Dentist",
+    "slug": "dentist",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Nurse",
+    "slug": "nurse",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Pharmacist",
+    "slug": "pharmacist",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Lab Technician",
+    "slug": "lab-technician",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Paramedic / EMT",
+    "slug": "paramedic-emt",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Lady Health Worker",
+    "slug": "lady-health-worker",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Physiotherapist",
+    "slug": "physiotherapist",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Radiologist / Imaging Technician",
+    "slug": "radiologist-imaging-technician",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Psychologist / Counselor",
+    "slug": "psychologist-counselor",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "professional",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Homeopathic / Hakeem Practitioner",
+    "slug": "homeopathic-hakeem-practitioner",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Midwife / Dai",
+    "slug": "midwife-dai",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "No formal education"
+  },
+  {
+    "title": "Optician / Optometrist",
+    "slug": "optician-optometrist",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "medical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Medical Transcriptionist",
+    "slug": "medical-transcriptionist",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "clerical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Hospital Administrator",
+    "slug": "hospital-administrator",
+    "category": "Healthcare & Medical",
+    "sector": "Healthcare & Medical",
+    "type": "managerial",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Primary School Teacher",
+    "slug": "primary-school-teacher",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Secondary School Teacher",
+    "slug": "secondary-school-teacher",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "College / University Lecturer",
+    "slug": "college-university-lecturer",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Master's degree"
+  },
+  {
+    "title": "University Professor",
+    "slug": "university-professor",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Doctorate / PhD"
+  },
+  {
+    "title": "Madrasa Teacher",
+    "slug": "madrasa-teacher",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "No formal education"
+  },
+  {
+    "title": "Tuition / Coaching Teacher",
+    "slug": "tuition-coaching-teacher",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Montessori / Early Childhood Teacher",
+    "slug": "montessori-early-childhood-teacher",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Special Education Teacher",
+    "slug": "special-education-teacher",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Vocational Trainer",
+    "slug": "vocational-trainer",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "School Principal / Administrator",
+    "slug": "school-principal-administrator",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "managerial",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Research Assistant",
+    "slug": "research-assistant",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "educational",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Librarian",
+    "slug": "librarian",
+    "category": "Education & Training",
+    "sector": "Education & Training",
+    "type": "clerical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Bank Teller / Officer",
+    "slug": "bank-teller-officer",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "clerical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Accountant",
+    "slug": "accountant",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Chartered Accountant (CA)",
+    "slug": "chartered-accountant-ca",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "professional",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Financial Analyst",
+    "slug": "financial-analyst",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Insurance Agent",
+    "slug": "insurance-agent",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Microfinance Officer",
+    "slug": "microfinance-officer",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "clerical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Tax Consultant",
+    "slug": "tax-consultant",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Auditor",
+    "slug": "auditor",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Stock Broker / Trader",
+    "slug": "stock-broker-trader",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Loan Officer",
+    "slug": "loan-officer",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "clerical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Investment Banker",
+    "slug": "investment-banker",
+    "category": "Banking & Finance",
+    "sector": "Banking & Finance",
+    "type": "professional",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Civil Servant (BPS Officer)",
+    "slug": "civil-servant-bps-officer",
+    "category": "Government & Public Administration",
+    "sector": "Government & Public Administration",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Police Officer",
+    "slug": "police-officer",
+    "category": "Government & Public Administration",
+    "sector": "Government & Public Administration",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Police Constable",
+    "slug": "police-constable",
+    "category": "Government & Public Administration",
+    "sector": "Government & Public Administration",
+    "type": "services",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Military Officer",
+    "slug": "military-officer",
+    "category": "Government & Public Administration",
+    "sector": "Defence & Security",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Soldier / Jawan",
+    "slug": "soldier-jawan",
+    "category": "Government & Public Administration",
+    "sector": "Defence & Security",
+    "type": "services",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Patwari / Revenue Officer",
+    "slug": "patwari-revenue-officer",
+    "category": "Government & Public Administration",
+    "sector": "Government & Public Administration",
+    "type": "clerical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Postman",
+    "slug": "postman",
+    "category": "Government & Public Administration",
+    "sector": "Government & Public Administration",
+    "type": "services",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Court Clerk / Stenographer",
+    "slug": "court-clerk-stenographer",
+    "category": "Government & Public Administration",
+    "sector": "Government & Public Administration",
+    "type": "clerical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Railway Worker",
+    "slug": "railway-worker",
+    "category": "Government & Public Administration",
+    "sector": "Transport & Logistics",
+    "type": "skilled-labor",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "WAPDA / Electricity Line Worker",
+    "slug": "wapda-electricity-line-worker",
+    "category": "Government & Public Administration",
+    "sector": "Energy & Utilities",
+    "type": "skilled-labor",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Sui Gas Technician",
+    "slug": "sui-gas-technician",
+    "category": "Government & Public Administration",
+    "sector": "Energy & Utilities",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Shopkeeper / Small Retailer",
+    "slug": "shopkeeper-small-retailer",
+    "category": "Retail & Wholesale Trade",
+    "sector": "Retail & Wholesale Trade",
+    "type": "services",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Wholesale Dealer",
+    "slug": "wholesale-dealer",
+    "category": "Retail & Wholesale Trade",
+    "sector": "Retail & Wholesale Trade",
+    "type": "services",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Sales Representative",
+    "slug": "sales-representative",
+    "category": "Retail & Wholesale Trade",
+    "sector": "Retail & Wholesale Trade",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Cashier",
+    "slug": "cashier",
+    "category": "Retail & Wholesale Trade",
+    "sector": "Retail & Wholesale Trade",
+    "type": "clerical",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Supermarket Worker",
+    "slug": "supermarket-worker",
+    "category": "Retail & Wholesale Trade",
+    "sector": "Retail & Wholesale Trade",
+    "type": "services",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Street Vendor / Hawker",
+    "slug": "street-vendor-hawker",
+    "category": "Retail & Wholesale Trade",
+    "sector": "Retail & Wholesale Trade",
+    "type": "unskilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Procurement Officer",
+    "slug": "procurement-officer",
+    "category": "Retail & Wholesale Trade",
+    "sector": "Retail & Wholesale Trade",
+    "type": "clerical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Hotel Receptionist",
+    "slug": "hotel-receptionist",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Chef / Cook",
+    "slug": "chef-cook",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Waiter",
+    "slug": "waiter",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "services",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Tour Guide",
+    "slug": "tour-guide",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "services",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Hotel Manager",
+    "slug": "hotel-manager",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "managerial",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Housekeeper (Hotel)",
+    "slug": "housekeeper-hotel",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "services",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Travel Agent",
+    "slug": "travel-agent",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Fast Food Worker",
+    "slug": "fast-food-worker",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "services",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Baker",
+    "slug": "baker",
+    "category": "Hospitality & Tourism",
+    "sector": "Hospitality & Tourism",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Journalist / Reporter",
+    "slug": "journalist-reporter",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "TV Anchor / News Presenter",
+    "slug": "tv-anchor-news-presenter",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Cameraman / Videographer",
+    "slug": "cameraman-videographer",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Radio Host / RJ",
+    "slug": "radio-host-rj",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Content Writer / Copywriter",
+    "slug": "content-writer-copywriter",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Social Media Manager",
+    "slug": "social-media-manager",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "technical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Video Editor",
+    "slug": "video-editor",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Translator / Interpreter",
+    "slug": "translator-interpreter",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Public Relations Officer",
+    "slug": "public-relations-officer",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Advertising Executive",
+    "slug": "advertising-executive",
+    "category": "Media & Communications",
+    "sector": "Media & Communications",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Lawyer / Advocate",
+    "slug": "lawyer-advocate",
+    "category": "Legal & Judiciary",
+    "sector": "Legal & Judiciary",
+    "type": "professional",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Judge",
+    "slug": "judge",
+    "category": "Legal & Judiciary",
+    "sector": "Legal & Judiciary",
+    "type": "professional",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Legal Advisor / Corporate Counsel",
+    "slug": "legal-advisor-corporate-counsel",
+    "category": "Legal & Judiciary",
+    "sector": "Legal & Judiciary",
+    "type": "professional",
+    "education": "Professional degree (MBBS, LLB, CA, etc.)"
+  },
+  {
+    "title": "Paralegal / Legal Assistant",
+    "slug": "paralegal-legal-assistant",
+    "category": "Legal & Judiciary",
+    "sector": "Legal & Judiciary",
+    "type": "clerical",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Notary Public / Deed Writer",
+    "slug": "notary-public-deed-writer",
+    "category": "Legal & Judiciary",
+    "sector": "Legal & Judiciary",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Power Plant Operator",
+    "slug": "power-plant-operator",
+    "category": "Energy & Utilities",
+    "sector": "Energy & Utilities",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Solar Panel Installer / Technician",
+    "slug": "solar-panel-installer-technician",
+    "category": "Energy & Utilities",
+    "sector": "Energy & Utilities",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Petroleum Engineer",
+    "slug": "petroleum-engineer",
+    "category": "Energy & Utilities",
+    "sector": "Energy & Utilities",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Gas Fitter",
+    "slug": "gas-fitter",
+    "category": "Energy & Utilities",
+    "sector": "Energy & Utilities",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Meter Reader",
+    "slug": "meter-reader",
+    "category": "Energy & Utilities",
+    "sector": "Energy & Utilities",
+    "type": "services",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Coal Miner",
+    "slug": "coal-miner",
+    "category": "Mining & Quarrying",
+    "sector": "Mining & Quarrying",
+    "type": "skilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Quarry Worker",
+    "slug": "quarry-worker",
+    "category": "Mining & Quarrying",
+    "sector": "Mining & Quarrying",
+    "type": "unskilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Mining Engineer",
+    "slug": "mining-engineer",
+    "category": "Mining & Quarrying",
+    "sector": "Mining & Quarrying",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Gem Cutter / Stone Worker",
+    "slug": "gem-cutter-stone-worker",
+    "category": "Mining & Quarrying",
+    "sector": "Mining & Quarrying",
+    "type": "trades",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Domestic Worker / Maid",
+    "slug": "domestic-worker-maid",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "unskilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Guard / Chowkidar",
+    "slug": "guard-chowkidar",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "services",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Security Guard (Private)",
+    "slug": "security-guard-private",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "services",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Driver (Private)",
+    "slug": "driver-private",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "services",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Barber / Hairdresser",
+    "slug": "barber-hairdresser",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Beautician",
+    "slug": "beautician",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Laundry Worker / Dhobi",
+    "slug": "laundry-worker-dhobi",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "services",
+    "education": "No formal education"
+  },
+  {
+    "title": "Sweeper / Sanitary Worker",
+    "slug": "sweeper-sanitary-worker",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "unskilled-labor",
+    "education": "No formal education"
+  },
+  {
+    "title": "Gardener / Mali",
+    "slug": "gardener-mali",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "services",
+    "education": "No formal education"
+  },
+  {
+    "title": "Nanny / Childcare Worker",
+    "slug": "nanny-childcare-worker",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "services",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Cobbler / Shoe Repairer",
+    "slug": "cobbler-shoe-repairer",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "No formal education"
+  },
+  {
+    "title": "Tailor (Local)",
+    "slug": "tailor-local",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "Mechanic (Auto)",
+    "slug": "mechanic-auto",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Mechanic (Motorcycle)",
+    "slug": "mechanic-motorcycle",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "Primary (Grade 5)"
+  },
+  {
+    "title": "AC / Refrigeration Technician",
+    "slug": "ac-refrigeration-technician",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Mobile Phone Repair Technician",
+    "slug": "mobile-phone-repair-technician",
+    "category": "Domestic & Personal Services",
+    "sector": "Domestic & Personal Services",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Musician / Singer",
+    "slug": "musician-singer",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "professional",
+    "education": "No formal education"
+  },
+  {
+    "title": "Actor / Performer",
+    "slug": "actor-performer",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "professional",
+    "education": "No formal education"
+  },
+  {
+    "title": "Painter / Fine Artist",
+    "slug": "painter-fine-artist",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Calligrapher",
+    "slug": "calligrapher",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "trades",
+    "education": "Middle (Grade 8)"
+  },
+  {
+    "title": "Cricket Player (Professional)",
+    "slug": "cricket-player-professional",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "professional",
+    "education": "No formal education"
+  },
+  {
+    "title": "Sports Coach",
+    "slug": "sports-coach",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Photographer",
+    "slug": "photographer",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  },
+  {
+    "title": "Event Planner",
+    "slug": "event-planner",
+    "category": "Arts, Culture & Sports",
+    "sector": "Arts, Culture & Sports",
+    "type": "services",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "NGO Field Worker",
+    "slug": "ngo-field-worker",
+    "category": "NGO & Development Sector",
+    "sector": "NGO & Development Sector",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Social Worker",
+    "slug": "social-worker",
+    "category": "NGO & Development Sector",
+    "sector": "NGO & Development Sector",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Community Health Worker",
+    "slug": "community-health-worker",
+    "category": "NGO & Development Sector",
+    "sector": "NGO & Development Sector",
+    "type": "services",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Development Program Manager",
+    "slug": "development-program-manager",
+    "category": "NGO & Development Sector",
+    "sector": "NGO & Development Sector",
+    "type": "managerial",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Monitoring & Evaluation Officer",
+    "slug": "monitoring-evaluation-officer",
+    "category": "NGO & Development Sector",
+    "sector": "NGO & Development Sector",
+    "type": "professional",
+    "education": "Master's degree"
+  },
+  {
+    "title": "Human Rights Activist",
+    "slug": "human-rights-activist",
+    "category": "NGO & Development Sector",
+    "sector": "NGO & Development Sector",
+    "type": "professional",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "HR Manager / Officer",
+    "slug": "hr-manager-officer",
+    "category": "General",
+    "sector": "Banking & Finance",
+    "type": "managerial",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Marketing Manager",
+    "slug": "marketing-manager",
+    "category": "General",
+    "sector": "Retail & Wholesale Trade",
+    "type": "managerial",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Office Clerk / Assistant",
+    "slug": "office-clerk-assistant",
+    "category": "General",
+    "sector": "Government & Public Administration",
+    "type": "clerical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Data Entry Operator",
+    "slug": "data-entry-operator",
+    "category": "General",
+    "sector": "Information Technology",
+    "type": "clerical",
+    "education": "Matric (Grade 10)"
+  },
+  {
+    "title": "Receptionist",
+    "slug": "receptionist",
+    "category": "General",
+    "sector": "Domestic & Personal Services",
+    "type": "clerical",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Call Center Agent",
+    "slug": "call-center-agent",
+    "category": "General",
+    "sector": "Information Technology",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Project Manager",
+    "slug": "project-manager",
+    "category": "General",
+    "sector": "Information Technology",
+    "type": "managerial",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Supply Chain Manager",
+    "slug": "supply-chain-manager",
+    "category": "General",
+    "sector": "Transport & Logistics",
+    "type": "managerial",
+    "education": "Bachelor's degree"
+  },
+  {
+    "title": "Import / Export Agent",
+    "slug": "import-export-agent",
+    "category": "General",
+    "sector": "Retail & Wholesale Trade",
+    "type": "services",
+    "education": "Intermediate (Grade 12)"
+  },
+  {
+    "title": "Entrepreneur / Small Business Owner",
+    "slug": "entrepreneur-small-business-owner",
+    "category": "General",
+    "sector": "Retail & Wholesale Trade",
+    "type": "managerial",
+    "education": "No formal education"
+  },
+  {
+    "title": "Freelancer (General)",
+    "slug": "freelancer-general",
+    "category": "General",
+    "sector": "Information Technology",
+    "type": "technical",
+    "education": "Diploma / Certificate"
+  }
+]

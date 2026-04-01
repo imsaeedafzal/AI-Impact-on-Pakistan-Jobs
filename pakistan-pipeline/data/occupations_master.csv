@@ -1,0 +1,207 @@
+title,title_urdu,category,sector,type,education_required,source_url,date_found,run_id
+Farmer (Crop),,Agriculture & Livestock,Agriculture & Livestock,agricultural,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Livestock Farmer,,Agriculture & Livestock,Agriculture & Livestock,agricultural,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Agricultural Laborer,,Agriculture & Livestock,Agriculture & Livestock,unskilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Tractor Operator,,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Irrigation Worker,,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Fisherman,,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Poultry Farmer,,Agriculture & Livestock,Agriculture & Livestock,agricultural,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Dairy Farmer,,Agriculture & Livestock,Agriculture & Livestock,agricultural,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Agricultural Extension Officer,,Agriculture & Livestock,Agriculture & Livestock,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Veterinarian,,Agriculture & Livestock,Healthcare & Medical,medical,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Floriculturist / Nursery Worker,,Agriculture & Livestock,Agriculture & Livestock,skilled-labor,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Textile Mill Worker,,Textiles & Garments,Textiles & Garments,skilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Power Loom Operator,,Textiles & Garments,Textiles & Garments,skilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Garment Stitcher / Tailor,,Textiles & Garments,Textiles & Garments,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Textile Designer,,Textiles & Garments,Textiles & Garments,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Quality Inspector (Textiles),,Textiles & Garments,Textiles & Garments,technical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Dyeing & Finishing Operator,,Textiles & Garments,Textiles & Garments,skilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Embroidery Worker,,Textiles & Garments,Textiles & Garments,trades,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Spinning Machine Operator,,Textiles & Garments,Textiles & Garments,skilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Mason / Bricklayer,,Construction & Real Estate,Construction & Real Estate,trades,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Carpenter,,Construction & Real Estate,Construction & Real Estate,trades,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Plumber,,Construction & Real Estate,Construction & Real Estate,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Electrician,,Construction & Real Estate,Construction & Real Estate,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Painter (Building),,Construction & Real Estate,Construction & Real Estate,trades,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Welder,,Construction & Real Estate,Construction & Real Estate,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Steel Fixer / Iron Worker,,Construction & Real Estate,Construction & Real Estate,trades,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Civil Engineer,,Construction & Real Estate,Construction & Real Estate,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Architect,,Construction & Real Estate,Construction & Real Estate,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Construction Laborer,,Construction & Real Estate,Construction & Real Estate,unskilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Crane Operator,,Construction & Real Estate,Construction & Real Estate,skilled-labor,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Real Estate Agent,,Construction & Real Estate,Construction & Real Estate,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Surveyor,,Construction & Real Estate,Construction & Real Estate,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Factory Worker (General),,Manufacturing & Industry,Manufacturing & Industry,unskilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Machine Operator,,Manufacturing & Industry,Manufacturing & Industry,skilled-labor,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Production Supervisor,,Manufacturing & Industry,Manufacturing & Industry,managerial,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Quality Control Inspector,,Manufacturing & Industry,Manufacturing & Industry,technical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Industrial Engineer,,Manufacturing & Industry,Manufacturing & Industry,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Mechanical Engineer,,Manufacturing & Industry,Manufacturing & Industry,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Chemical Engineer,,Manufacturing & Industry,Manufacturing & Industry,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Electrical Engineer,,Manufacturing & Industry,Manufacturing & Industry,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Electronics Technician,,Manufacturing & Industry,Manufacturing & Industry,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+CNC Machine Operator,,Manufacturing & Industry,Manufacturing & Industry,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Packaging Worker,,Manufacturing & Industry,Manufacturing & Industry,unskilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Truck Driver,,Transport & Logistics,Transport & Logistics,skilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Bus Driver,,Transport & Logistics,Transport & Logistics,skilled-labor,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Rickshaw Driver,,Transport & Logistics,Transport & Logistics,services,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Taxi / Ride-hail Driver,,Transport & Logistics,Transport & Logistics,services,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Delivery Rider,,Transport & Logistics,Transport & Logistics,services,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Warehouse Worker,,Transport & Logistics,Transport & Logistics,unskilled-labor,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Logistics Coordinator,,Transport & Logistics,Transport & Logistics,clerical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Customs Clearing Agent,,Transport & Logistics,Transport & Logistics,clerical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Ship/Port Worker,,Transport & Logistics,Transport & Logistics,skilled-labor,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Airline Pilot,,Transport & Logistics,Transport & Logistics,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Train Driver,,Transport & Logistics,Transport & Logistics,skilled-labor,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Air Traffic Controller,,Transport & Logistics,Transport & Logistics,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Software Developer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Web Developer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Mobile App Developer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Data Analyst,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Data Scientist,,Information Technology,Information Technology,professional,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Database Administrator,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Network Engineer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Cybersecurity Analyst,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+IT Support Technician,,Information Technology,Information Technology,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+System Administrator,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+UI/UX Designer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+DevOps Engineer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+AI / Machine Learning Engineer,,Information Technology,Information Technology,professional,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Cloud Engineer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+QA / Test Engineer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Computer Hardware Technician,,Information Technology,Information Technology,trades,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+SEO / Digital Marketing Specialist,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Graphic Designer,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Freelance IT Worker,,Information Technology,Information Technology,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+E-commerce Specialist,,Information Technology,Information Technology,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Doctor (MBBS),,Healthcare & Medical,Healthcare & Medical,medical,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Surgeon,,Healthcare & Medical,Healthcare & Medical,medical,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Dentist,,Healthcare & Medical,Healthcare & Medical,medical,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Nurse,,Healthcare & Medical,Healthcare & Medical,medical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Pharmacist,,Healthcare & Medical,Healthcare & Medical,medical,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Lab Technician,,Healthcare & Medical,Healthcare & Medical,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Paramedic / EMT,,Healthcare & Medical,Healthcare & Medical,medical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Lady Health Worker,,Healthcare & Medical,Healthcare & Medical,medical,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Physiotherapist,,Healthcare & Medical,Healthcare & Medical,medical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Radiologist / Imaging Technician,,Healthcare & Medical,Healthcare & Medical,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Psychologist / Counselor,,Healthcare & Medical,Healthcare & Medical,professional,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Homeopathic / Hakeem Practitioner,,Healthcare & Medical,Healthcare & Medical,medical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Midwife / Dai,,Healthcare & Medical,Healthcare & Medical,medical,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Optician / Optometrist,,Healthcare & Medical,Healthcare & Medical,medical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Medical Transcriptionist,,Healthcare & Medical,Healthcare & Medical,clerical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Hospital Administrator,,Healthcare & Medical,Healthcare & Medical,managerial,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Primary School Teacher,,Education & Training,Education & Training,educational,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Secondary School Teacher,,Education & Training,Education & Training,educational,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+College / University Lecturer,,Education & Training,Education & Training,educational,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+University Professor,,Education & Training,Education & Training,educational,Doctorate / PhD,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Madrasa Teacher,,Education & Training,Education & Training,educational,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Tuition / Coaching Teacher,,Education & Training,Education & Training,educational,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Montessori / Early Childhood Teacher,,Education & Training,Education & Training,educational,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Special Education Teacher,,Education & Training,Education & Training,educational,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Vocational Trainer,,Education & Training,Education & Training,educational,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+School Principal / Administrator,,Education & Training,Education & Training,managerial,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Research Assistant,,Education & Training,Education & Training,educational,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Librarian,,Education & Training,Education & Training,clerical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Bank Teller / Officer,,Banking & Finance,Banking & Finance,clerical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Accountant,,Banking & Finance,Banking & Finance,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Chartered Accountant (CA),,Banking & Finance,Banking & Finance,professional,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Financial Analyst,,Banking & Finance,Banking & Finance,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Insurance Agent,,Banking & Finance,Banking & Finance,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Microfinance Officer,,Banking & Finance,Banking & Finance,clerical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Tax Consultant,,Banking & Finance,Banking & Finance,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Auditor,,Banking & Finance,Banking & Finance,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Stock Broker / Trader,,Banking & Finance,Banking & Finance,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Loan Officer,,Banking & Finance,Banking & Finance,clerical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Investment Banker,,Banking & Finance,Banking & Finance,professional,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Civil Servant (BPS Officer),,Government & Public Administration,Government & Public Administration,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Police Officer,,Government & Public Administration,Government & Public Administration,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Police Constable,,Government & Public Administration,Government & Public Administration,services,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Military Officer,,Government & Public Administration,Defence & Security,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Soldier / Jawan,,Government & Public Administration,Defence & Security,services,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Patwari / Revenue Officer,,Government & Public Administration,Government & Public Administration,clerical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Postman,,Government & Public Administration,Government & Public Administration,services,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Court Clerk / Stenographer,,Government & Public Administration,Government & Public Administration,clerical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Railway Worker,,Government & Public Administration,Transport & Logistics,skilled-labor,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+WAPDA / Electricity Line Worker,,Government & Public Administration,Energy & Utilities,skilled-labor,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Sui Gas Technician,,Government & Public Administration,Energy & Utilities,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Shopkeeper / Small Retailer,,Retail & Wholesale Trade,Retail & Wholesale Trade,services,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Wholesale Dealer,,Retail & Wholesale Trade,Retail & Wholesale Trade,services,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Sales Representative,,Retail & Wholesale Trade,Retail & Wholesale Trade,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Cashier,,Retail & Wholesale Trade,Retail & Wholesale Trade,clerical,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Supermarket Worker,,Retail & Wholesale Trade,Retail & Wholesale Trade,services,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Street Vendor / Hawker,,Retail & Wholesale Trade,Retail & Wholesale Trade,unskilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Procurement Officer,,Retail & Wholesale Trade,Retail & Wholesale Trade,clerical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Hotel Receptionist,,Hospitality & Tourism,Hospitality & Tourism,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Chef / Cook,,Hospitality & Tourism,Hospitality & Tourism,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Waiter,,Hospitality & Tourism,Hospitality & Tourism,services,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Tour Guide,,Hospitality & Tourism,Hospitality & Tourism,services,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Hotel Manager,,Hospitality & Tourism,Hospitality & Tourism,managerial,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Housekeeper (Hotel),,Hospitality & Tourism,Hospitality & Tourism,services,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Travel Agent,,Hospitality & Tourism,Hospitality & Tourism,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Fast Food Worker,,Hospitality & Tourism,Hospitality & Tourism,services,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Baker,,Hospitality & Tourism,Hospitality & Tourism,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Journalist / Reporter,,Media & Communications,Media & Communications,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+TV Anchor / News Presenter,,Media & Communications,Media & Communications,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Cameraman / Videographer,,Media & Communications,Media & Communications,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Radio Host / RJ,,Media & Communications,Media & Communications,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Content Writer / Copywriter,,Media & Communications,Media & Communications,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Social Media Manager,,Media & Communications,Media & Communications,technical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Video Editor,,Media & Communications,Media & Communications,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Translator / Interpreter,,Media & Communications,Media & Communications,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Public Relations Officer,,Media & Communications,Media & Communications,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Advertising Executive,,Media & Communications,Media & Communications,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Lawyer / Advocate,,Legal & Judiciary,Legal & Judiciary,professional,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Judge,,Legal & Judiciary,Legal & Judiciary,professional,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Legal Advisor / Corporate Counsel,,Legal & Judiciary,Legal & Judiciary,professional,"Professional degree (MBBS, LLB, CA, etc.)",built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Paralegal / Legal Assistant,,Legal & Judiciary,Legal & Judiciary,clerical,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Notary Public / Deed Writer,,Legal & Judiciary,Legal & Judiciary,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Power Plant Operator,,Energy & Utilities,Energy & Utilities,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Solar Panel Installer / Technician,,Energy & Utilities,Energy & Utilities,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Petroleum Engineer,,Energy & Utilities,Energy & Utilities,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Gas Fitter,,Energy & Utilities,Energy & Utilities,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Meter Reader,,Energy & Utilities,Energy & Utilities,services,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Coal Miner,,Mining & Quarrying,Mining & Quarrying,skilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Quarry Worker,,Mining & Quarrying,Mining & Quarrying,unskilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Mining Engineer,,Mining & Quarrying,Mining & Quarrying,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Gem Cutter / Stone Worker,,Mining & Quarrying,Mining & Quarrying,trades,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Domestic Worker / Maid,,Domestic & Personal Services,Domestic & Personal Services,unskilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Guard / Chowkidar,,Domestic & Personal Services,Domestic & Personal Services,services,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Security Guard (Private),,Domestic & Personal Services,Domestic & Personal Services,services,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Driver (Private),,Domestic & Personal Services,Domestic & Personal Services,services,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Barber / Hairdresser,,Domestic & Personal Services,Domestic & Personal Services,trades,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Beautician,,Domestic & Personal Services,Domestic & Personal Services,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Laundry Worker / Dhobi,,Domestic & Personal Services,Domestic & Personal Services,services,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Sweeper / Sanitary Worker,,Domestic & Personal Services,Domestic & Personal Services,unskilled-labor,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Gardener / Mali,,Domestic & Personal Services,Domestic & Personal Services,services,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Nanny / Childcare Worker,,Domestic & Personal Services,Domestic & Personal Services,services,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Cobbler / Shoe Repairer,,Domestic & Personal Services,Domestic & Personal Services,trades,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Tailor (Local),,Domestic & Personal Services,Domestic & Personal Services,trades,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Mechanic (Auto),,Domestic & Personal Services,Domestic & Personal Services,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Mechanic (Motorcycle),,Domestic & Personal Services,Domestic & Personal Services,trades,Primary (Grade 5),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+AC / Refrigeration Technician,,Domestic & Personal Services,Domestic & Personal Services,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Mobile Phone Repair Technician,,Domestic & Personal Services,Domestic & Personal Services,trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Musician / Singer,,"Arts, Culture & Sports","Arts, Culture & Sports",professional,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Actor / Performer,,"Arts, Culture & Sports","Arts, Culture & Sports",professional,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Painter / Fine Artist,,"Arts, Culture & Sports","Arts, Culture & Sports",professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Calligrapher,,"Arts, Culture & Sports","Arts, Culture & Sports",trades,Middle (Grade 8),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Cricket Player (Professional),,"Arts, Culture & Sports","Arts, Culture & Sports",professional,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Sports Coach,,"Arts, Culture & Sports","Arts, Culture & Sports",professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Photographer,,"Arts, Culture & Sports","Arts, Culture & Sports",technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Event Planner,,"Arts, Culture & Sports","Arts, Culture & Sports",services,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+NGO Field Worker,,NGO & Development Sector,NGO & Development Sector,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Social Worker,,NGO & Development Sector,NGO & Development Sector,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Community Health Worker,,NGO & Development Sector,NGO & Development Sector,services,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Development Program Manager,,NGO & Development Sector,NGO & Development Sector,managerial,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Monitoring & Evaluation Officer,,NGO & Development Sector,NGO & Development Sector,professional,Master's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Human Rights Activist,,NGO & Development Sector,NGO & Development Sector,professional,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+HR Manager / Officer,,General,Banking & Finance,managerial,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Marketing Manager,,General,Retail & Wholesale Trade,managerial,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Office Clerk / Assistant,,General,Government & Public Administration,clerical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Data Entry Operator,,General,Information Technology,clerical,Matric (Grade 10),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Receptionist,,General,Domestic & Personal Services,clerical,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Call Center Agent,,General,Information Technology,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Project Manager,,General,Information Technology,managerial,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Supply Chain Manager,,General,Transport & Logistics,managerial,Bachelor's degree,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Import / Export Agent,,General,Retail & Wholesale Trade,services,Intermediate (Grade 12),built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Entrepreneur / Small Business Owner,,General,Retail & Wholesale Trade,managerial,No formal education,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab
+Freelancer (General),,General,Information Technology,technical,Diploma / Certificate,built-in-psco-taxonomy,2026-04-02,20260402-000822-3837ab

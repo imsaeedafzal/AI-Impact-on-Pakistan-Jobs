@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Exposure of Pakistan's Job Market</title>
+
+<!-- Open Graph / Social sharing -->
+<meta property="og:title" content="AI Exposure of Pakistan's Job Market">
+<meta property="og:description" content="Interactive analysis of how AI will reshape 206 Pakistani occupations across 77.2M jobs. Based on PBS Labour Force Survey 2024-25, Pakistan Economic Survey 2024-25, PMC, PNC, PSEB data.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_PK">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Exposure of Pakistan's Job Market">
+<meta name="twitter:description" content="Interactive analysis of how AI will reshape 206 Pakistani occupations across 77.2M jobs. Data from PBS, PMC, PNC, PSEB. AI exposure scored via Anthropic Claude.">
+<meta name="description" content="Interactive treemap visualization analyzing AI exposure of 206 Pakistani occupations covering 77.2 million jobs. Employment data from PBS Labour Force Survey 2024-25, Pakistan Economic Survey 2024-25, PMC, PNC, PSEB. AI exposure scored via Anthropic Claude.">
+
+<!-- Favicon (green circuit-style) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0f'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='20'>🤖</text></svg>">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0a0a0f;
+  --bg2: #12121a;
+  --fg: #e0e0e8;
+  --fg2: #888894;
+  --sidebar-w: 240px;
+  --accent: #6b8afd;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  width: var(--sidebar-w);
+  background: var(--bg2);
+  border-right: 1px solid rgba(255,255,255,0.06);
+  padding: 16px 14px;
+  z-index: 10;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#sidebar h1 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+#sidebar .subtitle {
+  font-size: 10px;
+  color: var(--fg2);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+#sidebar .subtitle a { color: var(--fg2); }
+
+/* ── Filters ─────────────────────────────────────────────── */
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.filter-section h3 {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-search {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 6px 8px;
+  color: var(--fg);
+  font-size: 11px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.filter-search:focus {
+  border-color: var(--accent);
+}
+.filter-search::placeholder {
+  color: var(--fg2);
+}
+
+.filter-select {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 4px 6px;
+  color: var(--fg);
+  font-size: 11px;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23888'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  padding-right: 20px;
+}
+.filter-select:focus {
+  border-color: var(--accent);
+}
+.filter-select option {
+  background: #1a1a2e;
+  color: var(--fg);
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.filter-row label {
+  font-size: 10px;
+  color: var(--fg2);
+  width: 52px;
+  flex-shrink: 0;
+}
+
+.filter-count {
+  font-size: 10px;
+  color: var(--fg2);
+  font-weight: 400;
+}
+
+.btn-reset {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: var(--fg2);
+  font-size: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-reset:hover {
+  color: var(--fg);
+  border-color: var(--accent);
+}
+
+/* ── Exposure chips ──────────────────────────────────────── */
+
+.exposure-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+.exposure-chip {
+  padding: 3px 7px;
+  border-radius: 3px;
+  font-size: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  color: var(--fg2);
+  transition: all 0.15s;
+  user-select: none;
+}
+.exposure-chip:hover {
+  border-color: rgba(255,255,255,0.25);
+}
+.exposure-chip.active {
+  border-color: var(--accent);
+  color: var(--fg);
+  background: rgba(107,138,253,0.12);
+}
+
+/* ── Stats ───────────────────────────────────────────────── */
+
+.stat-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.stat-section h3 {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg2);
+}
+.stat-big {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.stat-label {
+  font-size: 10px;
+  color: var(--fg2);
+}
+
+.tier-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.tier-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+}
+.tier-color {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.tier-name {
+  flex: 1;
+  color: var(--fg2);
+}
+.tier-jobs {
+  text-align: right;
+  white-space: nowrap;
+}
+.tier-pct {
+  text-align: right;
+  width: 30px;
+  color: var(--fg2);
+  font-size: 9px;
+}
+
+.histogram {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 40px;
+}
+.histogram .bar {
+  flex: 1;
+  border-radius: 1px 1px 0 0;
+  min-height: 1px;
+  position: relative;
+}
+.hist-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: var(--fg2);
+  margin-top: 2px;
+}
+
+.hbar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.hbar-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+}
+.hbar-label {
+  width: 64px;
+  flex-shrink: 0;
+  color: var(--fg2);
+  font-size: 10px;
+  text-align: right;
+}
+.hbar-track {
+  flex: 1;
+  height: 9px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.hbar-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+.hbar-val {
+  width: 22px;
+  flex-shrink: 0;
+  font-size: 10px;
+  color: var(--fg);
+  text-align: right;
+}
+
+.gradient-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: var(--fg2);
+}
+.gradient-legend canvas {
+  border-radius: 2px;
+}
+
+canvas#canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: var(--sidebar-w);
+  cursor: default;
+}
+
+#tooltip {
+  position: fixed;
+  pointer-events: none;
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 340px;
+  opacity: 0;
+  transition: opacity 0.12s;
+  z-index: 20;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+}
+#tooltip.visible { opacity: 1; }
+#tooltip .tt-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+#tooltip .tt-exposure {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+#tooltip .tt-stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px 12px;
+  font-size: 12px;
+}
+#tooltip .tt-stats .label { color: var(--fg2); }
+#tooltip .tt-stats .value { color: var(--fg); text-align: right; }
+#tooltip .tt-rationale {
+  font-size: 11px;
+  color: var(--fg2);
+  margin-top: 8px;
+  line-height: 1.4;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 8px;
+}
+
+/* ── Disclaimer banner ────────────────────────────────── */
+#disclaimer {
+  position: fixed;
+  top: 0;
+  left: var(--sidebar-w);
+  right: 0;
+  background: rgba(30, 28, 10, 0.95);
+  border-bottom: 1px solid rgba(255, 200, 50, 0.2);
+  color: #d4c47a;
+  font-size: 10px;
+  padding: 6px 14px;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.4;
+  backdrop-filter: blur(6px);
+}
+#disclaimer .close-btn {
+  margin-left: auto;
+  background: none;
+  border: 1px solid rgba(255,200,50,0.3);
+  color: #d4c47a;
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 9px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+#disclaimer .close-btn:hover {
+  background: rgba(255,200,50,0.1);
+}
+
+/* ── Score 0 clarification in legend ─────────────────── */
+.legend-note {
+  font-size: 9px;
+  color: var(--fg2);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+/* ── Mobile responsive ───────────────────────────────── */
+@media (max-width: 768px) {
+  :root { --sidebar-w: 100vw; }
+
+  body { overflow: auto; height: auto; }
+
+  #sidebar {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  canvas#canvas {
+    position: relative;
+    left: 0;
+    width: 100vw !important;
+    height: 70vh !important;
+  }
+
+  #disclaimer {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  #tooltip {
+    max-width: 280px;
+    font-size: 12px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <div>
+    <h1>AI Exposure of Pakistan's Job Market</h1>
+    <div class="subtitle">206 occupations &middot; area = employment &middot; color = AI exposure<br>Data: <a href="https://www.pbs.gov.pk">PBS</a>, <a href="https://www.finance.gov.pk/survey_2025.html">Economic Survey 2024-25</a>, PMC, PNC, PSEB<br>Analyzed by <span class="model-name">loading...</span> (Anthropic)<br><span style="opacity:0.7;">Last updated: April 2026</span></div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filter-section">
+    <h3>Filters <span class="filter-count" id="filterCount">206 of 206</span></h3>
+    <input type="text" class="filter-search" id="filterSearch" placeholder="Search occupations...">
+    <div class="filter-row">
+      <label>Industry</label>
+      <select class="filter-select" id="filterIndustry"><option value="">All (PBS)</option></select>
+    </div>
+    <div class="filter-row">
+      <label>Type</label>
+      <select class="filter-select" id="filterType"><option value="">All</option></select>
+    </div>
+    <div class="filter-row">
+      <label>Education</label>
+      <select class="filter-select" id="filterEdu"><option value="">All</option></select>
+    </div>
+    <div class="filter-row">
+      <label>Size by</label>
+      <select class="filter-select" id="filterSizeBy">
+        <option value="jobs">Employment (PBS)</option>
+        <option value="exposure">AI Exposure Score</option>
+        <option value="equal">Equal</option>
+      </select>
+    </div>
+    <div class="filter-row">
+      <label>Sort by</label>
+      <select class="filter-select" id="filterSort">
+        <option value="jobs">Employment (default)</option>
+        <option value="exposure-desc">Exposure (high first)</option>
+        <option value="exposure-asc">Exposure (low first)</option>
+        <option value="industry">PBS Industry</option>
+        <option value="alpha">Alphabetical</option>
+      </select>
+    </div>
+    <div>
+      <span style="font-size:10px;color:var(--fg2);">Exposure</span>
+      <div class="exposure-chips" id="exposureChips">
+        <div class="exposure-chip active" data-range="all">All</div>
+        <div class="exposure-chip" data-range="0-1">0-1</div>
+        <div class="exposure-chip" data-range="2-3">2-3</div>
+        <div class="exposure-chip" data-range="4-5">4-5</div>
+        <div class="exposure-chip" data-range="6-7">6-7</div>
+        <div class="exposure-chip" data-range="8-10">8-10</div>
+      </div>
+    </div>
+    <button class="btn-reset" id="btnReset">Reset all filters</button>
+  </div>
+
+  <!-- STATS -->
+  <div class="stat-section">
+    <h3>Total jobs</h3>
+    <div class="stat-big" id="statTotalJobs">&mdash;</div>
+  </div>
+
+  <div class="stat-section">
+    <h3>Weighted avg. exposure</h3>
+    <div class="stat-big" id="statAvgExposure">&mdash;</div>
+    <div class="stat-label">job-weighted, 0&ndash;10 scale</div>
+  </div>
+
+  <div class="stat-section">
+    <h3>Jobs by exposure</h3>
+    <div class="histogram" id="histogram"></div>
+    <div class="hist-labels"><span>0</span><span>5</span><span>10</span></div>
+  </div>
+
+  <div class="stat-section">
+    <h3>Breakdown</h3>
+    <div class="tier-bar" id="tierBar"></div>
+  </div>
+
+  <div class="stat-section">
+    <h3>Exposure by education</h3>
+    <div class="hbar-chart" id="eduChart"></div>
+  </div>
+
+  <div class="stat-section">
+    <h3>Exposure by PBS industry</h3>
+    <div class="hbar-chart" id="industryChart"></div>
+  </div>
+
+  <div class="gradient-legend">
+    <span>Low</span>
+    <canvas id="gradientLegend" width="80" height="8"></canvas>
+    <span>High</span>
+  </div>
+  <div class="legend-note">1 = minimal AI impact (physical/manual work). 10 = fully automatable by AI today. Gray = no data.</div>
+
+  <div class="stat-section" style="border-top:1px solid rgba(255,255,255,0.06);padding-top:12px;">
+    <h3>Methodology &amp; Sources</h3>
+    <table style="font-size:9px;color:var(--fg2);line-height:1.4;border-collapse:collapse;width:100%;">
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:4px 0;vertical-align:top;color:var(--accent);padding-right:6px;font-weight:600;" colspan="2">Data Sources by Category</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">All sectors</td><td style="padding:2px 0;"><a href="https://www.pbs.gov.pk/labour-force-statistics" style="color:#8899cc;">PBS LFS 2024-25</a> (77.2M employed), industry % from <a href="https://www.finance.gov.pk/survey_2025.html" style="color:#8899cc;">Econ Survey 2024-25</a> Table 12.12</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Healthcare</td><td style="padding:2px 0;"><strong>PMC</strong> + <strong>PNC</strong> exact registrations (2024): 319K doctors, 39K dentists, 138K nurses, 47K midwives, 29K LHWs</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">IT &amp; Telecom</td><td style="padding:2px 0;"><strong>PSEB</strong> + <strong>SECP</strong>: 30K+ companies, $2.8B exports, $400M freelance (FY25)</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Agriculture</td><td style="padding:2px 0;">PBS LFS: 37.4% of employed (28.9M). No per-crop/livestock breakdown</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Manufacturing</td><td style="padding:2px 0;">PBS LFS: 14.9% of employed (11.5M). Incl. textiles, garments, food processing</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Construction</td><td style="padding:2px 0;">PBS LFS: 9.5% of employed (7.3M)</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Education</td><td style="padding:2px 0;">PBS LFS: 3.8% of employed (2.9M). HEC data not yet integrated</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Finance</td><td style="padding:2px 0;">PBS LFS: 0.5% of employed (386K). SBP data not yet integrated</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Public Admin</td><td style="padding:2px 0;">PBS LFS: 2.9% of employed (2.2M). Incl. defence, police, civil service</td></tr>
+      <tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:4px 0;vertical-align:top;color:var(--accent);padding-right:6px;font-weight:600;" colspan="2">Analysis</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">AI scores</td><td style="padding:2px 0;">206 occupations scored 0-10 by <span class="model-name">loading...</span> (Anthropic)</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Box sizing</td><td style="padding:2px 0;">PSCO-weighted within each PBS industry (not equal share)</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Pipeline</td><td style="padding:2px 0;">104 government &amp; institutional sources collected</td></tr>
+    </table>
+    <div style="font-size:8px;color:var(--fg2);margin-top:6px;line-height:1.4;opacity:0.7;">
+      <strong>Limitations:</strong> Industry % from LFS 2020-21 (latest detailed breakdown); total (77.2M) from LFS 2024-25. Per-occupation salary not available. ~70% informal workforce. PEC (engineers), PBC (lawyers), HEC (faculty), SBP (banking) data not yet integrated. PSCO follows ISCO-08.
+    </div>
+  </div>
+</div>
+
+<div id="disclaimer">
+  <span>&#9888;</span>
+  <span>This tool is designed to understand the potential impact of AI on Pakistan's job market. It is an analytical resource, not official government policy. Employment data is sourced from PBS, PMC, PNC, and PSEB, but individual occupation figures may not be fully accurate. AI exposure scores are analytical assessments, not predictions. See full methodology below.</span>
+  <button class="close-btn" onclick="this.parentElement.style.display='none'">Dismiss</button>
+</div>
+
+<canvas id="canvas" role="img" aria-label="Interactive treemap visualization of AI exposure across 206 Pakistani occupations. Hover over rectangles for details."></canvas>
+
+<div id="tooltip">
+  <div class="tt-title"></div>
+  <div class="tt-exposure"></div>
+  <div class="tt-stats"></div>
+  <div class="tt-rationale"></div>
+</div>
+
+<script>
+
+// ── Exposure color scale ───────────────────────────────────────────────
+
+function exposureColor(score) {
+  if (score == null) return [128, 128, 128];
+  const t = Math.max(0, Math.min(10, score)) / 10;
+  let r, g, b;
+  if (t < 0.5) {
+    const s = t / 0.5;
+    r = Math.round(50 + s * 180);
+    g = Math.round(160 - s * 10);
+    b = Math.round(50 - s * 20);
+  } else {
+    const s = (t - 0.5) / 0.5;
+    r = Math.round(230 + s * 25);
+    g = Math.round(150 - s * 110);
+    b = Math.round(30 - s * 10);
+  }
+  return [r, g, b];
+}
+
+function exposureColorCSS(score, alpha) {
+  const [r, g, b] = exposureColor(score);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+
+// ── Squarified treemap layout ──────────────────────────────────────────
+
+function squarify(items, x, y, w, h) {
+  if (items.length === 0) return [];
+  if (items.length === 1) {
+    return [{ ...items[0], rx: x, ry: y, rw: w, rh: h }];
+  }
+
+  const total = items.reduce((s, d) => s + d.value, 0);
+  if (total === 0) return [];
+
+  const results = [];
+  let remaining = [...items];
+  let cx = x, cy = y, cw = w, ch = h;
+
+  while (remaining.length > 0) {
+    const remTotal = remaining.reduce((s, d) => s + d.value, 0);
+    const vertical = cw >= ch;
+    const side = vertical ? ch : cw;
+
+    let row = [remaining[0]];
+    let rowSum = remaining[0].value;
+
+    for (let i = 1; i < remaining.length; i++) {
+      const candidate = [...row, remaining[i]];
+      const candidateSum = rowSum + remaining[i].value;
+      if (worstAspect(candidate, candidateSum, side, remTotal, vertical ? cw : ch) <
+          worstAspect(row, rowSum, side, remTotal, vertical ? cw : ch)) {
+        row = candidate;
+        rowSum = candidateSum;
+      } else {
+        break;
+      }
+    }
+
+    const rowFraction = rowSum / remTotal;
+    const rowThickness = vertical ? cw * rowFraction : ch * rowFraction;
+
+    let offset = 0;
+    for (const item of row) {
+      const itemFraction = item.value / rowSum;
+      const itemLength = side * itemFraction;
+      if (vertical) {
+        results.push({ ...item, rx: cx, ry: cy + offset, rw: rowThickness, rh: itemLength });
+      } else {
+        results.push({ ...item, rx: cx + offset, ry: cy, rw: itemLength, rh: rowThickness });
+      }
+      offset += itemLength;
+    }
+
+    if (vertical) {
+      cx += rowThickness;
+      cw -= rowThickness;
+    } else {
+      cy += rowThickness;
+      ch -= rowThickness;
+    }
+
+    remaining = remaining.slice(row.length);
+  }
+
+  return results;
+}
+
+function worstAspect(row, rowSum, side, totalArea, availableExtent) {
+  const rowExtent = availableExtent * (rowSum / totalArea);
+  if (rowExtent === 0) return Infinity;
+  let worst = 0;
+  for (const item of row) {
+    const itemLen = side * (item.value / rowSum);
+    if (itemLen === 0) continue;
+    const aspect = Math.max(rowExtent / itemLen, itemLen / rowExtent);
+    if (aspect > worst) worst = aspect;
+  }
+  return worst;
+}
+
+// ── State ─────────────────────────────────────────────────────────────
+
+let allData = [];       // full unfiltered dataset
+let filteredData = [];   // currently filtered subset
+let rects = [];
+let hovered = null;
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let dpr = window.devicePixelRatio || 1;
+
+const MARGIN = 12;
+const GAP = 1.5;
+
+// ── Filtering ─────────────────────────────────────────────────────────
+
+let activeExposureRange = "all";
+
+function getFilters() {
+  return {
+    search: document.getElementById("filterSearch").value.trim().toLowerCase(),
+    type: document.getElementById("filterType").value,
+    industry: document.getElementById("filterIndustry").value,
+    edu: document.getElementById("filterEdu").value,
+    sizeBy: document.getElementById("filterSizeBy").value,
+    sort: document.getElementById("filterSort").value,
+    exposure: activeExposureRange,
+  };
+}
+
+function applyFilters() {
+  const f = getFilters();
+
+  filteredData = allData.filter(d => {
+    if (f.search && !d.title.toLowerCase().includes(f.search)) return false;
+    if (f.type && d._type !== f.type) return false;
+    if (f.industry && d.industry !== f.industry) return false;
+    if (f.edu && d.education !== f.edu) return false;
+
+    // Exposure range
+    if (f.exposure !== "all") {
+      const [lo, hi] = f.exposure.split("-").map(Number);
+      if (d.exposure == null || d.exposure < lo || d.exposure > hi) return false;
+    }
+
+    return true;
+  });
+
+  // Sort
+  switch (f.sort) {
+    case "exposure-desc":
+      filteredData.sort((a, b) => (b.exposure ?? -1) - (a.exposure ?? -1));
+      break;
+    case "exposure-asc":
+      filteredData.sort((a, b) => (a.exposure ?? 99) - (b.exposure ?? 99));
+      break;
+    case "industry":
+      filteredData.sort((a, b) => (a.industry || "").localeCompare(b.industry || ""));
+      break;
+    case "alpha":
+      filteredData.sort((a, b) => a.title.localeCompare(b.title));
+      break;
+    default: // jobs
+      filteredData.sort((a, b) => (b.jobs ?? 0) - (a.jobs ?? 0));
+  }
+
+  // Update count
+  document.getElementById("filterCount").textContent =
+    `${filteredData.length} of ${allData.length}`;
+
+  // Cascade: update Type dropdown based on current filtered data
+  const typeEl = document.getElementById("filterType");
+  const currentType = typeEl.value;
+  const availableTypes = [...new Set(filteredData.map(d => d._type).filter(Boolean))].sort();
+  typeEl.innerHTML = '<option value="">All</option>';
+  for (const t of availableTypes) {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t.replace(/-/g, " ");
+    if (t === currentType) opt.selected = true;
+    typeEl.appendChild(opt);
+  }
+
+  computeStats(filteredData);
+  layout();
+  draw();
+}
+
+function populateFilterDropdowns() {
+  // Types
+  const types = [...new Set(allData.map(d => d._type).filter(Boolean))].sort();
+  const typeEl = document.getElementById("filterType");
+  for (const t of types) {
+    const opt = document.createElement("option");
+    opt.value = t;
+    opt.textContent = t.replace(/-/g, " ");
+    typeEl.appendChild(opt);
+  }
+
+  // Industries (PBS)
+  const inds = [...new Set(allData.map(d => d.industry).filter(Boolean))].sort();
+  const indEl = document.getElementById("filterIndustry");
+  for (const ind of inds) {
+    const opt = document.createElement("option");
+    opt.value = ind;
+    const name = allData.find(d => d.industry === ind)?.industry_name || ind;
+    opt.textContent = name;
+    indEl.appendChild(opt);
+  }
+
+  // Education
+  const edus = [...new Set(allData.map(d => d.education).filter(Boolean))].sort();
+  const eduEl = document.getElementById("filterEdu");
+  for (const e of edus) {
+    const opt = document.createElement("option");
+    opt.value = e;
+    opt.textContent = e;
+    eduEl.appendChild(opt);
+  }
+}
+
+function wireFilterEvents() {
+  // Dropdowns and search
+  const inputs = ["filterSearch", "filterType", "filterIndustry", "filterEdu", "filterSizeBy", "filterSort"];
+  for (const id of inputs) {
+    const el = document.getElementById(id);
+    el.addEventListener(id === "filterSearch" ? "input" : "change", applyFilters);
+  }
+
+  // Exposure chips
+  const chips = document.querySelectorAll(".exposure-chip");
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      chips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      activeExposureRange = chip.dataset.range;
+      applyFilters();
+    });
+  });
+
+  // Reset button
+  document.getElementById("btnReset").addEventListener("click", () => {
+    document.getElementById("filterSearch").value = "";
+    document.getElementById("filterType").value = "";
+    document.getElementById("filterIndustry").value = "";
+    document.getElementById("filterEdu").value = "";
+    document.getElementById("filterSizeBy").value = "jobs";
+    document.getElementById("filterSort").value = "jobs";
+    activeExposureRange = "all";
+    const chips = document.querySelectorAll(".exposure-chip");
+    chips.forEach(c => c.classList.remove("active"));
+    chips[0].classList.add("active");
+    applyFilters();
+  });
+}
+
+// ── Layout & Rendering ────────────────────────────────────────────────
+
+function layout() {
+  const isMobile = window.innerWidth <= 768;
+  const sidebarW = isMobile ? 0 : parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-w'));
+  const disclaimer = document.getElementById("disclaimer");
+  const disclaimerH = (!isMobile && disclaimer && disclaimer.offsetHeight && disclaimer.style.display !== 'none') ? disclaimer.offsetHeight : 0;
+  const w = isMobile ? window.innerWidth : (window.innerWidth - sidebarW);
+  const h = isMobile ? (window.innerHeight * 0.7) : (window.innerHeight - disclaimerH);
+
+  canvas.width = w * dpr;
+  canvas.height = h * dpr;
+  canvas.style.width = w + "px";
+  canvas.style.height = h + "px";
+  if (!isMobile) {
+    canvas.style.top = disclaimerH + "px";
+  }
+
+  const tx = MARGIN;
+  const ty = MARGIN;
+  const tw = w - MARGIN * 2;
+  const th = h - MARGIN * 2;
+
+  // Use filteredData for layout
+  const activeData = filteredData.length > 0 ? filteredData : [];
+  const sizeBy = getFilters().sizeBy;
+
+  // Determine value function based on sizing mode
+  function getValue(d) {
+    if (sizeBy === "exposure") return (d.exposure != null ? d.exposure + 1 : 1); // +1 so score 0 isn't invisible
+    if (sizeBy === "equal") return 1;
+    return d.jobs || 1; // default: employment
+  }
+
+  // Group by PBS industry (more meaningful than internal category)
+  const byIndustry = {};
+  for (const d of activeData) {
+    const ind = d.industry_name || d.category;
+    if (!byIndustry[ind]) byIndustry[ind] = [];
+    byIndustry[ind].push(d);
+  }
+
+  const groups = Object.keys(byIndustry).map(ind => ({
+    cat: ind,
+    items: byIndustry[ind],
+    value: byIndustry[ind].reduce((s, d) => s + getValue(d), 0),
+  })).sort((a, b) => b.value - a.value);
+
+  const catRects = squarify(groups, tx, ty, tw, th);
+
+  rects = [];
+  for (const cr of catRects) {
+    const innerGap = GAP;
+    const items = cr.items.map(d => ({ ...d, value: getValue(d) }));
+    const innerRects = squarify(items,
+      cr.rx + innerGap, cr.ry + innerGap,
+      cr.rw - innerGap * 2, cr.rh - innerGap * 2
+    );
+    for (const ir of innerRects) {
+      rects.push(ir);
+    }
+  }
+}
+
+function draw() {
+  const w = canvas.width;
+  const h = canvas.height;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.fillStyle = "#0a0a0f";
+  ctx.fillRect(0, 0, w / dpr, h / dpr);
+
+  if (rects.length === 0) {
+    ctx.fillStyle = "rgba(255,255,255,0.3)";
+    ctx.font = "14px -apple-system, system-ui, sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillText("No occupations match filters", (w / dpr) / 2, (h / dpr) / 2);
+    ctx.textAlign = "start";
+    return;
+  }
+
+  for (const r of rects) {
+    const isHovered = r === hovered;
+
+    const g = GAP / 2;
+    const rx = r.rx + g;
+    const ry = r.ry + g;
+    const rw = r.rw - g * 2;
+    const rh = r.rh - g * 2;
+
+    if (rw <= 0 || rh <= 0) continue;
+
+    const fillAlpha = isHovered ? 0.8 : 0.5;
+    ctx.fillStyle = exposureColorCSS(r.exposure, fillAlpha);
+    ctx.fillRect(rx, ry, rw, rh);
+
+    if (isHovered) {
+      ctx.strokeStyle = "#fff";
+      ctx.lineWidth = 2;
+      ctx.strokeRect(rx, ry, rw, rh);
+    }
+
+    const minW = 50;
+    const minH = 18;
+    if (rw > minW && rh > minH) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(rx + 4, ry + 2, rw - 8, rh - 4);
+      ctx.clip();
+
+      const fontSize = Math.min(13, Math.max(9, Math.min(rw / 10, rh / 3)));
+      ctx.font = `500 ${fontSize}px -apple-system, system-ui, sans-serif`;
+      ctx.fillStyle = isHovered ? "#fff" : "rgba(255,255,255,0.85)";
+      ctx.textBaseline = "top";
+      ctx.fillText(r.title, rx + 5, ry + 4);
+
+      if (rh > 34 && rw > 60) {
+        const info = (r.exposure != null ? r.exposure + "/10" : "") +
+                     (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
+        ctx.font = `400 ${Math.max(8, fontSize - 2)}px -apple-system, system-ui, sans-serif`;
+        ctx.fillStyle = "rgba(255,255,255,0.5)";
+        ctx.fillText(info, rx + 5, ry + 4 + fontSize + 2);
+      }
+
+      ctx.restore();
+    }
+  }
+}
+
+function hitTest(mx, my) {
+  const isMobile = window.innerWidth <= 768;
+  const sidebarW = isMobile ? 0 : parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-w'));
+  const disclaimer = document.getElementById("disclaimer");
+  const disclaimerH = (!isMobile && disclaimer && disclaimer.offsetHeight && disclaimer.style.display !== 'none') ? disclaimer.offsetHeight : 0;
+  const cx = mx - sidebarW;
+  const cy = my - disclaimerH;
+  for (let i = rects.length - 1; i >= 0; i--) {
+    const r = rects[i];
+    if (cx >= r.rx && cx < r.rx + r.rw && cy >= r.ry && cy < r.ry + r.rh) {
+      return r;
+    }
+  }
+  return null;
+}
+
+function formatNumber(n) {
+  if (n == null) return "\u2014";
+  if (n >= 1000000) return (n / 1000000).toFixed(1) + "M";
+  if (n >= 1000) return Math.round(n / 1000) + "K";
+  return n.toLocaleString();
+}
+
+function showTooltip(d, mx, my) {
+  const tt = document.getElementById("tooltip");
+
+  tt.querySelector(".tt-title").textContent = d.title;
+
+  const score = d.exposure != null ? d.exposure : null;
+  if (score != null) {
+    const barWidth = Math.max(score * 10, 2); // min 2% for score 0 visibility
+    const color = exposureColorCSS(score, 1);
+    const label = score <= 1 ? `AI Exposure: ${score}/10 (minimal AI impact)` :
+                  score === 10 ? "AI Exposure: 10/10 (fully automatable)" :
+                  `AI Exposure: ${score}/10`;
+    tt.querySelector(".tt-exposure").innerHTML =
+      `<span style="color:${color};font-weight:600;">${label}</span>` +
+      `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
+      `<div style="height:100%;width:${barWidth}%;background:${color};border-radius:2px;"></div></div>`;
+  } else {
+    tt.querySelector(".tt-exposure").innerHTML =
+      `<span style="color:#888;font-weight:600;">AI Exposure: No data</span>`;
+  }
+
+  tt.querySelector(".tt-stats").innerHTML = `
+    <span class="label">Sector</span><span class="value">${d.category || '\u2014'}</span>
+    <span class="label">PBS industry</span><span class="value">${d.industry_name || '\u2014'}</span>
+    <span class="label">Industry jobs</span><span class="value">${formatNumber(d.industry_employment)} (PBS LFS)</span>
+    <span class="label">PSCO group</span><span class="value">${d.psco_group_name || '\u2014'}</span>
+    <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>
+    <span class="label">Data source</span><span class="value" style="font-size:9px;max-width:180px;white-space:normal;">${d.data_source || '\u2014'}</span>
+  `;
+
+  tt.querySelector(".tt-rationale").textContent =
+    d.exposure_rationale || "";
+
+  const pad = 16;
+  let tx = mx + pad;
+  let ty = my - pad;
+  if (tx + 340 > window.innerWidth) tx = mx - 340 - pad;
+  if (ty < 10) ty = my + pad;
+  if (ty + 200 > window.innerHeight) ty = my - 200;
+
+  tt.style.left = tx + "px";
+  tt.style.top = ty + "px";
+  tt.classList.add("visible");
+}
+
+function hideTooltip() {
+  document.getElementById("tooltip").classList.remove("visible");
+}
+
+// ── Sidebar stats ──────────────────────────────────────────────────────
+
+function computeStats(data) {
+  const totalJobs = data.reduce((s, d) => s + (d.jobs || 0), 0);
+
+  // Job-weighted average exposure
+  let weightedSum = 0, weightedCount = 0;
+  for (const d of data) {
+    if (d.exposure != null && d.jobs) {
+      weightedSum += d.exposure * d.jobs;
+      weightedCount += d.jobs;
+    }
+  }
+  const weightedAvg = weightedCount > 0 ? weightedSum / weightedCount : 0;
+
+  // Histogram: jobs per exposure score 0-10
+  const histogram = new Array(11).fill(0);
+  for (const d of data) {
+    if (d.exposure != null && d.jobs) {
+      histogram[d.exposure] += d.jobs;
+    }
+  }
+
+  // Tiers
+  const tiers = [
+    { name: "Minimal", range: [0, 1], color: exposureColorCSS(0.5, 1) },
+    { name: "Low", range: [2, 3], color: exposureColorCSS(2.5, 1) },
+    { name: "Moderate", range: [4, 5], color: exposureColorCSS(4.5, 1) },
+    { name: "High", range: [6, 7], color: exposureColorCSS(6.5, 1) },
+    { name: "Very high", range: [8, 10], color: exposureColorCSS(9, 1) },
+  ];
+  for (const tier of tiers) {
+    tier.jobs = 0;
+    for (const d of data) {
+      if (d.exposure != null && d.jobs &&
+          d.exposure >= tier.range[0] && d.exposure <= tier.range[1]) {
+        tier.jobs += d.jobs;
+      }
+    }
+    tier.pct = totalJobs > 0 ? (tier.jobs / totalJobs * 100) : 0;
+  }
+
+  // Render
+  document.getElementById("statTotalJobs").textContent =
+    totalJobs >= 1e6 ? (totalJobs / 1e6).toFixed(1) + "M" : formatNumber(totalJobs);
+  document.getElementById("statAvgExposure").innerHTML =
+    `<span style="color:${exposureColorCSS(weightedAvg, 1)}">${weightedAvg.toFixed(1)}</span>`;
+
+  // Histogram
+  const maxHist = Math.max(...histogram);
+  const histEl = document.getElementById("histogram");
+  histEl.innerHTML = histogram.map((count, i) => {
+    const h = maxHist > 0 ? (count / maxHist * 100) : 0;
+    return `<div class="bar" style="height:${Math.max(2, h)}%;background:${exposureColorCSS(i, 0.7)}" title="${i}: ${formatNumber(count)} jobs"></div>`;
+  }).join("");
+
+  // Tier breakdown
+  const tierEl = document.getElementById("tierBar");
+  tierEl.innerHTML = tiers.map(t =>
+    `<div class="tier-row">
+      <div class="tier-color" style="background:${t.color}"></div>
+      <span class="tier-name">${t.name} (${t.range[0]}-${t.range[1]})</span>
+      <span class="tier-jobs">${formatNumber(t.jobs)}</span>
+      <span class="tier-pct">${t.pct.toFixed(0)}%</span>
+    </div>`
+  ).join("");
+
+  // Exposure by PBS industry (top industries by employment)
+  const industries = [
+    { key: "agriculture_forestry_fishing", label: "Agriculture" },
+    { key: "manufacturing", label: "Manufacturing" },
+    { key: "wholesale_retail_trade", label: "Trade" },
+    { key: "construction", label: "Construction" },
+    { key: "transport_storage", label: "Transport" },
+    { key: "education", label: "Education" },
+    { key: "public_admin_defence", label: "Public Admin" },
+    { key: "health_social_work", label: "Health" },
+    { key: "information_communication", label: "IT & Media" },
+    { key: "financial_insurance", label: "Finance" },
+  ];
+  const industryChartEl = document.getElementById("industryChart");
+  industryChartEl.innerHTML = industries.map(grp => {
+    let wSum = 0, wCount = 0;
+    for (const d of data) {
+      if (d.exposure != null && d.jobs && d.industry === grp.key) {
+        wSum += d.exposure * d.jobs;
+        wCount += d.jobs;
+      }
+    }
+    const avg = wCount > 0 ? wSum / wCount : 0;
+    const pct = avg / 10 * 100;
+    return `<div class="hbar-row">
+      <span class="hbar-label">${grp.label}</span>
+      <div class="hbar-track"><div class="hbar-fill" style="width:${pct}%;background:${exposureColorCSS(avg, 0.8)}"></div></div>
+      <span class="hbar-val">${avg.toFixed(1)}</span>
+    </div>`;
+  }).join("");
+
+  // Exposure by education
+  const eduGroups = [
+    { label: "None/Primary", match: ["No formal education", "Primary (Grade 5)"] },
+    { label: "Middle/Matric", match: ["Middle (Grade 8)", "Matric (Grade 10)"] },
+    { label: "Inter/Diploma", match: ["Intermediate (Grade 12)", "Diploma / Certificate"] },
+    { label: "Bachelor's", match: ["Bachelor's degree"] },
+    { label: "Master's+", match: ["Master's degree", "Doctorate / PhD", "Professional degree (MBBS, LLB, CA, etc.)"] },
+  ];
+  const eduChartEl = document.getElementById("eduChart");
+  eduChartEl.innerHTML = eduGroups.map(grp => {
+    let wSum = 0, wCount = 0;
+    for (const d of data) {
+      if (d.exposure != null && d.jobs && grp.match.includes(d.education)) {
+        wSum += d.exposure * d.jobs;
+        wCount += d.jobs;
+      }
+    }
+    const avg = wCount > 0 ? wSum / wCount : 0;
+    const pct = avg / 10 * 100;
+    return `<div class="hbar-row">
+      <span class="hbar-label">${grp.label}</span>
+      <div class="hbar-track"><div class="hbar-fill" style="width:${pct}%;background:${exposureColorCSS(avg, 0.8)}"></div></div>
+      <span class="hbar-val">${avg.toFixed(1)}</span>
+    </div>`;
+  }).join("");
+
+}
+
+// ── Events ─────────────────────────────────────────────────────────────
+
+canvas.addEventListener("mousemove", (e) => {
+  const hit = hitTest(e.clientX, e.clientY);
+  if (hit !== hovered) {
+    hovered = hit;
+    draw();
+  }
+  if (hovered) {
+    showTooltip(hovered, e.clientX, e.clientY);
+    canvas.style.cursor = "pointer";
+  } else {
+    hideTooltip();
+    canvas.style.cursor = "default";
+  }
+});
+
+canvas.addEventListener("mouseleave", () => {
+  hovered = null;
+  hideTooltip();
+  draw();
+});
+
+function resize() {
+  dpr = window.devicePixelRatio || 1;
+  layout();
+  draw();
+}
+
+// ── Legend gradient ────────────────────────────────────────────────────
+
+function drawGradientLegend() {
+  const c = document.getElementById("gradientLegend");
+  const gctx = c.getContext("2d");
+  for (let x = 0; x < 80; x++) {
+    const score = (x / 79) * 10;
+    gctx.fillStyle = exposureColorCSS(score, 1);
+    gctx.fillRect(x, 0, 1, 8);
+  }
+}
+
+// ── Load ───────────────────────────────────────────────────────────────
+
+let dataMetadata = {};
+
+fetch("data.json")
+  .then(r => r.json())
+  .then(raw => {
+    // Support both metadata format {metadata, occupations} and flat array
+    if (raw.metadata && raw.occupations) {
+      dataMetadata = raw.metadata;
+      allData = raw.occupations;
+    } else {
+      allData = raw;
+    }
+    for (const item of allData) item._type = item.type || "";
+    applyMetadataToUI();
+    init();
+  })
+  .catch(err => {
+    console.error("Failed to load data.json:", err);
+    document.getElementById("canvas").style.display = "none";
+    const msg = document.createElement("div");
+    msg.style.cssText = "color:#e88;padding:40px;text-align:center;font-size:16px;margin-left:var(--sidebar-w);";
+    msg.textContent = "Error: Could not load data.json. Please ensure the file exists in the site/ folder.";
+    document.body.appendChild(msg);
+  });
+
+function applyMetadataToUI() {
+  // Dynamically set model name wherever it appears
+  const model = dataMetadata.scoring_model || "Unknown model";
+  const modelShort = model.replace(/-\d{8}$/, ""); // "claude-sonnet-4-20250514" → "claude-sonnet-4"
+  document.querySelectorAll(".model-name").forEach(el => {
+    el.textContent = modelShort;
+  });
+}
+
+function init() {
+  filteredData = [...allData];
+  populateFilterDropdowns();
+  wireFilterEvents();
+  computeStats(filteredData);
+  drawGradientLegend();
+  resize();
+}
+
+window.addEventListener("resize", resize);
+</script>
+</body>
+</html>

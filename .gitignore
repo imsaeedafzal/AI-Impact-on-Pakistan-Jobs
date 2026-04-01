@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[oc]
+.venv/
+*.egg-info/
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pakistan pipeline - reproducible/intermediate files (not needed in repo)
+pakistan-pipeline/output/raw/
+pakistan-pipeline/output/extraction_summary.json
+pakistan-pipeline/data/source_logs.csv
+
+# Editor
+.vscode/
+*.swp

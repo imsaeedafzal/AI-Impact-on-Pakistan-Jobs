@@ -1,0 +1,1246 @@
+{
+  "metadata": {
+    "model": "claude-sonnet-4-20250514",
+    "scored_at": "2026-04-02",
+    "total": 206,
+    "api": "https://api.anthropic.com/v1/messages"
+  },
+  "scores": [
+    {
+      "slug": "farmer-crop",
+      "title": "Farmer (Crop)",
+      "exposure": 2,
+      "rationale": "Crop farming in Pakistan remains predominantly physical work requiring hands-on cultivation, irrigation management, pest control, and harvesting activities that cannot be digitized. While AI could potentially assist with weather forecasting, crop monitoring, or market price information, the vast majority of Pakistani farmers operate small plots with limited access to digital infrastructure and smart farming technologies, keeping AI's practical impact minimal for the foreseeable future."
+    },
+    {
+      "slug": "livestock-farmer",
+      "title": "Livestock Farmer",
+      "exposure": 2,
+      "rationale": "Livestock farming is fundamentally hands-on work requiring physical presence for animal care, feeding, health monitoring, and handling in often unpredictable environments. While AI might assist with peripheral tasks like record-keeping or market price information, the core work of animal husbandry remains deeply physical and experiential. In Pakistan's context, most livestock farming occurs in rural areas with limited digital infrastructure, and the informal nature of much agricultural work further reduces AI integration potential."
+    },
+    {
+      "slug": "agricultural-laborer",
+      "title": "Agricultural Laborer",
+      "exposure": 1,
+      "rationale": "Agricultural laborers perform entirely physical, hands-on work like planting, harvesting, weeding, and tending to crops and livestock that requires human presence in unpredictable outdoor environments. In Pakistan's largely traditional agricultural sector with limited mechanization and technology adoption, AI has virtually no impact on the core manual tasks that define this occupation. While some large commercial farms might eventually use AI for crop monitoring or planning, the vast majority of Pakistan's agricultural laborers work on small farms using traditional methods where AI tools are neither available nor applicable to their daily physical work."
+    },
+    {
+      "slug": "tractor-operator",
+      "title": "Tractor Operator",
+      "exposure": 2,
+      "rationale": "Tractor operation is primarily a hands-on, physical job requiring real-time control of heavy machinery in variable field conditions that demand human judgment and spatial awareness. While GPS guidance systems and precision agriculture technologies exist, Pakistan's agricultural sector has limited adoption of such advanced systems, and the core work of operating tractors across diverse terrain and crop conditions remains fundamentally manual. AI might eventually assist with route optimization or maintenance scheduling, but the essential task of physically controlling farm equipment in unpredictable outdoor environments creates a natural barrier to AI displacement."
+    },
+    {
+      "slug": "irrigation-worker",
+      "title": "Irrigation Worker",
+      "exposure": 1,
+      "rationale": "Irrigation workers perform primarily physical, hands-on tasks like operating water channels, maintaining irrigation infrastructure, and managing water flow in agricultural fields. This work requires physical presence in outdoor environments and practical skills that cannot be digitized or automated by AI. Given Pakistan's agricultural sector relies heavily on traditional irrigation methods and manual labor, AI has virtually no impact on the core responsibilities of this occupation."
+    },
+    {
+      "slug": "fisherman",
+      "title": "Fisherman",
+      "exposure": 1,
+      "rationale": "Fishing is fundamentally a physical, hands-on occupation requiring real-time navigation of water bodies, manual operation of nets and equipment, and direct interaction with marine environments that are highly unpredictable. In Pakistan's context, most fishing operations along the coast and inland waters remain traditional and low-tech, with limited digital infrastructure penetration in fishing communities, making AI adoption minimal and confined to very basic weather or navigation apps at most."
+    },
+    {
+      "slug": "poultry-farmer",
+      "title": "Poultry Farmer",
+      "exposure": 2,
+      "rationale": "Poultry farming in Pakistan is predominantly a hands-on occupation requiring physical presence for daily care, feeding, health monitoring, and facility management of live birds. While AI might assist with peripheral tasks like record-keeping or automated feeding systems in larger commercial operations, the core work remains physical and requires real-time human judgment for animal welfare, disease detection, and farm management in Pakistan's largely traditional agricultural sector."
+    },
+    {
+      "slug": "dairy-farmer",
+      "title": "Dairy Farmer",
+      "exposure": 2,
+      "rationale": "Dairy farming in Pakistan is predominantly hands-on physical work involving animal care, milking, feeding, and farm maintenance that requires direct human presence and cannot be digitized. While AI might eventually assist with peripheral tasks like record-keeping or basic herd management apps, the core activities remain fundamentally physical and the low education requirement suggests limited technology adoption in Pakistan's largely traditional dairy sector."
+    },
+    {
+      "slug": "agricultural-extension-officer",
+      "title": "Agricultural Extension Officer",
+      "exposure": 4,
+      "rationale": "Agricultural Extension Officers in Pakistan combine knowledge work (crop planning, data analysis, research dissemination) with essential field-based activities requiring direct farmer interaction and on-site agricultural assessment. While AI can assist with data analysis, weather forecasting, and information management, the core function of building trust with farmers, conducting field demonstrations, and providing localized advice requires human presence and cultural understanding. Pakistan's agricultural sector remains largely traditional with limited digital infrastructure in rural areas, which constrains AI adoption despite the knowledge-intensive aspects of the role."
+    },
+    {
+      "slug": "veterinarian",
+      "title": "Veterinarian",
+      "exposure": 5,
+      "rationale": "Veterinarians in Pakistan combine knowledge work (diagnosis, treatment planning, record-keeping) with essential hands-on physical examination and treatment of animals. While AI can assist with diagnostic support, medical records, and treatment recommendations, the core veterinary work requires direct animal interaction, physical procedures, and real-time clinical judgment that cannot be digitized. Pakistan's livestock-dependent agricultural economy and limited rural digitization further reduce immediate AI disruption to traditional veterinary practice."
+    },
+    {
+      "slug": "floriculturist-nursery-worker",
+      "title": "Floriculturist / Nursery Worker",
+      "exposure": 2,
+      "rationale": "Floriculture and nursery work is predominantly hands-on, requiring physical tasks like planting, watering, pruning, soil preparation, and plant care that cannot be digitized. While AI might assist with peripheral tasks like crop monitoring or market price information, the core work involves manual labor, plant handling, and real-time assessment of plant health in Pakistan's diverse agricultural conditions. The occupation's reliance on physical presence, tactile skills, and direct interaction with living plants creates natural barriers to AI automation."
+    },
+    {
+      "slug": "textile-mill-worker",
+      "title": "Textile Mill Worker",
+      "exposure": 3,
+      "rationale": "Textile mill workers primarily operate physical machinery, handle fabric materials, and perform manual tasks like cutting, stitching, and quality inspection that require hands-on skills and real-time decision-making on the factory floor. While AI might assist with some peripheral functions like production scheduling or quality monitoring systems, the core work remains fundamentally physical and tied to manufacturing equipment. Pakistan's textile industry, being labor-intensive and export-focused, relies heavily on skilled manual workers whose physical presence and tactile expertise cannot be easily replaced by current AI technologies."
+    },
+    {
+      "slug": "power-loom-operator",
+      "title": "Power Loom Operator",
+      "exposure": 2,
+      "rationale": "Power loom operators perform primarily physical, hands-on work operating textile machinery that requires real-time monitoring, manual adjustments, and physical presence on the factory floor. While AI might eventually assist with predictive maintenance or quality control systems in modern textile facilities, Pakistan's textile sector largely relies on traditional power looms with limited digitization, and the core job of threading, monitoring fabric production, and making mechanical adjustments remains fundamentally manual work that AI cannot directly replace."
+    },
+    {
+      "slug": "garment-stitcher-tailor",
+      "title": "Garment Stitcher / Tailor",
+      "exposure": 2,
+      "rationale": "Garment stitching and tailoring requires hands-on manual skills, physical dexterity, and real-time problem-solving with fabric and materials that AI cannot replicate. While AI might assist with pattern design or inventory management in larger operations, the core work of cutting, stitching, fitting, and finishing garments remains fundamentally physical and craft-based, especially in Pakistan's predominantly small-scale and informal textile sector."
+    },
+    {
+      "slug": "textile-designer",
+      "title": "Textile Designer",
+      "exposure": 8,
+      "rationale": "Textile design is predominantly digital work involving pattern creation, color schemes, and design software - all areas where AI tools are rapidly advancing and already being adopted. While Pakistan's textile industry is traditionally conservative, the competitive export market and growing digitization are driving adoption of AI-powered design tools that can generate patterns, suggest color combinations, and automate repetitive design tasks. The core creative and technical work can be significantly enhanced or partially automated by AI, making designers who leverage these tools much more productive."
+    },
+    {
+      "slug": "quality-inspector-textiles",
+      "title": "Quality Inspector (Textiles)",
+      "exposure": 4,
+      "rationale": "Quality inspection in Pakistan's textile industry requires physical examination of fabrics, checking for defects, color consistency, and material properties that demand hands-on assessment and human judgment. While AI-powered vision systems could assist with some standardized defect detection, the role still heavily relies on tactile evaluation, understanding of local production variations, and real-time decision-making on the factory floor. Pakistan's textile sector, though significant, has moderate technology adoption levels, meaning traditional inspection methods remain predominant."
+    },
+    {
+      "slug": "dyeing-finishing-operator",
+      "title": "Dyeing & Finishing Operator",
+      "exposure": 3,
+      "rationale": "Dyeing and finishing operations in Pakistan's textile industry require hands-on machine operation, physical handling of fabrics, and real-time monitoring of chemical processes that demand human presence on the factory floor. While AI might assist with some quality control monitoring or process optimization in advanced facilities, the core work involves manual dexterity, sensory evaluation of fabric quality, and physical operation of dyeing equipment that cannot be easily automated given Pakistan's current industrial infrastructure and the tactile nature of textile processing."
+    },
+    {
+      "slug": "embroidery-worker",
+      "title": "Embroidery Worker",
+      "exposure": 2,
+      "rationale": "Embroidery work requires intricate manual dexterity, artistic skill, and hands-on manipulation of fabric and thread that cannot be replicated by AI. While automated embroidery machines exist, Pakistan's textile sector still relies heavily on skilled hand embroidery for traditional garments and high-quality work, particularly in the informal economy where most embroidery workers operate. AI may assist with design patterns or digitization, but the core craft remains fundamentally manual and human-centered."
+    },
+    {
+      "slug": "spinning-machine-operator",
+      "title": "Spinning Machine Operator",
+      "exposure": 3,
+      "rationale": "Spinning machine operators work with physical textile machinery requiring hands-on operation, monitoring, and manual adjustments that cannot be easily automated by current AI systems. While AI might assist with quality control monitoring or predictive maintenance in Pakistan's textile sector, the core job involves physical manipulation of materials and real-time responses to machine conditions. Pakistan's textile industry, though significant, operates with varying levels of automation and many facilities still rely heavily on human operators for flexibility and cost-effectiveness."
+    },
+    {
+      "slug": "mason-bricklayer",
+      "title": "Mason / Bricklayer",
+      "exposure": 1,
+      "rationale": "Mason/bricklayer work is entirely hands-on, requiring physical skill, manual dexterity, and real-time problem-solving in unpredictable construction environments. In Pakistan's construction sector, which relies heavily on traditional building methods and manual labor, AI has virtually no application to the core tasks of laying bricks, mixing mortar, or reading physical building conditions. While AI might eventually assist with project planning or material optimization at higher levels, the fundamental craft of masonry remains completely dependent on human physical presence and tactile expertise."
+    },
+    {
+      "slug": "carpenter",
+      "title": "Carpenter",
+      "exposure": 2,
+      "rationale": "Carpentry is fundamentally hands-on physical work requiring manual dexterity, spatial reasoning, and real-time problem-solving with wood and tools. While AI might assist with design software or project planning in more formal construction settings, the core work of measuring, cutting, joining, and installing wood structures cannot be automated and requires human craftsmanship. In Pakistan's construction sector, most carpentry work is done in informal settings with traditional tools, making AI adoption even less relevant to daily tasks."
+    },
+    {
+      "slug": "plumber",
+      "title": "Plumber",
+      "exposure": 2,
+      "rationale": "Plumbing is fundamentally hands-on work requiring physical presence, manual dexterity, and real-time problem-solving in unpredictable environments. While AI might assist with minor administrative tasks like scheduling or accessing technical manuals, the core work of installing, repairing, and maintaining plumbing systems cannot be automated and requires human expertise to navigate Pakistan's diverse building infrastructure and local conditions."
+    },
+    {
+      "slug": "electrician",
+      "title": "Electrician",
+      "exposure": 2,
+      "rationale": "Electricians perform predominantly hands-on, physical work that requires real-time problem-solving in unpredictable environments and cannot be done remotely. While AI might assist with minor tasks like circuit design or troubleshooting guides, the core work of installing, repairing, and maintaining electrical systems requires manual dexterity, physical presence, and human judgment that AI cannot replace. In Pakistan's context, where much electrical work involves older infrastructure and informal construction practices, the need for skilled human intervention remains paramount."
+    },
+    {
+      "slug": "painter-building",
+      "title": "Painter (Building)",
+      "exposure": 1,
+      "rationale": "Building painters perform highly physical, hands-on work that requires manual dexterity, color matching skills, and real-time adaptation to surface conditions and architectural features. In Pakistan's construction sector, this work is predominantly done through traditional methods with minimal digital integration, and the core tasks of surface preparation, paint application, and finishing cannot be automated by current AI technologies."
+    },
+    {
+      "slug": "welder",
+      "title": "Welder",
+      "exposure": 2,
+      "rationale": "Welding is fundamentally a hands-on skilled trade requiring physical presence, manual dexterity, and real-time adaptation to materials and conditions that cannot be replicated digitally. While AI might assist with some peripheral tasks like project planning or inventory management, the core welding work in Pakistan's construction sector remains entirely dependent on human skill and physical execution in unpredictable job site environments."
+    },
+    {
+      "slug": "steel-fixer-iron-worker",
+      "title": "Steel Fixer / Iron Worker",
+      "exposure": 1,
+      "rationale": "Steel fixing and iron work is entirely hands-on physical labor requiring manual dexterity, spatial reasoning, and real-time problem-solving in construction environments. In Pakistan's construction sector, which relies heavily on manual labor and traditional building methods, AI has virtually no application to the core tasks of cutting, bending, positioning, and welding steel reinforcement. The work requires physical presence on construction sites and cannot be digitized or automated with current technology."
+    },
+    {
+      "slug": "civil-engineer",
+      "title": "Civil Engineer",
+      "exposure": 6,
+      "rationale": "Civil engineers in Pakistan perform substantial knowledge work including design calculations, project planning, and technical documentation that AI can increasingly assist with or automate. However, the role requires significant on-site supervision, quality control, and real-world problem-solving in Pakistan's challenging construction environment with varying infrastructure standards. While AI tools can enhance productivity in design and analysis phases, the physical oversight and contextual decision-making aspects provide meaningful protection from full automation."
+    },
+    {
+      "slug": "architect",
+      "title": "Architect",
+      "exposure": 7,
+      "rationale": "Architects work primarily with digital tools for design, drafting, and visualization - tasks where AI is rapidly advancing through tools like generative design software and automated CAD systems. While the profession requires creative judgment, client interaction, and site visits, the core work of creating architectural drawings, 3D models, and design documentation is highly digital and AI-augmentable. In Pakistan's growing construction sector, architects who leverage AI tools for faster design iterations and automated drafting will likely become significantly more productive than those who don't."
+    },
+    {
+      "slug": "construction-laborer",
+      "title": "Construction Laborer",
+      "exposure": 1,
+      "rationale": "Construction laborers perform entirely physical, hands-on work including carrying materials, digging, mixing concrete, and basic construction tasks that require human presence at job sites. In Pakistan's construction sector, which relies heavily on manual labor and has limited automation even for basic tasks, AI has virtually no impact on the core daily activities of construction workers. The work cannot be digitized or performed remotely, creating a natural barrier to AI disruption."
+    },
+    {
+      "slug": "crane-operator",
+      "title": "Crane Operator",
+      "exposure": 2,
+      "rationale": "Crane operation requires real-time physical coordination, spatial awareness, and safety judgment in unpredictable construction environments that AI cannot replicate. While some modern cranes have digital assistance features, the core work involves manual control of heavy machinery requiring human presence and split-second decision-making. In Pakistan's construction sector, most cranes are older models with minimal digital integration, further limiting AI's impact on daily operations."
+    },
+    {
+      "slug": "real-estate-agent",
+      "title": "Real Estate Agent",
+      "exposure": 4,
+      "rationale": "Real estate agents in Pakistan rely heavily on personal relationships, local market knowledge, and face-to-face interactions with clients for property viewings and negotiations, which are difficult for AI to replicate. However, AI can assist with property valuation, market analysis, lead generation, and administrative tasks like documentation and client communication. The moderate digitization of Pakistan's real estate sector and the relationship-driven nature of property transactions limit AI's ability to fully transform this occupation."
+    },
+    {
+      "slug": "surveyor",
+      "title": "Surveyor",
+      "exposure": 5,
+      "rationale": "Surveyors combine significant fieldwork (physical site visits, equipment operation, boundary marking) with substantial digital analysis and mapping tasks that AI can increasingly assist with. While AI tools can help with data processing, calculations, and even some mapping functions, the core surveying work still requires physical presence at sites, equipment operation, and human judgment for complex boundary disputes and terrain assessment. In Pakistan's construction sector, the mix of traditional practices and emerging digital tools creates moderate AI exposure."
+    },
+    {
+      "slug": "factory-worker-general",
+      "title": "Factory Worker (General)",
+      "exposure": 3,
+      "rationale": "Factory workers in Pakistan primarily perform physical tasks like operating machinery, assembly line work, and material handling that require human dexterity and real-time coordination. While AI and automation may gradually impact some manufacturing processes, Pakistan's manufacturing sector relies heavily on labor-intensive production methods due to lower labor costs, and many factories lack the capital investment for advanced automation. The physical nature of most factory work and Pakistan's competitive advantage in low-cost manufacturing provide significant barriers to AI displacement in the near term."
+    },
+    {
+      "slug": "machine-operator",
+      "title": "Machine Operator",
+      "exposure": 3,
+      "rationale": "Machine operators primarily perform hands-on, physical work operating and monitoring manufacturing equipment, which requires real-time human presence and manual dexterity. While AI and automation may gradually improve machine efficiency and predictive maintenance in Pakistan's manufacturing sector, the core job of physically operating, adjusting, and troubleshooting machinery remains largely human-dependent. Pakistan's manufacturing infrastructure is still developing smart factory capabilities, limiting immediate AI integration into these roles."
+    },
+    {
+      "slug": "production-supervisor",
+      "title": "Production Supervisor",
+      "exposure": 4,
+      "rationale": "Production supervisors in Pakistan's manufacturing sector blend physical oversight of production lines with knowledge work like scheduling, quality control documentation, and performance reporting. While AI can assist with data analysis, predictive maintenance, and production optimization, the core supervisory functions require real-time human presence on factory floors to manage workers, troubleshoot equipment issues, and ensure safety compliance. Pakistan's manufacturing sector, particularly in textiles and other traditional industries, remains heavily reliant on human supervision due to mixed automation levels and the need for hands-on management of diverse workforce dynamics."
+    },
+    {
+      "slug": "quality-control-inspector",
+      "title": "Quality Control Inspector",
+      "exposure": 4,
+      "rationale": "Quality Control Inspectors in Pakistan's manufacturing sector combine physical inspection tasks with data recording and analysis. While AI can assist with pattern recognition in defect detection and automated reporting, the core work still requires hands-on examination of physical products, understanding of manufacturing processes, and real-time decision-making on the factory floor. Pakistan's manufacturing sector has moderate digitization levels, meaning AI adoption will be gradual and complementary rather than replacing the human inspector entirely."
+    },
+    {
+      "slug": "industrial-engineer",
+      "title": "Industrial Engineer",
+      "exposure": 7,
+      "rationale": "Industrial engineers primarily work with data analysis, process optimization, and system design - tasks that are increasingly digital and well-suited to AI assistance. While they need to visit factory floors and interact with workers, the core analytical work of identifying inefficiencies, modeling workflows, and optimizing production can be significantly enhanced by AI tools. Pakistan's growing manufacturing sector and increasing digitization of industrial processes make this occupation particularly exposed to AI transformation."
+    },
+    {
+      "slug": "mechanical-engineer",
+      "title": "Mechanical Engineer",
+      "exposure": 6,
+      "rationale": "Mechanical engineers in Pakistan's manufacturing sector face high AI exposure as their core tasks\u2014CAD design, simulations, calculations, and technical documentation\u2014are increasingly automated by AI tools. While the role requires some physical site visits and hands-on problem-solving, the majority of work involves digital design and analysis that AI can significantly enhance or partially automate. Pakistan's growing manufacturing digitization and adoption of Industry 4.0 technologies will accelerate this transformation, though the need for human oversight in complex engineering decisions provides some protection."
+    },
+    {
+      "slug": "chemical-engineer",
+      "title": "Chemical Engineer",
+      "exposure": 6,
+      "rationale": "Chemical engineers combine significant digital work (process modeling, data analysis, design calculations) with essential physical oversight of manufacturing operations and safety protocols. While AI can enhance design optimization, simulation, and data analysis tasks, the role requires hands-on plant operations, safety inspections, and real-time problem-solving in Pakistan's industrial facilities. The profession will see productivity gains from AI tools but maintains substantial human-dependent components in manufacturing oversight and regulatory compliance."
+    },
+    {
+      "slug": "electrical-engineer",
+      "title": "Electrical Engineer",
+      "exposure": 6,
+      "rationale": "Electrical engineers in Pakistan's manufacturing sector combine significant digital work (circuit design, simulations, technical documentation) with essential physical components like equipment installation, testing, and on-site troubleshooting. While AI tools can enhance design processes and automate routine calculations, the role requires hands-on expertise with industrial systems and real-world problem-solving that maintains substantial human value in Pakistan's growing manufacturing base."
+    },
+    {
+      "slug": "electronics-technician",
+      "title": "Electronics Technician",
+      "exposure": 4,
+      "rationale": "Electronics technicians primarily perform hands-on work like circuit repair, component testing, and equipment maintenance that requires physical manipulation and real-time troubleshooting skills. While AI diagnostic tools and digital manuals could assist with some aspects, the core work involves tactile skills and on-site problem-solving that cannot be digitized. In Pakistan's manufacturing context, where much electronics work involves older equipment and informal repair practices, the transition to AI-assisted diagnostics would be gradual."
+    },
+    {
+      "slug": "cnc-machine-operator",
+      "title": "CNC Machine Operator",
+      "exposure": 3,
+      "rationale": "CNC machine operators primarily perform hands-on technical work requiring physical presence to monitor machines, handle materials, and make real-time adjustments based on visual and tactile feedback. While AI might assist with some programming optimization or predictive maintenance alerts, the core job involves manual setup, quality inspection, and troubleshooting that requires human expertise and physical interaction with machinery. Pakistan's manufacturing sector still relies heavily on human operators for flexibility and cost-effectiveness compared to fully automated systems."
+    },
+    {
+      "slug": "packaging-worker",
+      "title": "Packaging Worker",
+      "exposure": 2,
+      "rationale": "Packaging workers perform primarily manual, physical tasks like assembling boxes, wrapping products, and operating basic machinery that requires human dexterity and real-time decision-making. While some advanced automated packaging systems exist globally, Pakistan's manufacturing sector still relies heavily on manual labor due to lower labor costs and limited automation infrastructure. AI has minimal impact on the core physical tasks, though it might eventually assist with quality control or inventory tracking in more advanced facilities."
+    },
+    {
+      "slug": "truck-driver",
+      "title": "Truck Driver",
+      "exposure": 2,
+      "rationale": "Truck driving is primarily a physical occupation requiring manual vehicle operation, real-time decision-making in unpredictable traffic conditions, and physical presence for loading/unloading cargo. While AI-powered logistics optimization and GPS navigation provide some assistance, the core job of safely operating heavy vehicles on Pakistan's diverse road conditions\u2014from highways to narrow urban streets\u2014remains fundamentally human-dependent, with autonomous trucking technology still years away from practical deployment in Pakistan's infrastructure context."
+    },
+    {
+      "slug": "bus-driver",
+      "title": "Bus Driver",
+      "exposure": 1,
+      "rationale": "Bus driving requires constant physical presence, real-time decision-making in unpredictable traffic conditions, and manual vehicle operation skills that cannot be digitized. While autonomous vehicles exist globally, Pakistan's chaotic traffic patterns, poor road infrastructure, and mixed transport modes (rickshaws, donkey carts, pedestrians) create an environment far too complex for current AI systems to navigate safely."
+    },
+    {
+      "slug": "rickshaw-driver",
+      "title": "Rickshaw Driver",
+      "exposure": 1,
+      "rationale": "Rickshaw driving requires physical presence, manual vehicle operation, and real-time navigation through Pakistan's complex urban environments with unpredictable traffic patterns. While ride-hailing apps have digitized booking in some cities, the core work remains entirely physical and dependent on human skills for maneuvering through narrow streets, negotiating fares, and handling diverse passenger interactions that AI cannot replicate."
+    },
+    {
+      "slug": "taxi-ride-hail-driver",
+      "title": "Taxi / Ride-hail Driver",
+      "exposure": 2,
+      "rationale": "Taxi and ride-hail driving is fundamentally a physical occupation requiring real-time navigation, vehicle operation, and in-person passenger interaction in Pakistan's complex traffic conditions. While ride-hailing apps have digitized booking and payment processes, the core driving task remains entirely manual and human-dependent, with autonomous vehicles being decades away from deployment in Pakistan's infrastructure and regulatory environment."
+    },
+    {
+      "slug": "delivery-rider",
+      "title": "Delivery Rider",
+      "exposure": 2,
+      "rationale": "Delivery riders perform primarily physical work requiring real-time navigation, package handling, and face-to-face customer interactions in Pakistan's complex urban environments. While AI might assist with route optimization through apps, the core job of physically transporting goods on motorcycles through traffic, narrow streets, and to specific locations remains fundamentally human-dependent. Pakistan's large informal delivery sector and infrastructure challenges further limit AI's ability to automate this occupation."
+    },
+    {
+      "slug": "warehouse-worker",
+      "title": "Warehouse Worker",
+      "exposure": 3,
+      "rationale": "Warehouse work in Pakistan is predominantly physical - loading, unloading, sorting, and moving goods by hand or with basic equipment. While AI-powered inventory management systems and automated warehouses exist globally, Pakistan's logistics sector remains largely manual with limited automation infrastructure, especially in smaller cities and informal operations that dominate the market."
+    },
+    {
+      "slug": "logistics-coordinator",
+      "title": "Logistics Coordinator",
+      "exposure": 7,
+      "rationale": "Logistics coordination involves substantial digital work including route optimization, inventory management systems, shipment tracking, and data analysis - all areas where AI tools are rapidly advancing. While some human judgment is needed for complex problem-solving and vendor relationships, the core tasks of scheduling, tracking, and coordinating shipments can be significantly enhanced or automated by AI, making each coordinator much more productive and potentially reducing workforce needs."
+    },
+    {
+      "slug": "customs-clearing-agent",
+      "title": "Customs Clearing Agent",
+      "exposure": 6,
+      "rationale": "Customs clearing agents handle documentation, regulatory compliance, and communication with government agencies - tasks that are increasingly digitized and suitable for AI assistance in document processing, form filling, and regulatory guidance. While the role requires some relationship management with clients and customs officials, the core work involves processing standardized paperwork and navigating regulatory requirements that AI can significantly streamline, especially as Pakistan's customs systems become more digitized."
+    },
+    {
+      "slug": "shipport-worker",
+      "title": "Ship/Port Worker",
+      "exposure": 2,
+      "rationale": "Ship/port workers perform predominantly physical tasks like loading/unloading cargo, operating cranes, securing vessels, and moving containers - work that requires human presence in unpredictable maritime environments. While Pakistan's ports like Karachi and Gwadar may adopt some digital tracking systems and automated equipment over time, the core job remains hands-on manual labor that cannot be performed remotely or fully automated given current technology and infrastructure constraints."
+    },
+    {
+      "slug": "airline-pilot",
+      "title": "Airline Pilot",
+      "exposure": 3,
+      "rationale": "Airline pilots perform highly specialized physical and cognitive tasks requiring real-time decision-making, manual flying skills, and direct responsibility for passenger safety that cannot be delegated to AI. While AI assists with navigation, autopilot systems, and flight planning, the core piloting responsibilities - especially during takeoffs, landings, and emergency situations - require human expertise and split-second judgment. In Pakistan's aviation context, pilots remain essential for operating aircraft safely across the country's diverse terrain and weather conditions."
+    },
+    {
+      "slug": "train-driver",
+      "title": "Train Driver",
+      "exposure": 2,
+      "rationale": "Train driving requires real-time physical operation of heavy machinery, constant vigilance for safety hazards, and split-second decision-making in unpredictable situations that demand human judgment and reflexes. While AI may assist with route optimization or scheduling systems, the core responsibility of safely operating trains through Pakistan's diverse terrain and infrastructure conditions requires human presence and control. The physical nature of the work and critical safety requirements create strong barriers to AI automation in Pakistan's current railway infrastructure."
+    },
+    {
+      "slug": "air-traffic-controller",
+      "title": "Air Traffic Controller",
+      "exposure": 4,
+      "rationale": "Air traffic controllers work with digital systems and radar displays, making them moderately exposed to AI assistance for flight tracking, weather analysis, and route optimization. However, the job requires real-time critical decision-making, immediate human judgment in emergency situations, and direct radio communication with pilots - functions that demand human oversight for safety reasons. Pakistan's aviation sector, while growing, maintains strict international safety standards that would likely ensure human controllers remain central to operations even as AI tools enhance their capabilities."
+    },
+    {
+      "slug": "software-developer",
+      "title": "Software Developer",
+      "exposure": 8,
+      "rationale": "Software development is fundamentally digital work involving coding, system design, and problem-solving - all areas where AI tools like GitHub Copilot, ChatGPT, and automated code generation are rapidly advancing. Pakistan's large IT sector and strong freelance developer community are particularly exposed as AI makes individual developers significantly more productive, potentially reducing demand for routine coding tasks while elevating the importance of system architecture and AI tool integration skills."
+    },
+    {
+      "slug": "web-developer",
+      "title": "Web Developer",
+      "exposure": 8,
+      "rationale": "Web development is fundamentally digital work involving coding, design, and problem-solving that can be done entirely on a computer, making it highly susceptible to AI automation and augmentation. AI coding assistants like GitHub Copilot are already transforming how developers work, potentially making individual developers much more productive while reducing demand for routine coding tasks. Pakistan's large IT freelance workforce and growing tech sector make this occupation particularly vulnerable to AI-driven changes in the global digital marketplace."
+    },
+    {
+      "slug": "mobile-app-developer",
+      "title": "Mobile App Developer",
+      "exposure": 8,
+      "rationale": "Mobile app development is entirely digital work involving coding, design, and testing that can be done remotely on a computer, making it highly susceptible to AI automation and augmentation. Pakistan's large IT freelance workforce and growing tech sector mean developers here are already encountering AI coding assistants that can generate code, debug applications, and automate routine development tasks. While complex problem-solving and creative design still require human oversight, AI tools are rapidly advancing in software development capabilities, potentially reducing demand for junior developers while making senior developers significantly more productive."
+    },
+    {
+      "slug": "data-analyst",
+      "title": "Data Analyst",
+      "exposure": 8,
+      "rationale": "Data analysis is fundamentally digital work involving pattern recognition, statistical analysis, and report generation - all areas where AI tools like advanced analytics platforms and automated insights are rapidly advancing. In Pakistan's growing IT sector, data analysts already work entirely on computers and AI can significantly enhance or potentially replace many core analytical tasks, making this occupation highly vulnerable to AI disruption."
+    },
+    {
+      "slug": "data-scientist",
+      "title": "Data Scientist",
+      "exposure": 8,
+      "rationale": "Data science is fundamentally digital work involving statistical analysis, machine learning model development, and data visualization - all areas where AI tools are rapidly advancing and can significantly augment or automate many tasks. While human expertise remains crucial for problem framing, domain knowledge, and strategic interpretation, AI is already transforming core data science workflows through automated feature engineering, model selection, and code generation. Pakistan's growing IT sector and emphasis on digital skills development means data scientists here are likely early adopters of AI tools, making them highly exposed to productivity gains and potential job restructuring."
+    },
+    {
+      "slug": "database-administrator",
+      "title": "Database Administrator",
+      "exposure": 8,
+      "rationale": "Database administration is fundamentally digital work involving query optimization, performance tuning, backup management, and system monitoring - all tasks where AI tools are rapidly advancing and can significantly boost productivity. While complex troubleshooting and strategic database architecture decisions still require human expertise, AI can already automate routine maintenance tasks, generate SQL queries, and assist with performance analysis. Pakistan's growing IT sector and emphasis on digital services makes this occupation particularly vulnerable to AI-driven productivity gains that could reduce demand for traditional DBA roles."
+    },
+    {
+      "slug": "network-engineer",
+      "title": "Network Engineer",
+      "exposure": 7,
+      "rationale": "Network engineers work primarily with digital systems and configurations that can be increasingly automated and optimized by AI tools, from network monitoring to troubleshooting and capacity planning. While some physical infrastructure work and complex problem-solving still require human expertise, AI is rapidly advancing in network management, automated deployment, and predictive maintenance. Pakistan's growing IT sector and digital infrastructure development make this occupation particularly susceptible to AI-driven productivity gains and potential workforce consolidation."
+    },
+    {
+      "slug": "cybersecurity-analyst",
+      "title": "Cybersecurity Analyst",
+      "exposure": 7,
+      "rationale": "Cybersecurity analysts work primarily in digital environments, analyzing threats, monitoring systems, and implementing security measures - all tasks where AI tools are rapidly advancing and can significantly enhance productivity. However, the role requires critical thinking, strategic decision-making, and understanding of evolving threat landscapes that still benefit from human expertise. In Pakistan's growing IT sector, cybersecurity professionals using AI-powered tools will likely become much more effective, though the increasing digitization and cyber threats also create continued demand for skilled human analysts."
+    },
+    {
+      "slug": "it-support-technician",
+      "title": "IT Support Technician",
+      "exposure": 7,
+      "rationale": "IT Support Technicians face high AI exposure as many troubleshooting tasks, system diagnostics, and routine maintenance can be automated or AI-assisted through chatbots, automated diagnostic tools, and remote management systems. While some physical hardware work and complex problem-solving still require human intervention, the core knowledge work of identifying issues, providing solutions, and system configuration is increasingly being augmented by AI tools that can handle common support tickets and guide users through solutions."
+    },
+    {
+      "slug": "system-administrator",
+      "title": "System Administrator",
+      "exposure": 7,
+      "rationale": "System administrators work primarily in digital environments managing servers, networks, and IT infrastructure - domains where AI tools are rapidly advancing to automate routine tasks like monitoring, troubleshooting, and configuration management. While the role still requires human judgment for complex problem-solving and strategic decisions, AI can significantly enhance productivity in areas like log analysis, security monitoring, and system optimization. Pakistan's growing IT sector and increasing digitization make this occupation particularly susceptible to AI-driven transformation, though the need for human oversight of critical infrastructure provides some protection."
+    },
+    {
+      "slug": "uiux-designer",
+      "title": "UI/UX Designer",
+      "exposure": 8,
+      "rationale": "UI/UX design is predominantly digital work involving wireframing, prototyping, and visual design - all tasks where AI tools like Figma AI, Midjourney, and ChatGPT are already providing substantial assistance and automation. Pakistan's growing IT sector and large freelance design community are particularly exposed as AI can now generate interfaces, conduct user research analysis, and create design systems, potentially reducing demand for traditional design roles while requiring designers to adapt to AI-augmented workflows."
+    },
+    {
+      "slug": "devops-engineer",
+      "title": "DevOps Engineer",
+      "exposure": 8,
+      "rationale": "DevOps Engineers work entirely in digital environments, automating infrastructure, managing cloud deployments, and writing code - all domains where AI tools are rapidly advancing and already providing significant productivity gains. Pakistan's growing IT sector and strong freelance developer community make this occupation particularly exposed, as AI can assist with or automate many core tasks like configuration management, monitoring, and deployment pipelines. While complex system architecture and troubleshooting still require human expertise, AI tools are increasingly capable of handling routine DevOps tasks."
+    },
+    {
+      "slug": "ai-machine-learning-engineer",
+      "title": "AI / Machine Learning Engineer",
+      "exposure": 8,
+      "rationale": "AI/ML Engineers work entirely in digital domains - coding, model development, data analysis, and algorithm design - making them highly exposed to AI productivity tools that can accelerate development cycles and automate routine coding tasks. However, they possess deep technical expertise in AI itself, allowing them to leverage these tools effectively and remain valuable for complex problem-solving, system architecture, and innovation. Pakistan's growing tech sector and substantial freelance AI workforce face significant productivity shifts, but demand for AI expertise continues to grow as businesses adopt AI solutions."
+    },
+    {
+      "slug": "cloud-engineer",
+      "title": "Cloud Engineer",
+      "exposure": 8,
+      "rationale": "Cloud engineering is fundamentally digital work involving system design, infrastructure automation, and code-based configuration management - all domains where AI tools are rapidly advancing and already providing significant productivity gains. While the role requires technical judgment and problem-solving that currently needs human oversight, the core tasks of writing infrastructure code, debugging systems, and optimizing cloud resources are highly amenable to AI assistance. Pakistan's growing IT sector and strong adoption of cloud technologies among tech companies means cloud engineers will likely experience substantial workflow changes as AI tools become more sophisticated."
+    },
+    {
+      "slug": "qa-test-engineer",
+      "title": "QA / Test Engineer",
+      "exposure": 8,
+      "rationale": "QA/Test Engineers work primarily in digital environments, writing test cases, executing automated tests, and analyzing software defects - all tasks where AI tools are rapidly advancing and can significantly boost productivity. Pakistan's growing IT sector and strong freelance testing community make this occupation particularly vulnerable to AI-driven efficiency gains, where fewer engineers may be needed as AI handles routine testing scenarios and bug detection."
+    },
+    {
+      "slug": "computer-hardware-technician",
+      "title": "Computer Hardware Technician",
+      "exposure": 3,
+      "rationale": "Computer hardware technicians primarily perform hands-on physical work - diagnosing, repairing, and assembling computer components - which requires manual dexterity and real-world problem-solving that AI cannot directly perform. While AI diagnostic tools might assist with troubleshooting software issues or providing repair guidance, the core job involves physical manipulation of hardware components. In Pakistan's context, where hardware repair shops are common and much work involves older equipment requiring manual expertise, the physical nature of the work provides substantial protection from AI displacement."
+    },
+    {
+      "slug": "seo-digital-marketing-specialist",
+      "title": "SEO / Digital Marketing Specialist",
+      "exposure": 8,
+      "rationale": "SEO and digital marketing work is entirely computer-based, involving content creation, data analysis, keyword research, and campaign optimization - all domains where AI tools are rapidly advancing and already being adopted. Pakistan's large freelance digital marketing workforce is particularly vulnerable as AI can automate much of the routine optimization, content generation, and reporting tasks that form the core of this occupation."
+    },
+    {
+      "slug": "graphic-designer",
+      "title": "Graphic Designer",
+      "exposure": 8,
+      "rationale": "Graphic design is fundamentally digital work that can be done entirely on a computer, making it highly susceptible to AI tools like DALL-E, Midjourney, and Canva's AI features that can generate designs, logos, and layouts rapidly. Pakistan's large freelance graphic design workforce, which serves both domestic and international clients through platforms like Fiverr and Upwork, faces particular disruption as clients can increasingly use AI tools directly for basic design needs, potentially reducing demand for human designers except for complex, strategic creative work."
+    },
+    {
+      "slug": "freelance-it-worker",
+      "title": "Freelance IT Worker",
+      "exposure": 9,
+      "rationale": "Freelance IT work is entirely digital and computer-based, making it highly susceptible to AI automation and productivity enhancement tools. Pakistan's large freelance IT workforce, which includes web developers, software programmers, and digital service providers, faces significant disruption as AI can increasingly handle coding, debugging, and routine development tasks that form the core of many freelance projects."
+    },
+    {
+      "slug": "e-commerce-specialist",
+      "title": "E-commerce Specialist",
+      "exposure": 8,
+      "rationale": "E-commerce specialists work primarily in digital environments, managing online stores, analyzing customer data, optimizing product listings, and running digital marketing campaigns - all tasks where AI tools are rapidly advancing and already providing significant productivity gains. Pakistan's growing e-commerce sector and large freelance workforce in digital marketing makes this occupation particularly vulnerable to AI disruption, as AI can automate much of the data analysis, content creation, and optimization work that forms the core of this role."
+    },
+    {
+      "slug": "doctor-mbbs",
+      "title": "Doctor (MBBS)",
+      "exposure": 5,
+      "rationale": "While AI is advancing rapidly in medical diagnostics, imaging analysis, and treatment recommendations, doctors in Pakistan still require extensive direct patient interaction, physical examinations, and complex clinical decision-making that AI cannot fully replace. The profession involves a significant mix of knowledge work (where AI can assist with diagnosis and research) and essential human elements like patient communication, physical procedures, and contextual judgment, particularly important in Pakistan's healthcare system where doctor-patient relationships and bedside manner remain crucial."
+    },
+    {
+      "slug": "surgeon",
+      "title": "Surgeon",
+      "exposure": 3,
+      "rationale": "Surgery requires extensive hands-on manual dexterity, real-time decision-making in unpredictable situations, and direct physical intervention that cannot be digitized. While AI may assist with pre-operative planning, imaging analysis, and some diagnostic support, the core surgical work remains fundamentally physical and requires human expertise, especially in Pakistan's healthcare system where advanced robotic surgery infrastructure is limited."
+    },
+    {
+      "slug": "dentist",
+      "title": "Dentist",
+      "exposure": 4,
+      "rationale": "Dentistry requires extensive hands-on physical procedures, direct patient interaction, and manual dexterity that AI cannot replicate. While AI may assist with diagnostic imaging, treatment planning, and administrative tasks, the core work of dental procedures, patient examination, and chairside manner remains fundamentally human-centered, limiting AI's transformative impact on the profession in Pakistan's healthcare context."
+    },
+    {
+      "slug": "nurse",
+      "title": "Nurse",
+      "exposure": 2,
+      "rationale": "Nursing is fundamentally a hands-on profession requiring direct patient care, physical assessments, medication administration, and real-time human interaction in unpredictable medical situations. While AI might assist with some documentation or scheduling tasks, the core nursing functions of patient monitoring, emotional support, and clinical interventions cannot be automated. In Pakistan's healthcare system, where personal care and human touch remain central to patient treatment, nurses' physical presence and interpersonal skills are irreplaceable."
+    },
+    {
+      "slug": "pharmacist",
+      "title": "Pharmacist",
+      "exposure": 5,
+      "rationale": "Pharmacists in Pakistan perform a mix of knowledge work (drug interactions, dosage calculations, prescription verification) that AI can assist with, and essential interpersonal tasks (patient counseling, physical dispensing) that require human presence. While AI tools can help with drug information lookup and clinical decision support, the role's regulatory responsibilities, patient interaction requirements, and physical handling of medications create substantial barriers to full automation in Pakistan's healthcare system."
+    },
+    {
+      "slug": "lab-technician",
+      "title": "Lab Technician",
+      "exposure": 4,
+      "rationale": "Lab technicians perform a mix of hands-on sample preparation, equipment operation, and data recording/analysis tasks. While AI can assist with result interpretation and pattern recognition in lab data, the core work requires physical handling of specimens, operating laboratory equipment, and ensuring quality control through direct observation. In Pakistan's healthcare system, many labs still rely on manual processes and basic equipment, limiting immediate AI integration compared to highly digitized laboratory environments."
+    },
+    {
+      "slug": "paramedic-emt",
+      "title": "Paramedic / EMT",
+      "exposure": 2,
+      "rationale": "Paramedics and EMTs perform critical, time-sensitive medical interventions that require physical presence, manual skills, and real-time decision-making in unpredictable emergency situations. While AI might assist with some administrative tasks like patient record management or provide diagnostic support tools, the core job functions of patient assessment, life-saving procedures, and emergency transport cannot be automated and require human judgment and physical intervention in Pakistan's diverse emergency response contexts."
+    },
+    {
+      "slug": "lady-health-worker",
+      "title": "Lady Health Worker",
+      "exposure": 2,
+      "rationale": "Lady Health Workers in Pakistan perform primarily community-based healthcare tasks requiring direct human interaction, home visits, and hands-on care in rural and urban communities. While AI might assist with basic record-keeping or health information systems, the core work involves building trust with families, conducting physical health assessments, and providing maternal/child health services that require human presence and cultural sensitivity. The role's emphasis on community engagement and physical healthcare delivery in Pakistan's diverse social contexts creates natural barriers to AI displacement."
+    },
+    {
+      "slug": "physiotherapist",
+      "title": "Physiotherapist",
+      "exposure": 3,
+      "rationale": "Physiotherapy is fundamentally a hands-on profession requiring physical assessment, manual therapy techniques, and real-time adjustment of treatment based on patient response. While AI might assist with treatment planning, exercise prescription, or patient monitoring through apps, the core work involves direct physical interaction, manual skills, and human touch that cannot be digitized. In Pakistan's healthcare context, where personal interaction and trust-building with patients is especially valued, the human element remains irreplaceable."
+    },
+    {
+      "slug": "radiologist-imaging-technician",
+      "title": "Radiologist / Imaging Technician",
+      "exposure": 7,
+      "rationale": "Radiology is highly exposed to AI as image analysis and pattern recognition are core AI strengths, with AI systems already demonstrating ability to detect abnormalities in X-rays, CT scans, and MRIs. While Pakistan's healthcare sector has slower technology adoption than developed countries, AI diagnostic tools are increasingly accessible and cost-effective, making them attractive for resource-constrained settings. The digital nature of medical imaging makes this occupation particularly vulnerable to AI augmentation or replacement, though human oversight and patient interaction remain important."
+    },
+    {
+      "slug": "psychologist-counselor",
+      "title": "Psychologist / Counselor",
+      "exposure": 4,
+      "rationale": "While psychologists increasingly use digital tools for assessments, note-taking, and teletherapy sessions, the core work remains fundamentally interpersonal - requiring empathy, real-time emotional intelligence, and human connection that AI cannot replicate. In Pakistan's context, where mental health stigma is high and trust-building with clients is crucial, the human element becomes even more essential, though AI may assist with administrative tasks and preliminary screening tools."
+    },
+    {
+      "slug": "homeopathic-hakeem-practitioner",
+      "title": "Homeopathic / Hakeem Practitioner",
+      "exposure": 3,
+      "rationale": "Homeopathic and Hakeem practitioners rely heavily on traditional knowledge systems, personal consultation, physical examination, and building trust-based relationships with patients - all requiring human presence and cultural understanding. While AI might assist with basic symptom analysis or record-keeping, the core practice involves interpreting traditional medicine principles, reading patients' physical signs, and providing personalized herbal/homeopathic treatments that are deeply rooted in Pakistan's cultural healthcare traditions. The informal nature of much hakeem practice and limited digitization in this sector further reduces AI's immediate impact."
+    },
+    {
+      "slug": "midwife-dai",
+      "title": "Midwife / Dai",
+      "exposure": 2,
+      "rationale": "Midwifery requires hands-on physical care, real-time assessment of labor progress, and immediate response to medical emergencies that demand human presence and tactile skills. While AI might assist with basic health monitoring or record-keeping, the core work of delivering babies and providing maternal care is fundamentally physical and interpersonal. In Pakistan's context, many midwives work in rural areas with limited digital infrastructure, and the traditional dai system relies heavily on experiential knowledge and community trust that cannot be digitized."
+    },
+    {
+      "slug": "optician-optometrist",
+      "title": "Optician / Optometrist",
+      "exposure": 4,
+      "rationale": "Opticians/optometrists require significant hands-on work including eye examinations, fitting glasses/contact lenses, and direct patient interaction that cannot be digitized. While AI can assist with diagnostic imaging analysis and prescription calculations, the core functions of physical eye testing, manual adjustments of eyewear, and personalized patient care remain human-dependent. In Pakistan's healthcare context, the profession maintains lower digitization levels and relies heavily on traditional examination methods and in-person consultations."
+    },
+    {
+      "slug": "medical-transcriptionist",
+      "title": "Medical Transcriptionist",
+      "exposure": 10,
+      "rationale": "Medical transcriptionists perform routine information processing tasks that are entirely digital - converting audio recordings of medical dictations into written text. AI speech-to-text technology and specialized medical transcription AI tools can already perform this work with high accuracy, making this occupation maximally exposed to automation. In Pakistan's growing healthcare digitization efforts, hospitals and clinics are increasingly adopting AI-powered transcription solutions that can work faster and more cost-effectively than human transcriptionists."
+    },
+    {
+      "slug": "hospital-administrator",
+      "title": "Hospital Administrator",
+      "exposure": 6,
+      "rationale": "Hospital administrators handle a mix of digital management tasks (budgeting, scheduling, data analysis, compliance reporting) that AI can significantly enhance, alongside interpersonal responsibilities requiring human judgment like staff management and stakeholder relations. In Pakistan's healthcare system, administrators increasingly use digital systems for patient records and resource management, making them moderately exposed to AI productivity gains, though the role's strategic and relationship-building aspects provide some protection from full automation."
+    },
+    {
+      "slug": "primary-school-teacher",
+      "title": "Primary School Teacher",
+      "exposure": 4,
+      "rationale": "Primary school teaching involves substantial face-to-face interaction with young children, classroom management, and hands-on educational activities that require human presence and emotional intelligence. While AI tools can assist with lesson planning, grading, and educational content creation, the core work of teaching young children remains fundamentally interpersonal. In Pakistan's context, limited digital infrastructure in many schools and the emphasis on traditional teaching methods further reduce immediate AI disruption, though AI tutoring tools may gradually supplement classroom instruction."
+    },
+    {
+      "slug": "secondary-school-teacher",
+      "title": "Secondary School Teacher",
+      "exposure": 4,
+      "rationale": "Secondary school teachers in Pakistan have moderate AI exposure as AI can assist with lesson planning, content creation, and assessment tasks, but the core job requires real-time classroom management, student interaction, and adaptive teaching that demands human presence. While AI tools may enhance productivity in preparation and grading, the fundamental teaching process relies on interpersonal skills and physical classroom presence that cannot be digitized, especially given Pakistan's emphasis on traditional classroom-based education delivery."
+    },
+    {
+      "slug": "college-university-lecturer",
+      "title": "College / University Lecturer",
+      "exposure": 6,
+      "rationale": "University lecturers face significant AI exposure as their core activities - content creation, research, grading, and curriculum development - are increasingly digital and AI-assistable. While the interpersonal teaching component and need for subject matter expertise provide some protection, AI tools can already help with lecture preparation, assessment, and research tasks, making individual lecturers more productive. Pakistan's growing emphasis on digital education and online learning platforms, accelerated by COVID-19, increases exposure as more teaching activities become digitized."
+    },
+    {
+      "slug": "university-professor",
+      "title": "University Professor",
+      "exposure": 6,
+      "rationale": "University professors in Pakistan face moderate-high AI exposure as AI can assist with research, content creation, grading, and administrative tasks, potentially making individual professors more productive. However, the core functions of teaching, mentoring, conducting original research, and providing expert judgment still require significant human expertise and interpersonal skills. Pakistan's education sector is gradually digitalizing, especially post-COVID, but the emphasis on in-person instruction and the relationship-based nature of higher education provide some protection against full automation."
+    },
+    {
+      "slug": "madrasa-teacher",
+      "title": "Madrasa Teacher",
+      "exposure": 2,
+      "rationale": "Madrasa teaching is fundamentally based on human-to-human religious instruction, memorization guidance, and spiritual mentorship that requires physical presence and personal interaction. While AI might assist with some administrative tasks or supplementary learning materials, the core work of teaching Quranic recitation, Islamic jurisprudence, and providing religious guidance relies heavily on traditional pedagogical methods and human connection. Pakistan's madrasa system remains largely traditional with limited digital integration, further reducing AI's potential impact on daily teaching practices."
+    },
+    {
+      "slug": "tuition-coaching-teacher",
+      "title": "Tuition / Coaching Teacher",
+      "exposure": 6,
+      "rationale": "Tuition and coaching teachers in Pakistan face significant AI exposure as educational content delivery, lesson planning, and personalized learning can increasingly be enhanced or partially automated by AI tools. While the interpersonal teaching relationship and classroom management still require human presence, AI tutoring platforms and educational apps are already disrupting Pakistan's large private tutoring market, potentially reducing demand for human tutors especially for standardized test preparation and routine subject matter."
+    },
+    {
+      "slug": "montessori-early-childhood-teacher",
+      "title": "Montessori / Early Childhood Teacher",
+      "exposure": 3,
+      "rationale": "Early childhood education is fundamentally built on physical interaction, emotional bonding, and real-time responsiveness to young children's needs - areas where human presence is irreplaceable. While AI might assist with lesson planning or administrative tasks, the core work of nurturing, teaching through play, and managing classroom dynamics requires human warmth and adaptability that AI cannot replicate, especially in Pakistan's relationship-centered educational culture."
+    },
+    {
+      "slug": "special-education-teacher",
+      "title": "Special Education Teacher",
+      "exposure": 3,
+      "rationale": "Special education teaching requires intensive one-on-one human interaction, emotional support, and personalized physical interventions that cannot be replicated by AI. While AI tools might assist with lesson planning or progress tracking, the core work of building relationships with special needs students and providing hands-on therapeutic support remains fundamentally human. Pakistan's education sector also has limited digital infrastructure, particularly in special education, which further reduces AI's immediate impact on these roles."
+    },
+    {
+      "slug": "vocational-trainer",
+      "title": "Vocational Trainer",
+      "exposure": 4,
+      "rationale": "Vocational trainers in Pakistan primarily deliver hands-on technical skills training that requires physical demonstration, equipment operation, and real-time student interaction in workshops and labs. While AI tools could assist with curriculum development, assessment tracking, and some theoretical content delivery, the core job involves teaching practical skills like welding, carpentry, or machinery operation that cannot be effectively replaced by digital instruction. Pakistan's vocational training system remains largely traditional and hands-on, limiting AI's immediate impact on the profession's core functions."
+    },
+    {
+      "slug": "school-principal-administrator",
+      "title": "School Principal / Administrator",
+      "exposure": 5,
+      "rationale": "School principals in Pakistan blend administrative knowledge work (budgeting, reporting, policy implementation) with essential interpersonal leadership requiring physical presence - managing staff, interacting with students/parents, and overseeing campus operations. While AI can assist with administrative tasks like scheduling, data analysis, and report generation, the core leadership, relationship-building, and crisis management aspects require human judgment and on-site presence that are difficult to automate in Pakistan's education context."
+    },
+    {
+      "slug": "research-assistant",
+      "title": "Research Assistant",
+      "exposure": 8,
+      "rationale": "Research assistants primarily work with digital information - conducting literature reviews, data analysis, writing reports, and managing databases - all tasks where AI tools are rapidly advancing and already providing significant productivity gains. In Pakistan's academic sector, while some research may involve fieldwork, the core intellectual work of synthesizing information, analyzing data, and producing written outputs is highly susceptible to AI automation and augmentation, potentially reducing demand for traditional research assistant roles."
+    },
+    {
+      "slug": "librarian",
+      "title": "Librarian",
+      "exposure": 7,
+      "rationale": "Librarians perform predominantly knowledge work including cataloging, research assistance, information organization, and digital resource management - tasks where AI tools can provide substantial productivity gains. While some interpersonal interaction with patrons remains important, the core functions of information retrieval, database management, and research support are increasingly digital domains where AI excels. Pakistan's growing digitization of educational institutions and libraries makes this occupation particularly susceptible to AI-driven transformation."
+    },
+    {
+      "slug": "bank-teller-officer",
+      "title": "Bank Teller / Officer",
+      "exposure": 7,
+      "rationale": "Bank tellers and officers perform predominantly digital tasks like transaction processing, account management, and financial record-keeping that AI can increasingly automate or augment. While customer service requires human interaction, Pakistan's banking sector is rapidly digitizing with mobile banking and ATMs already reducing teller demand, and AI-powered chatbots and automated systems are being deployed for routine banking operations. The clerical nature of much of the work makes it highly susceptible to AI automation despite the need for some human oversight and complex customer interactions."
+    },
+    {
+      "slug": "accountant",
+      "title": "Accountant",
+      "exposure": 7,
+      "rationale": "Accounting work is predominantly digital - financial analysis, bookkeeping, tax preparation, and report generation - making it highly susceptible to AI automation and augmentation. In Pakistan's growing financial sector, AI tools are already being adopted for routine accounting tasks like transaction processing and compliance reporting, though complex financial advisory and audit functions still require human expertise and regulatory oversight."
+    },
+    {
+      "slug": "chartered-accountant-ca",
+      "title": "Chartered Accountant (CA)",
+      "exposure": 7,
+      "rationale": "Chartered Accountants perform predominantly knowledge-based work including financial analysis, auditing, tax planning, and report preparation - all areas where AI tools can significantly enhance productivity and automate routine tasks. While the profession requires professional judgment, regulatory knowledge, and client relationships that provide some protection, the core technical work of financial analysis, compliance checking, and report generation is highly susceptible to AI assistance and automation. Pakistan's growing digitization in the banking and finance sector, along with the adoption of accounting software and AI-powered financial tools, will likely reshape how CAs work and potentially reduce demand for routine accounting tasks."
+    },
+    {
+      "slug": "financial-analyst",
+      "title": "Financial Analyst",
+      "exposure": 8,
+      "rationale": "Financial analysts work primarily with digital data, creating models, reports, and investment recommendations using computers and analytical software - all domains where AI is rapidly advancing. Pakistan's growing fintech sector and digitization of banking services means these professionals are increasingly working in fully digital environments where AI tools can automate data analysis, pattern recognition, and report generation that form the core of their work."
+    },
+    {
+      "slug": "insurance-agent",
+      "title": "Insurance Agent",
+      "exposure": 6,
+      "rationale": "Insurance agents in Pakistan blend digital tasks (policy research, quote generation, claims processing) with essential relationship-building and face-to-face client interactions. While AI can automate policy comparisons, underwriting assessments, and basic customer queries, the trust-based nature of insurance sales and Pakistan's preference for personal relationships in financial decisions provides some protection. However, digital insurance platforms and AI-powered customer service tools are increasingly being adopted by Pakistani insurers, making agents more productive but potentially reducing demand for traditional intermediaries."
+    },
+    {
+      "slug": "microfinance-officer",
+      "title": "Microfinance Officer",
+      "exposure": 6,
+      "rationale": "Microfinance officers perform substantial knowledge work including loan assessment, financial analysis, and client evaluation that AI can increasingly assist with or automate. However, the role requires significant field work, relationship building with clients in rural/urban communities, and understanding local contexts that are crucial in Pakistan's microfinance sector. While AI can enhance credit scoring and risk assessment capabilities, the interpersonal and on-ground components provide some protection against full automation."
+    },
+    {
+      "slug": "tax-consultant",
+      "title": "Tax Consultant",
+      "exposure": 7,
+      "rationale": "Tax consulting involves substantial knowledge work including tax code analysis, return preparation, compliance checking, and client advisory services - all areas where AI tools can provide significant assistance with research, calculations, and document preparation. While client relationships and complex advisory work still require human expertise, the core analytical and computational aspects of tax work are highly susceptible to AI augmentation, making tax consultants much more productive but potentially reducing overall demand for the profession in Pakistan's growing digital economy."
+    },
+    {
+      "slug": "auditor",
+      "title": "Auditor",
+      "exposure": 7,
+      "rationale": "Auditing involves substantial digital work including data analysis, report writing, and financial record examination that AI can increasingly assist with or automate. While auditors still need human judgment for complex assessments and client interactions, AI tools are already being deployed in Pakistan's banking sector for transaction analysis and anomaly detection. The profession's heavy reliance on pattern recognition and document review makes it highly susceptible to AI augmentation, though regulatory requirements and the need for professional accountability provide some protection."
+    },
+    {
+      "slug": "stock-broker-trader",
+      "title": "Stock Broker / Trader",
+      "exposure": 7,
+      "rationale": "Stock brokers and traders work primarily with digital systems for market analysis, trade execution, and client communication - all areas where AI is rapidly advancing and already being deployed for algorithmic trading and market prediction. While relationship management with clients provides some protection, the core analytical and trading functions are highly susceptible to AI automation. Pakistan's growing digital financial infrastructure and increasing adoption of fintech solutions will accelerate this transformation in the banking sector."
+    },
+    {
+      "slug": "loan-officer",
+      "title": "Loan Officer",
+      "exposure": 7,
+      "rationale": "Loan officers perform predominantly digital knowledge work including credit analysis, risk assessment, and documentation review - all areas where AI tools are rapidly advancing and already being deployed in Pakistan's banking sector. While relationship building and complex decision-making still require human judgment, AI can significantly enhance productivity in evaluating applications, generating reports, and processing routine approvals, making fewer officers needed for the same volume of work."
+    },
+    {
+      "slug": "investment-banker",
+      "title": "Investment Banker",
+      "exposure": 7,
+      "rationale": "Investment banking involves substantial digital work including financial modeling, market analysis, deal structuring, and client presentations - all areas where AI tools can significantly enhance productivity. While relationship management and complex deal negotiations still require human expertise, AI is already transforming core analytical tasks and document preparation. Pakistan's growing financial sector and increasing digitization make this occupation highly exposed to AI-driven productivity gains."
+    },
+    {
+      "slug": "civil-servant-bps-officer",
+      "title": "Civil Servant (BPS Officer)",
+      "exposure": 6,
+      "rationale": "Civil servants in Pakistan's BPS system perform substantial knowledge work including policy analysis, report writing, administrative decision-making, and correspondence - all areas where AI tools can significantly enhance productivity. However, the role requires considerable human judgment for stakeholder management, public interaction, and navigating Pakistan's complex bureaucratic and political landscape. The government sector's slower technology adoption may initially limit AI integration, but the fundamentally information-processing nature of much civil service work makes it moderately to highly exposed over time."
+    },
+    {
+      "slug": "police-officer",
+      "title": "Police Officer",
+      "exposure": 4,
+      "rationale": "Police work in Pakistan involves substantial physical presence, real-time decision-making in unpredictable situations, and direct human interaction that cannot be digitized. While AI could assist with administrative tasks like report writing, case analysis, and traffic monitoring systems, the core functions of law enforcement, community policing, and emergency response require human judgment and physical presence in Pakistan's diverse and often challenging environments."
+    },
+    {
+      "slug": "police-constable",
+      "title": "Police Constable",
+      "exposure": 4,
+      "rationale": "Police constables in Pakistan perform primarily physical duties like patrolling, crowd control, traffic management, and maintaining law and order, which require human presence and real-time decision-making in unpredictable situations. While AI tools could assist with some administrative tasks like report writing or data management, the core functions of community policing, physical security, and on-ground law enforcement cannot be automated. Pakistan's limited digital infrastructure in police departments and emphasis on traditional policing methods further reduces immediate AI impact on this role."
+    },
+    {
+      "slug": "military-officer",
+      "title": "Military Officer",
+      "exposure": 3,
+      "rationale": "Military officers in Pakistan primarily engage in physical leadership, tactical operations, and real-time decision-making in unpredictable environments that require human judgment and presence. While AI may assist with some administrative tasks, intelligence analysis, and logistics planning, the core responsibilities of commanding troops, conducting operations, and maintaining security cannot be automated. Pakistan's military context, with its focus on border security and counter-terrorism operations, particularly emphasizes the irreplaceable human elements of leadership and situational awareness."
+    },
+    {
+      "slug": "soldier-jawan",
+      "title": "Soldier / Jawan",
+      "exposure": 2,
+      "rationale": "Military personnel work involves primarily physical training, combat readiness, field operations, and real-time tactical situations that require human presence and decision-making in unpredictable environments. While AI may assist with some administrative tasks, logistics planning, or equipment maintenance records, the core functions of a soldier - physical combat, security operations, and human judgment in high-stakes situations - remain fundamentally human-centered. Pakistan's military context, with significant border security needs and varied terrain operations, reinforces the necessity for human soldiers in most operational roles."
+    },
+    {
+      "slug": "patwari-revenue-officer",
+      "title": "Patwari / Revenue Officer",
+      "exposure": 6,
+      "rationale": "Patwaris handle land records, revenue collection, and property documentation - work that is increasingly digitized through Pakistan's land record computerization initiatives. While the role requires field visits for property verification and dispute resolution, the core tasks of maintaining records, calculating revenues, and processing applications are knowledge-based and suitable for AI assistance. Pakistan's ongoing digitization of land records makes this occupation moderately to highly exposed to AI transformation."
+    },
+    {
+      "slug": "postman",
+      "title": "Postman",
+      "exposure": 2,
+      "rationale": "Postmen in Pakistan perform primarily physical work requiring door-to-door delivery, navigation of local neighborhoods, and face-to-face interactions with recipients. While AI might assist with route optimization or sorting at postal facilities, the core job of physically delivering mail and packages to specific addresses requires human presence and local knowledge that cannot be digitized, especially given Pakistan's often informal addressing systems and mixed urban-rural geography."
+    },
+    {
+      "slug": "court-clerk-stenographer",
+      "title": "Court Clerk / Stenographer",
+      "exposure": 8,
+      "rationale": "Court clerks and stenographers perform primarily digital tasks like transcribing proceedings, maintaining records, and processing documents - work that AI speech-to-text and document processing tools can increasingly handle. While Pakistan's court system may be slower to adopt new technologies due to bureaucratic processes, the core functions of this role are highly susceptible to AI automation as the technology becomes more accessible and accurate in local languages."
+    },
+    {
+      "slug": "railway-worker",
+      "title": "Railway Worker",
+      "exposure": 2,
+      "rationale": "Railway workers in Pakistan primarily perform physical tasks like track maintenance, signal operation, train operation, and station management that require hands-on presence and real-time decision-making in unpredictable environments. While AI might assist with some scheduling, route optimization, or basic administrative tasks, the core work involves manual labor, equipment operation, and safety-critical human judgment that cannot be digitized. Pakistan's railway infrastructure relies heavily on human oversight for safety and operational reliability, making physical presence essential."
+    },
+    {
+      "slug": "wapda-electricity-line-worker",
+      "title": "WAPDA / Electricity Line Worker",
+      "exposure": 2,
+      "rationale": "WAPDA line workers perform highly physical, hands-on electrical work requiring real-time presence in the field - installing, maintaining, and repairing power lines and electrical infrastructure. While AI might assist with some administrative tasks like work scheduling or basic diagnostics, the core job involves manual electrical work, climbing poles, and handling high-voltage equipment that cannot be automated. Pakistan's power grid infrastructure challenges and the critical safety requirements of electrical work ensure this remains a human-centered occupation."
+    },
+    {
+      "slug": "sui-gas-technician",
+      "title": "Sui Gas Technician",
+      "exposure": 3,
+      "rationale": "Sui Gas Technicians primarily perform hands-on technical work including gas line installation, maintenance, leak detection, and equipment repair that requires physical presence and manual skills. While AI might assist with some diagnostic tools, scheduling, or documentation, the core job involves working with physical gas infrastructure in the field. Pakistan's gas distribution network requires skilled technicians for safety-critical work that cannot be automated, making this occupation relatively protected from AI disruption."
+    },
+    {
+      "slug": "shopkeeper-small-retailer",
+      "title": "Shopkeeper / Small Retailer",
+      "exposure": 3,
+      "rationale": "Shopkeeping in Pakistan is predominantly a physical, interpersonal business requiring face-to-face customer interaction, cash handling, and physical inventory management in local neighborhoods. While AI could potentially assist with basic inventory tracking or digital payments, the vast majority of Pakistan's small retailers operate in the informal economy with limited digital infrastructure and rely heavily on personal relationships and cash transactions. The core work of serving customers, managing physical goods, and building community trust remains fundamentally human-centered."
+    },
+    {
+      "slug": "wholesale-dealer",
+      "title": "Wholesale Dealer",
+      "exposure": 3,
+      "rationale": "Wholesale dealing in Pakistan involves significant relationship management, physical inventory handling, logistics coordination, and face-to-face negotiations that require human presence and cultural understanding. While AI could assist with inventory management and basic record-keeping, the core activities of building trust with suppliers and retailers, managing physical goods movement, and navigating Pakistan's relationship-driven business culture remain fundamentally human-centered. The relatively low education requirement and prevalence of informal wholesale networks in Pakistan's economy further limit immediate AI adoption."
+    },
+    {
+      "slug": "sales-representative",
+      "title": "Sales Representative",
+      "exposure": 4,
+      "rationale": "Sales representatives in Pakistan's retail and wholesale trade rely heavily on relationship-building, face-to-face interactions, and understanding local market dynamics, which require human presence and cultural sensitivity. While AI tools can assist with lead generation, customer data analysis, and basic communication, the core activities of building trust, negotiating deals, and adapting to diverse customer needs in Pakistan's relationship-driven business culture remain fundamentally human tasks."
+    },
+    {
+      "slug": "cashier",
+      "title": "Cashier",
+      "exposure": 4,
+      "rationale": "Cashiers perform routine transaction processing that could be automated by self-checkout systems and digital payment technologies, but Pakistan's retail sector remains largely cash-based with limited adoption of automated checkout systems. The role involves significant face-to-face customer interaction and handling of physical goods, which provides some protection against AI displacement in the near term given Pakistan's preference for personal service and slower technology adoption in traditional retail."
+    },
+    {
+      "slug": "supermarket-worker",
+      "title": "Supermarket Worker",
+      "exposure": 3,
+      "rationale": "Supermarket workers primarily perform physical tasks like stocking shelves, handling cash registers, and assisting customers face-to-face, which require human presence and manual dexterity. While AI might assist with inventory management systems or automated checkout in modern Pakistani supermarkets, the core job functions remain largely physical and interpersonal. Pakistan's retail sector still relies heavily on human workers for customer service and manual operations, with limited adoption of advanced automation technologies in most supermarket chains."
+    },
+    {
+      "slug": "street-vendor-hawker",
+      "title": "Street Vendor / Hawker",
+      "exposure": 1,
+      "rationale": "Street vendors and hawkers in Pakistan operate entirely in the physical world, requiring face-to-face customer interaction, physical handling of goods, and mobility through neighborhoods and markets. Their work is deeply embedded in Pakistan's informal economy where cash transactions, personal relationships, and physical presence are essential - none of which can be digitized or automated by AI. While mobile payment systems might eventually reach some vendors, the core job remains fundamentally physical and interpersonal."
+    },
+    {
+      "slug": "procurement-officer",
+      "title": "Procurement Officer",
+      "exposure": 7,
+      "rationale": "Procurement officers primarily work with digital systems for vendor management, contract analysis, price comparisons, and supply chain coordination - all areas where AI tools can significantly enhance productivity through automated sourcing, spend analysis, and supplier evaluation. While relationship management with vendors requires human interaction, the core analytical and administrative functions are highly susceptible to AI augmentation, particularly as Pakistan's retail sector increasingly digitizes its procurement processes."
+    },
+    {
+      "slug": "hotel-receptionist",
+      "title": "Hotel Receptionist",
+      "exposure": 4,
+      "rationale": "Hotel receptionists perform a mix of routine administrative tasks (booking management, billing) that AI can assist with, but the core role requires real-time human interaction with guests for check-ins, problem resolution, and hospitality services. In Pakistan's hospitality sector, personal service and human warmth remain highly valued by guests, and many hotels still rely on traditional systems rather than fully digital operations, limiting AI's immediate impact on the profession."
+    },
+    {
+      "slug": "chef-cook",
+      "title": "Chef / Cook",
+      "exposure": 2,
+      "rationale": "Cooking is fundamentally a hands-on craft requiring physical skills, sensory judgment (taste, smell, texture), and real-time adaptation that AI cannot replicate. While AI might assist with recipe suggestions or inventory management in high-end restaurants, the core work of food preparation, cooking techniques, and quality control requires human presence and manual dexterity that remains largely unaffected by AI automation in Pakistan's hospitality sector."
+    },
+    {
+      "slug": "waiter",
+      "title": "Waiter",
+      "exposure": 2,
+      "rationale": "Waiters perform primarily physical and interpersonal work requiring real-time human presence - taking orders, serving food, handling customer interactions, and managing table service. While AI might assist with peripheral tasks like order processing or inventory management in more digitized restaurants, the core job functions require physical presence and human interaction that cannot be automated. In Pakistan's hospitality sector, which relies heavily on personal service and has limited adoption of advanced restaurant technologies, AI exposure remains minimal."
+    },
+    {
+      "slug": "tour-guide",
+      "title": "Tour Guide",
+      "exposure": 3,
+      "rationale": "Tour guides primarily provide in-person experiences, storytelling, and real-time interaction with tourists in physical locations, which are core human activities that AI cannot replicate. While AI tools might assist with research, itinerary planning, or translation apps, the essence of guiding tourists through Pakistan's cultural sites, managing group dynamics, and providing personalized local insights requires human presence and cultural knowledge that remains largely irreplaceable."
+    },
+    {
+      "slug": "hotel-manager",
+      "title": "Hotel Manager",
+      "exposure": 5,
+      "rationale": "Hotel management involves a significant mix of digital tasks (revenue management, booking systems, financial analysis) that AI can enhance, alongside essential interpersonal responsibilities requiring physical presence like guest relations, staff supervision, and crisis management. In Pakistan's hospitality sector, while larger hotels are adopting digital management systems that AI can optimize, the role fundamentally requires human judgment for customer service, cultural sensitivity, and on-site leadership that cannot be fully automated."
+    },
+    {
+      "slug": "housekeeper-hotel",
+      "title": "Housekeeper (Hotel)",
+      "exposure": 2,
+      "rationale": "Hotel housekeeping is fundamentally physical work requiring manual cleaning, bed-making, room maintenance, and real-time problem-solving in unpredictable environments. While AI might assist with minor scheduling or inventory management tasks, the core job of physically cleaning and maintaining hotel rooms cannot be automated with current technology. Pakistan's hospitality sector remains labor-intensive with limited adoption of advanced automation technologies."
+    },
+    {
+      "slug": "travel-agent",
+      "title": "Travel Agent",
+      "exposure": 8,
+      "rationale": "Travel agents primarily work with digital systems - booking flights, hotels, researching destinations, and communicating with clients online. AI tools can already handle most core functions like finding optimal routes, comparing prices, and making reservations, while chatbots can provide 24/7 customer service. In Pakistan's growing digital economy, online travel platforms and AI-powered booking systems are rapidly replacing traditional travel agents, especially as internet penetration increases and customers become more comfortable with self-service digital tools."
+    },
+    {
+      "slug": "fast-food-worker",
+      "title": "Fast Food Worker",
+      "exposure": 2,
+      "rationale": "Fast food work in Pakistan is predominantly physical and interpersonal - taking orders face-to-face, preparing food by hand, cleaning, and providing customer service in person. While AI might assist with order management systems or inventory tracking in larger chains, the core job functions require physical presence and manual tasks that cannot be digitized, especially given Pakistan's preference for fresh, locally-prepared food and high-touch customer service."
+    },
+    {
+      "slug": "baker",
+      "title": "Baker",
+      "exposure": 2,
+      "rationale": "Baking is fundamentally a hands-on craft requiring physical skills like kneading dough, operating ovens, and real-time sensory judgment for texture, temperature, and timing that cannot be digitized. While AI might assist with minor tasks like inventory management or recipe optimization, the core work of mixing, shaping, and baking remains entirely manual and requires human presence throughout the process."
+    },
+    {
+      "slug": "journalist-reporter",
+      "title": "Journalist / Reporter",
+      "exposure": 7,
+      "rationale": "Journalism is predominantly knowledge work involving research, writing, and digital communication - all areas where AI tools are rapidly advancing and already being adopted by Pakistani media outlets for content generation, fact-checking, and translation. While human judgment, source relationships, and field reporting remain important, AI can significantly enhance productivity in core tasks like writing, editing, and data analysis, making this occupation highly exposed to AI transformation in Pakistan's increasingly digital media landscape."
+    },
+    {
+      "slug": "tv-anchor-news-presenter",
+      "title": "TV Anchor / News Presenter",
+      "exposure": 6,
+      "rationale": "TV anchors combine digital content creation (script writing, research) with essential on-camera presence and real-time audience interaction that requires human charisma and credibility. While AI can assist with research, teleprompter content, and background preparation, the core function of delivering news with authority and connecting with Pakistani audiences requires human presence and cultural understanding. Pakistan's media landscape still heavily values recognizable human personalities, though AI tools for content preparation and fact-checking are increasingly useful."
+    },
+    {
+      "slug": "cameraman-videographer",
+      "title": "Cameraman / Videographer",
+      "exposure": 4,
+      "rationale": "Cameramen/videographers require physical presence at shoots, manual operation of equipment, and real-time creative decision-making that AI cannot replicate. However, AI is increasingly automating post-production tasks like editing, color correction, and basic video enhancement, which may reduce demand for some technical roles. In Pakistan's growing media sector, the core filming work remains human-dependent, but AI tools for video processing are becoming more accessible even with limited digital infrastructure."
+    },
+    {
+      "slug": "radio-host-rj",
+      "title": "Radio Host / RJ",
+      "exposure": 6,
+      "rationale": "Radio hosts face moderate-high AI exposure as their core work involves content creation, script writing, and voice-based communication - areas where AI is rapidly advancing. While live interaction with callers and real-time audience engagement provide some protection, AI can already assist with content research, script generation, and even voice synthesis. Pakistan's growing digital media landscape and the shift toward podcast-style content increases exposure, though traditional radio's continued popularity in local languages may provide some buffer against full automation."
+    },
+    {
+      "slug": "content-writer-copywriter",
+      "title": "Content Writer / Copywriter",
+      "exposure": 9,
+      "rationale": "Content writing and copywriting are entirely digital occupations where AI tools like ChatGPT and Claude can already produce high-quality written content across multiple formats and languages, including Urdu. Pakistan's large freelance writing community, which serves both domestic and international markets, faces particularly high disruption as clients can increasingly use AI for content generation at a fraction of the cost."
+    },
+    {
+      "slug": "social-media-manager",
+      "title": "Social Media Manager",
+      "exposure": 8,
+      "rationale": "Social media management is predominantly digital work involving content creation, strategy development, analytics interpretation, and audience engagement - all areas where AI tools are rapidly advancing and already being adopted. In Pakistan's growing digital economy with its large freelance workforce and expanding social media presence, AI can automate content generation, optimize posting schedules, analyze engagement metrics, and even handle basic customer interactions, making individual managers significantly more productive while potentially reducing overall demand for human managers."
+    },
+    {
+      "slug": "video-editor",
+      "title": "Video Editor",
+      "exposure": 8,
+      "rationale": "Video editing is fundamentally digital work done entirely on computers, making it highly susceptible to AI automation and enhancement tools. AI video editing capabilities are rapidly advancing with automated cutting, color correction, effects generation, and even AI-generated content, which directly impacts the core tasks of video editors. Pakistan's growing digital media sector and large freelance workforce in creative services makes this occupation particularly vulnerable to AI disruption."
+    },
+    {
+      "slug": "translator-interpreter",
+      "title": "Translator / Interpreter",
+      "exposure": 8,
+      "rationale": "Translation work is fundamentally digital and language-based, making it highly susceptible to AI tools like ChatGPT and specialized translation models that are rapidly improving in quality. Pakistan's large freelance translation workforce, particularly those serving international clients online, faces significant disruption as AI translation becomes more accurate and cost-effective. While human translators may still be needed for nuanced, cultural, or specialized content, the volume of routine translation work available will likely decrease substantially."
+    },
+    {
+      "slug": "public-relations-officer",
+      "title": "Public Relations Officer",
+      "exposure": 7,
+      "rationale": "Public Relations Officers work primarily in digital domains - writing press releases, managing social media, creating content, and analyzing media coverage - all areas where AI tools are rapidly advancing and already providing significant productivity gains. While relationship-building and strategic communication require human judgment, the core deliverables (content creation, media monitoring, campaign analysis) are increasingly AI-assisted, making this a high-exposure occupation in Pakistan's growing digital media landscape."
+    },
+    {
+      "slug": "advertising-executive",
+      "title": "Advertising Executive",
+      "exposure": 7,
+      "rationale": "Advertising executives work primarily in digital domains - creating campaigns, analyzing data, managing client communications, and developing creative strategies that can be significantly enhanced by AI tools for content generation, audience targeting, and performance optimization. While client relationship management and strategic thinking still require human judgment, the core creative and analytical work is increasingly AI-augmented, making workers more productive but potentially reducing overall demand in Pakistan's growing digital advertising sector."
+    },
+    {
+      "slug": "lawyer-advocate",
+      "title": "Lawyer / Advocate",
+      "exposure": 6,
+      "rationale": "Legal work in Pakistan involves substantial knowledge work that AI can assist with - research, document drafting, case analysis, and contract review - making lawyers significantly more productive. However, the profession retains essential human elements including court appearances, client counseling, negotiation, and navigating Pakistan's complex legal system that blends common law, Islamic law, and local practices. While AI tools are already transforming legal research and document preparation globally, Pakistan's legal system still heavily relies on physical court proceedings and relationship-based practice."
+    },
+    {
+      "slug": "judge",
+      "title": "Judge",
+      "exposure": 4,
+      "rationale": "While AI can assist judges with legal research, case analysis, and document review, the core judicial functions require human judgment, interpretation of law, courtroom presence, and complex decision-making that considers social context and equity. In Pakistan's legal system, where oral arguments, witness testimony, and nuanced understanding of local customs are crucial, the human element remains irreplaceable despite AI's potential as a research and analytical tool."
+    },
+    {
+      "slug": "legal-advisor-corporate-counsel",
+      "title": "Legal Advisor / Corporate Counsel",
+      "exposure": 7,
+      "rationale": "Legal advisory work involves substantial knowledge processing - contract analysis, legal research, document drafting, and regulatory compliance - all areas where AI tools are becoming highly capable. While client relationships and courtroom advocacy require human judgment, much of corporate counsel work involves analyzing documents and providing written advice that AI can increasingly assist with or automate. Pakistan's growing corporate sector and digitization of legal processes will accelerate AI adoption in this field."
+    },
+    {
+      "slug": "paralegal-legal-assistant",
+      "title": "Paralegal / Legal Assistant",
+      "exposure": 7,
+      "rationale": "Paralegals perform predominantly digital knowledge work including legal research, document drafting, case preparation, and client communication - all areas where AI tools are rapidly advancing and already showing significant capabilities. While some client interaction and court appearances require human presence, the core tasks of legal research, document review, and administrative support are highly susceptible to AI automation and augmentation. In Pakistan's legal sector, which is increasingly digitizing case management and research processes, AI tools can substantially enhance paralegal productivity or potentially reduce demand for traditional paralegal roles."
+    },
+    {
+      "slug": "notary-public-deed-writer",
+      "title": "Notary Public / Deed Writer",
+      "exposure": 7,
+      "rationale": "Notary Public/Deed Writer work involves standardized document preparation, verification, and legal formatting - tasks that are increasingly digitizable and where AI can assist with template generation, error checking, and routine legal language. While the role requires some human judgment for verification and client interaction, the core work product is digital documents following established legal formats, making it highly susceptible to AI automation in Pakistan's growing digital documentation ecosystem."
+    },
+    {
+      "slug": "power-plant-operator",
+      "title": "Power Plant Operator",
+      "exposure": 3,
+      "rationale": "Power plant operators primarily perform hands-on technical work monitoring equipment, conducting physical inspections, and responding to real-time operational conditions that require human presence and judgment. While AI may assist with data analysis and predictive maintenance in Pakistan's more modern power facilities, the core responsibilities involve physical system control, safety protocols, and emergency response that cannot be automated. Pakistan's power infrastructure varies widely in technological sophistication, with many plants still requiring substantial manual oversight and intervention."
+    },
+    {
+      "slug": "solar-panel-installer-technician",
+      "title": "Solar Panel Installer / Technician",
+      "exposure": 2,
+      "rationale": "Solar panel installation and maintenance is predominantly physical work requiring hands-on technical skills, working at heights, and real-time problem-solving in outdoor environments. While AI might assist with system diagnostics or scheduling, the core job involves manual installation, wiring, and on-site troubleshooting that cannot be automated. Pakistan's growing solar sector will likely increase demand for these skilled technicians rather than reduce it through AI automation."
+    },
+    {
+      "slug": "petroleum-engineer",
+      "title": "Petroleum Engineer",
+      "exposure": 6,
+      "rationale": "Petroleum engineers combine significant digital analysis work (reservoir modeling, production optimization, data analysis) with field operations requiring physical presence at drilling sites and facilities. While AI can enhance reservoir simulation, predictive maintenance, and production forecasting - areas where Pakistan's oil and gas sector is increasingly digitizing - the job still requires substantial on-site engineering judgment, safety oversight, and coordination with field crews that cannot be fully automated."
+    },
+    {
+      "slug": "gas-fitter",
+      "title": "Gas Fitter",
+      "exposure": 2,
+      "rationale": "Gas fitting is primarily hands-on technical work requiring physical installation, maintenance, and repair of gas systems, with safety-critical tasks that demand human expertise and real-time problem-solving in varied physical environments. While AI might assist with minor administrative tasks like scheduling or accessing technical manuals, the core work involves manual skills, safety protocols, and on-site troubleshooting that cannot be digitized. In Pakistan's context, where gas infrastructure often requires customized solutions and direct human intervention, the physical and safety-critical nature of this trade provides strong protection against AI displacement."
+    },
+    {
+      "slug": "meter-reader",
+      "title": "Meter Reader",
+      "exposure": 2,
+      "rationale": "Meter readers primarily perform physical tasks requiring them to visit customer locations, navigate neighborhoods, and manually read utility meters - work that fundamentally requires human presence in the field. While digital meter reading technology and smart meters could reduce demand for this occupation over time, Pakistan's utility infrastructure remains largely traditional with manual meters, and the physical nature of accessing meters in diverse residential and commercial settings creates natural barriers to AI automation."
+    },
+    {
+      "slug": "coal-miner",
+      "title": "Coal Miner",
+      "exposure": 1,
+      "rationale": "Coal mining is fundamentally physical work requiring human presence in dangerous underground environments, manual operation of heavy machinery, and real-time safety decisions that cannot be digitized. While AI might assist with some surface-level planning or safety monitoring systems, the core extraction work remains entirely hands-on and location-dependent, making it largely immune to AI displacement in Pakistan's mining context."
+    },
+    {
+      "slug": "quarry-worker",
+      "title": "Quarry Worker",
+      "exposure": 1,
+      "rationale": "Quarry workers perform physically demanding manual labor including rock extraction, heavy machinery operation, and material handling that requires human presence in hazardous environments. The work is entirely hands-on and location-specific, with minimal digital components that AI could impact. Pakistan's quarrying sector remains largely traditional and labor-intensive, with limited technology adoption that would create pathways for AI integration."
+    },
+    {
+      "slug": "mining-engineer",
+      "title": "Mining Engineer",
+      "exposure": 5,
+      "rationale": "Mining engineers combine significant digital work (geological modeling, mine planning software, data analysis) with essential field presence for site inspections, safety oversight, and equipment management. While AI can enhance geological surveys, predictive maintenance, and optimization algorithms, the core responsibilities require physical presence at mining sites and real-time decision-making in hazardous environments. Pakistan's mining sector, though growing, has moderate digitization levels which limits immediate AI adoption compared to more advanced mining operations globally."
+    },
+    {
+      "slug": "gem-cutter-stone-worker",
+      "title": "Gem Cutter / Stone Worker",
+      "exposure": 1,
+      "rationale": "Gem cutting and stone work requires highly specialized manual dexterity, tactile feedback, and years of hands-on experience to assess stone quality, grain patterns, and cutting angles that cannot be replicated by AI. In Pakistan's traditional gem and jewelry industry, particularly in areas like Peshawar and Quetta, this craft relies on artisanal skills passed down through generations and direct physical manipulation of materials that AI cannot perform."
+    },
+    {
+      "slug": "domestic-worker-maid",
+      "title": "Domestic Worker / Maid",
+      "exposure": 1,
+      "rationale": "Domestic workers perform entirely physical, hands-on tasks like cleaning, cooking, and childcare that require human presence in homes. In Pakistan's context, this occupation remains largely informal with minimal technology integration, and the personal trust relationship between employers and domestic workers cannot be replicated by AI systems."
+    },
+    {
+      "slug": "guard-chowkidar",
+      "title": "Guard / Chowkidar",
+      "exposure": 1,
+      "rationale": "Guards/chowkidars perform primarily physical security work requiring real-time human presence, vigilance, and immediate response to threats or emergencies. While basic digital tools like CCTV monitoring might be enhanced by AI, the core function of physical security and deterrence cannot be automated, especially in Pakistan's context where personal security services rely heavily on human judgment and local knowledge. The job's low education requirements and emphasis on physical presence make it largely immune to AI disruption."
+    },
+    {
+      "slug": "security-guard-private",
+      "title": "Security Guard (Private)",
+      "exposure": 1,
+      "rationale": "Security guards perform primarily physical surveillance and protection duties that require real-time human presence, situational awareness, and the ability to respond to unpredictable security threats. While some modern security systems incorporate AI-powered cameras and monitoring tools, the core function of providing human security presence, making judgment calls, and physically responding to incidents cannot be automated. In Pakistan's context, most private security work involves basic physical guarding of premises, gates, and properties with minimal digital infrastructure."
+    },
+    {
+      "slug": "driver-private",
+      "title": "Driver (Private)",
+      "exposure": 1,
+      "rationale": "Private drivers perform entirely physical work requiring real-time navigation, vehicle operation, and human judgment in unpredictable traffic conditions - skills that AI cannot replicate without autonomous vehicles. While Pakistan has limited autonomous vehicle infrastructure and adoption, the core driving task remains fundamentally manual and location-dependent, making this occupation minimally exposed to AI disruption in the foreseeable future."
+    },
+    {
+      "slug": "barber-hairdresser",
+      "title": "Barber / Hairdresser",
+      "exposure": 1,
+      "rationale": "Barbing and hairdressing require hands-on manual skills, physical dexterity, and real-time interaction with clients in person. The core work involves cutting, styling, and grooming hair through direct physical manipulation that cannot be digitized or automated by AI. In Pakistan's context, this occupation remains firmly rooted in traditional service delivery with minimal digital integration, making it highly resistant to AI disruption."
+    },
+    {
+      "slug": "beautician",
+      "title": "Beautician",
+      "exposure": 2,
+      "rationale": "Beautician work is predominantly hands-on, requiring physical skills like hair cutting, styling, makeup application, and skincare treatments that demand real-time human interaction and manual dexterity. While AI might assist with minor tasks like appointment scheduling or trend research, the core services require physical presence and personalized human touch that cannot be digitized. In Pakistan's context, most beauty services operate in small salons or home-based setups with limited digital infrastructure, further reducing AI's potential impact on daily operations."
+    },
+    {
+      "slug": "laundry-worker-dhobi",
+      "title": "Laundry Worker / Dhobi",
+      "exposure": 1,
+      "rationale": "Laundry work in Pakistan is predominantly manual and physical, involving washing, drying, ironing, and handling clothes by hand or with basic equipment. The work requires physical presence, manual dexterity, and direct handling of garments, with most dhobis operating in informal settings with minimal digital infrastructure. While AI might eventually impact industrial laundry facilities, the traditional dhobi profession remains largely unchanged by digital technologies."
+    },
+    {
+      "slug": "sweeper-sanitary-worker",
+      "title": "Sweeper / Sanitary Worker",
+      "exposure": 1,
+      "rationale": "Sweeping and sanitary work is entirely physical labor requiring human presence in varied, unpredictable environments across Pakistan's diverse urban and rural settings. The work involves manual cleaning, waste collection, and maintenance tasks that cannot be digitized or automated with current AI technology. While some developed countries are experimenting with robotic cleaning systems, Pakistan's infrastructure limitations, cost constraints, and the informal nature of most sanitary work make AI adoption virtually impossible in this sector."
+    },
+    {
+      "slug": "gardener-mali",
+      "title": "Gardener / Mali",
+      "exposure": 1,
+      "rationale": "Gardening work is fundamentally physical and hands-on, requiring direct interaction with plants, soil, and outdoor environments that cannot be digitized or automated by AI. In Pakistan's context, most gardeners work in residential settings or small-scale operations with minimal technology adoption, making AI tools largely irrelevant to their core tasks of planting, watering, pruning, and maintaining gardens."
+    },
+    {
+      "slug": "nanny-childcare-worker",
+      "title": "Nanny / Childcare Worker",
+      "exposure": 1,
+      "rationale": "Childcare work is fundamentally about physical presence, emotional connection, and real-time human interaction with children - tasks that AI cannot replicate. In Pakistan's context, where childcare is highly personal and family-oriented, the human element of nurturing, safety supervision, and building trust with families remains irreplaceable by digital tools."
+    },
+    {
+      "slug": "cobbler-shoe-repairer",
+      "title": "Cobbler / Shoe Repairer",
+      "exposure": 1,
+      "rationale": "Cobbler work is entirely hands-on, requiring manual dexterity to repair shoes, stitch leather, and work with physical materials and tools. In Pakistan's context, most cobblers operate small roadside stalls or shops serving local communities, with minimal digitization and no computer-based work components that AI could impact."
+    },
+    {
+      "slug": "tailor-local",
+      "title": "Tailor (Local)",
+      "exposure": 2,
+      "rationale": "Tailoring is fundamentally a hands-on craft requiring physical manipulation of fabric, precise measurements of individual customers, and manual sewing skills that cannot be digitized. While AI might assist with basic pattern design or inventory management, the core work of fitting, cutting, and sewing garments remains entirely physical and requires human dexterity and judgment. In Pakistan's context, most local tailors operate in traditional settings with minimal digital infrastructure, serving customers who value personal fitting and customization."
+    },
+    {
+      "slug": "mechanic-auto",
+      "title": "Mechanic (Auto)",
+      "exposure": 2,
+      "rationale": "Auto mechanics work primarily with physical components, requiring hands-on diagnostic skills, manual dexterity, and real-time problem-solving with mechanical systems. While AI might assist with computerized diagnostic tools in modern vehicles, Pakistan's automotive landscape includes many older vehicles and the core work remains fundamentally physical - disassembling, repairing, and reassembling mechanical parts. The informal nature of many auto repair shops in Pakistan and limited digitization further reduces AI's immediate impact on daily work."
+    },
+    {
+      "slug": "mechanic-motorcycle",
+      "title": "Mechanic (Motorcycle)",
+      "exposure": 2,
+      "rationale": "Motorcycle mechanics in Pakistan perform predominantly hands-on physical work - diagnosing engine problems through sound and touch, disassembling parts, welding, and testing repairs that require real-time problem-solving in unpredictable mechanical situations. While AI might eventually assist with diagnostic tools or parts ordering, the core work of physically repairing motorcycles in Pakistan's numerous small workshops remains largely unchanged, especially given the informal nature of most motorcycle repair businesses and limited digital infrastructure adoption."
+    },
+    {
+      "slug": "ac-refrigeration-technician",
+      "title": "AC / Refrigeration Technician",
+      "exposure": 2,
+      "rationale": "AC/Refrigeration technicians perform primarily hands-on, physical work requiring manual skills, diagnostic expertise, and on-site presence to repair and maintain cooling systems. While AI might assist with minor tasks like scheduling appointments or accessing repair manuals, the core job involves physical troubleshooting, component replacement, and real-time problem-solving in Pakistan's diverse residential and commercial settings. The work cannot be digitized or performed remotely, providing strong protection against AI displacement."
+    },
+    {
+      "slug": "mobile-phone-repair-technician",
+      "title": "Mobile Phone Repair Technician",
+      "exposure": 2,
+      "rationale": "Mobile phone repair is primarily hands-on technical work requiring physical manipulation of small components, soldering, and diagnostic skills that must be performed in person. While AI might assist with some diagnostic software or parts identification, the core work involves manual dexterity and real-world problem-solving that cannot be digitized. In Pakistan's context, this trade remains largely informal and relies on practical experience rather than digital tools."
+    },
+    {
+      "slug": "musician-singer",
+      "title": "Musician / Singer",
+      "exposure": 3,
+      "rationale": "Musicians and singers primarily engage in creative performance that requires human artistic expression, emotional connection with audiences, and physical presence for live performances - core elements that AI cannot replicate. While AI tools can assist with composition, production, and distribution, the fundamental value of music lies in human creativity and live performance, which remain largely protected from automation in Pakistan's music industry that heavily emphasizes live concerts, wedding performances, and cultural events."
+    },
+    {
+      "slug": "actor-performer",
+      "title": "Actor / Performer",
+      "exposure": 3,
+      "rationale": "Acting and performing are fundamentally human-centered activities requiring physical presence, emotional expression, and real-time audience interaction that cannot be digitized. While AI may assist with some peripheral tasks like script analysis or scheduling, and could potentially impact content creation in Pakistan's growing digital media sector, the core craft of live performance and on-camera acting remains inherently human and requires physical embodiment that AI cannot replicate."
+    },
+    {
+      "slug": "painter-fine-artist",
+      "title": "Painter / Fine Artist",
+      "exposure": 3,
+      "rationale": "Fine artists and painters primarily engage in physical, hands-on creative work that requires manual dexterity, artistic vision, and direct manipulation of physical materials like canvas, paint, and brushes. While AI image generation tools are emerging, the core artistic process remains deeply human-centered, involving tactile skills and personal creative expression that cannot be easily replicated. In Pakistan's context, the art market is still largely traditional with limited digital integration, and most fine artists work with physical mediums rather than digital platforms."
+    },
+    {
+      "slug": "calligrapher",
+      "title": "Calligrapher",
+      "exposure": 7,
+      "rationale": "Calligraphy work is increasingly digital, with AI tools now capable of generating sophisticated calligraphic designs and fonts that can replicate traditional styles. In Pakistan's growing digital design market, clients may increasingly opt for AI-generated calligraphy for cost and speed, though demand for authentic handwritten work for religious texts and ceremonial purposes may provide some protection. The occupation's core creative output can be digitized and automated, making it highly vulnerable to AI disruption."
+    },
+    {
+      "slug": "cricket-player-professional",
+      "title": "Cricket Player (Professional)",
+      "exposure": 2,
+      "rationale": "Professional cricket is fundamentally a physical sport requiring real-time athletic performance, hand-eye coordination, and in-person competition that cannot be digitized or automated. While AI may assist with peripheral activities like performance analysis, training optimization, or match strategy, the core job of playing cricket remains entirely dependent on human physical and mental skills in unpredictable game situations. Pakistan's strong cricket culture and the sport's inherently human nature provide natural barriers to AI displacement."
+    },
+    {
+      "slug": "sports-coach",
+      "title": "Sports Coach",
+      "exposure": 3,
+      "rationale": "Sports coaching is fundamentally about real-time human interaction, physical demonstration, and in-person motivation during training and competitions. While AI tools might assist with performance analytics, video analysis, or training schedules, the core work requires physical presence, emotional intelligence, and adaptive interpersonal skills that cannot be digitized. In Pakistan's sports culture, the mentor-athlete relationship and hands-on guidance remain essential elements that AI cannot replicate."
+    },
+    {
+      "slug": "photographer",
+      "title": "Photographer",
+      "exposure": 6,
+      "rationale": "Photography involves both technical digital skills (editing, post-processing, digital asset management) and creative/interpersonal elements (client interaction, artistic vision, on-location shooting). While AI tools are rapidly advancing in image generation, editing, and enhancement - making photographers more productive but also creating competition - the profession still requires human creativity, client relationships, and physical presence for events, portraits, and specialized shoots. In Pakistan's context, wedding photography and event coverage remain highly valued services requiring human presence, though the growing digital freelance market faces increasing AI competition."
+    },
+    {
+      "slug": "event-planner",
+      "title": "Event Planner",
+      "exposure": 5,
+      "rationale": "Event planning involves a significant mix of digital coordination tasks (vendor management, scheduling, budgeting, marketing) that AI can assist with, alongside essential human elements like client relationship building, creative vision, and on-site execution. In Pakistan's context, while the growing corporate and wedding event industry increasingly uses digital tools for planning and promotion, the core value remains in personal relationships, cultural understanding, and physical presence during events, limiting AI's ability to fully transform the role."
+    },
+    {
+      "slug": "ngo-field-worker",
+      "title": "NGO Field Worker",
+      "exposure": 3,
+      "rationale": "NGO field workers in Pakistan primarily engage in community outreach, direct service delivery, and face-to-face interactions with beneficiaries in rural and urban areas, requiring physical presence and cultural sensitivity that AI cannot replicate. While AI might assist with basic data collection, reporting, or scheduling tasks, the core work involves building trust with communities, conducting field visits, and implementing programs that require human judgment and local context understanding. Pakistan's NGO sector relies heavily on personal relationships and on-ground presence, making this occupation largely resistant to AI disruption."
+    },
+    {
+      "slug": "social-worker",
+      "title": "Social Worker",
+      "exposure": 3,
+      "rationale": "Social work in Pakistan involves extensive face-to-face interaction with vulnerable communities, field visits, and building trust relationships that require human empathy and cultural understanding. While AI might assist with case documentation and report writing, the core functions of counseling, community mobilization, and direct service delivery in Pakistan's diverse social contexts remain fundamentally human-centered. The profession's reliance on interpersonal skills and physical presence in communities provides strong protection against AI displacement."
+    },
+    {
+      "slug": "community-health-worker",
+      "title": "Community Health Worker",
+      "exposure": 2,
+      "rationale": "Community Health Workers in Pakistan primarily engage in direct human interaction, home visits, health education, and basic medical screenings that require physical presence and interpersonal trust-building in local communities. While AI might assist with basic record-keeping or health information lookup, the core functions of community outreach, culturally sensitive health education, and building relationships with families cannot be digitized. The role's effectiveness depends heavily on local language skills, cultural understanding, and face-to-face human connection, which are fundamental barriers to AI replacement."
+    },
+    {
+      "slug": "development-program-manager",
+      "title": "Development Program Manager",
+      "exposure": 6,
+      "rationale": "Development Program Managers work primarily with digital tools for planning, monitoring, reporting, and stakeholder communication - areas where AI can significantly enhance productivity through automated report generation, data analysis, and proposal writing. However, the role requires substantial human judgment for community engagement, relationship building with donors and beneficiaries, and navigating Pakistan's complex socio-political landscape. While AI can streamline administrative tasks and improve decision-making through better data insights, the core interpersonal and contextual aspects of development work in Pakistan's diverse communities still require human expertise."
+    },
+    {
+      "slug": "monitoring-evaluation-officer",
+      "title": "Monitoring & Evaluation Officer",
+      "exposure": 7,
+      "rationale": "M&E Officers primarily work with data analysis, report writing, survey design, and performance measurement - all digital tasks where AI tools can significantly enhance productivity through automated data processing, visualization, and report generation. While the role requires some field visits and stakeholder engagement, the core work of analyzing program effectiveness and creating evaluation frameworks is increasingly supported by AI-powered analytics tools that are becoming accessible even in Pakistan's development sector."
+    },
+    {
+      "slug": "human-rights-activist",
+      "title": "Human Rights Activist",
+      "exposure": 4,
+      "rationale": "Human rights activism involves substantial fieldwork, community engagement, and real-time advocacy that requires physical presence and deep cultural understanding of Pakistan's diverse communities. While AI can assist with research, report writing, and data analysis tasks, the core work of building trust with vulnerable populations, conducting interviews, and navigating Pakistan's complex social and political landscape requires human judgment and interpersonal skills that AI cannot replicate."
+    },
+    {
+      "slug": "hr-manager-officer",
+      "title": "HR Manager / Officer",
+      "exposure": 7,
+      "rationale": "HR management involves substantial knowledge work including recruitment screening, policy development, performance analysis, and employee communications - all areas where AI tools can significantly enhance productivity. While the role requires human judgment for complex employee relations and strategic decisions, much of the routine HR work (resume screening, scheduling, basic queries, report generation) can be automated or AI-assisted. In Pakistan's banking sector, which is increasingly digitized, HR managers are likely to adopt AI tools for efficiency gains, though the interpersonal aspects of the role provide some protection from complete automation."
+    },
+    {
+      "slug": "marketing-manager",
+      "title": "Marketing Manager",
+      "exposure": 7,
+      "rationale": "Marketing managers work primarily with digital tools for campaign development, data analysis, content creation, and customer insights - all areas where AI is rapidly advancing and already providing significant productivity gains. While the role requires strategic thinking and stakeholder management that benefits from human judgment, the core work products (marketing strategies, content, analytics reports) are fundamentally digital and AI-assistable. In Pakistan's growing digital marketing landscape, AI tools for social media management, customer segmentation, and campaign optimization are becoming increasingly accessible and valuable."
+    },
+    {
+      "slug": "office-clerk-assistant",
+      "title": "Office Clerk / Assistant",
+      "exposure": 7,
+      "rationale": "Office clerks perform predominantly digital tasks like data entry, document processing, filing, and basic administrative work that AI can increasingly automate or significantly enhance. In Pakistan's government sector, while digitization is still progressing, the routine and repetitive nature of clerical work makes it highly susceptible to AI tools for document management, data processing, and administrative automation. The combination of standardized processes and digital workflow adoption in Pakistani government offices creates substantial exposure to AI-driven productivity gains."
+    },
+    {
+      "slug": "data-entry-operator",
+      "title": "Data Entry Operator",
+      "exposure": 10,
+      "rationale": "Data entry is purely routine information processing work done entirely on computers, with no physical or creative components - exactly the type of work AI excels at automating. In Pakistan's IT sector, automated data processing tools and AI systems can already perform most data entry tasks faster and more accurately than humans. This occupation faces immediate and complete disruption as businesses adopt readily available AI solutions to replace manual data entry work."
+    },
+    {
+      "slug": "receptionist",
+      "title": "Receptionist",
+      "exposure": 6,
+      "rationale": "Receptionists handle a mix of routine information processing (scheduling, data entry, basic inquiries) that AI can increasingly automate, alongside interpersonal tasks requiring human presence for greeting visitors and handling complex situations. In Pakistan's context, while many businesses still rely on human receptionists for cultural reasons and the personal touch valued in service interactions, the digital transformation of appointment systems and customer service through chatbots is gradually reducing demand for traditional receptionist roles."
+    },
+    {
+      "slug": "call-center-agent",
+      "title": "Call Center Agent",
+      "exposure": 8,
+      "rationale": "Call center work is fundamentally digital communication that can be increasingly handled by AI chatbots and voice assistants, which are rapidly improving in natural language processing capabilities. Pakistan's large call center industry, serving both domestic and international markets, is particularly vulnerable as companies seek cost savings through AI automation. While human agents may still be needed for complex issues, AI will likely handle routine inquiries, significantly reducing workforce demand."
+    },
+    {
+      "slug": "project-manager",
+      "title": "Project Manager",
+      "exposure": 7,
+      "rationale": "IT project management involves substantial digital work including planning, coordination, reporting, and stakeholder communication that AI tools can significantly enhance or automate. While human judgment and relationship management remain important, AI can already handle many core tasks like scheduling, risk analysis, progress tracking, and documentation. Pakistan's growing IT sector and remote work culture make this occupation particularly susceptible to AI-driven productivity gains that could reduce demand for traditional project managers."
+    },
+    {
+      "slug": "supply-chain-manager",
+      "title": "Supply Chain Manager",
+      "exposure": 7,
+      "rationale": "Supply chain management involves substantial digital work including data analysis, demand forecasting, vendor coordination, and logistics optimization - all areas where AI tools can significantly enhance productivity. While the role requires some human judgment for relationship management and strategic decisions, the core analytical and planning functions are increasingly supported by AI-powered supply chain software. In Pakistan's growing e-commerce and manufacturing sectors, companies are rapidly adopting digital supply chain solutions, making managers who leverage AI tools much more effective than those who don't."
+    },
+    {
+      "slug": "import-export-agent",
+      "title": "Import / Export Agent",
+      "exposure": 6,
+      "rationale": "Import/Export Agents handle substantial documentation, regulatory compliance, and logistics coordination that can be significantly enhanced by AI tools for customs processing, trade documentation, and supply chain optimization. While the role requires relationship management with clients and suppliers, the core work involves information processing, regulatory tracking, and communication that AI can streamline. Pakistan's growing digital trade infrastructure and e-commerce sector make AI adoption increasingly viable for trade facilitation tasks."
+    },
+    {
+      "slug": "entrepreneur-small-business-owner",
+      "title": "Entrepreneur / Small Business Owner",
+      "exposure": 4,
+      "rationale": "Entrepreneurs and small business owners in Pakistan's retail/wholesale sector face moderate AI exposure as their work combines digital tasks (inventory management, accounting, marketing) with essential human elements like relationship building, negotiation, and physical operations. While AI tools can assist with bookkeeping, customer analysis, and online marketing - particularly valuable for Pakistan's growing e-commerce sector - the core entrepreneurial functions of strategic decision-making, supplier relationships, and local market navigation require human judgment and cultural understanding. Pakistan's predominantly cash-based, relationship-driven business culture and limited digital infrastructure in many areas provide some protection against full AI disruption."
+    },
+    {
+      "slug": "freelancer-general",
+      "title": "Freelancer (General)",
+      "exposure": 8,
+      "rationale": "Freelancers in Pakistan's IT sector primarily work in digital domains like web development, graphic design, content writing, and digital marketing - all areas where AI tools are rapidly advancing and already being integrated into workflows. Pakistan's large freelance workforce, which heavily relies on platforms like Upwork and Fiverr for international clients, faces significant disruption as AI can now perform many routine technical tasks that previously required human freelancers, though skilled freelancers who adapt to use AI tools may become more productive."
+    }
+  ]
+}
