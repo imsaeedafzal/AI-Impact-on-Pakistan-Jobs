@@ -20,13 +20,66 @@
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-:root {
+/* ── Dark theme (default) ─────────────────────────────── */
+:root, [data-theme="dark"] {
   --bg: #0a0a0f;
   --bg2: #12121a;
+  --bg3: #1a1a28;
   --fg: #e0e0e8;
   --fg2: #888894;
+  --border: rgba(255,255,255,0.06);
+  --border2: rgba(255,255,255,0.1);
+  --hover: rgba(255,255,255,0.03);
   --sidebar-w: 240px;
   --accent: #6b8afd;
+  --canvas-bg: #0a0a0f;
+  --scroll-track: rgba(255,255,255,0.02);
+  --scroll-thumb: rgba(255,255,255,0.12);
+  --scroll-thumb-hover: rgba(255,255,255,0.22);
+  --disclaimer-bg: rgba(30, 28, 10, 0.95);
+  --disclaimer-border: rgba(255, 200, 50, 0.2);
+  --disclaimer-color: #d4c47a;
+}
+
+/* ── Light theme ─────────────────────────────────────── */
+[data-theme="light"] {
+  --bg: #f4f5f7;
+  --bg2: #ffffff;
+  --bg3: #ebedf0;
+  --fg: #1a1a2e;
+  --fg2: #5c5c6e;
+  --border: rgba(0,0,0,0.08);
+  --border2: rgba(0,0,0,0.15);
+  --hover: rgba(0,0,0,0.03);
+  --accent: #4a6cf7;
+  --canvas-bg: #f4f5f7;
+  --scroll-track: rgba(0,0,0,0.03);
+  --scroll-thumb: rgba(0,0,0,0.15);
+  --scroll-thumb-hover: rgba(0,0,0,0.28);
+  --disclaimer-bg: rgba(255, 248, 220, 0.95);
+  --disclaimer-border: rgba(180, 140, 20, 0.3);
+  --disclaimer-color: #7a6520;
+}
+
+/* ── Custom scrollbar ────────────────────────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) var(--scroll-track);
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scroll-thumb-hover);
 }
 
 body {
@@ -35,6 +88,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   overflow: hidden;
   height: 100vh;
+  transition: background 0.3s, color 0.3s;
 }
 
 #sidebar {
@@ -42,7 +96,7 @@ body {
   top: 0; left: 0; bottom: 0;
   width: var(--sidebar-w);
   background: var(--bg2);
-  border-right: 1px solid rgba(255,255,255,0.06);
+  border-right: 1px solid var(--border);
   padding: 16px 14px 50px 14px;
   z-index: 10;
   overflow-y: auto;
@@ -85,12 +139,16 @@ body {
   align-items: center;
 }
 
+.search-wrap {
+  position: relative;
+  width: 100%;
+}
 .filter-search {
   width: 100%;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--bg3);
+  border: 1px solid var(--border2);
   border-radius: 4px;
-  padding: 6px 8px;
+  padding: 6px 24px 6px 8px;
   color: var(--fg);
   font-size: 11px;
   font-family: inherit;
@@ -103,11 +161,32 @@ body {
 .filter-search::placeholder {
   color: var(--fg2);
 }
+.search-clear {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--fg2);
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  display: none;
+  transition: color 0.15s;
+}
+.search-clear:hover {
+  color: var(--fg);
+}
+.search-wrap.has-text .search-clear {
+  display: block;
+}
 
 .filter-select {
   width: 100%;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--bg3);
+  border: 1px solid var(--border2);
   border-radius: 4px;
   padding: 4px 6px;
   color: var(--fg);
@@ -126,7 +205,7 @@ body {
   border-color: var(--accent);
 }
 .filter-select option {
-  background: #1a1a2e;
+  background: var(--bg2);
   color: var(--fg);
 }
 
@@ -149,8 +228,8 @@ body {
 }
 
 .btn-reset {
-  background: none;
-  border: 1px solid rgba(255,255,255,0.12);
+  background: var(--bg3);
+  border: 1px solid var(--border2);
   border-radius: 4px;
   padding: 4px 8px;
   color: var(--fg2);
@@ -176,14 +255,15 @@ body {
   border-radius: 3px;
   font-size: 10px;
   cursor: pointer;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border2);
+  background: var(--bg3);
   color: var(--fg2);
   transition: all 0.15s;
   user-select: none;
 }
 .exposure-chip:hover {
-  border-color: rgba(255,255,255,0.25);
+  border-color: var(--accent);
+  color: var(--fg);
 }
 .exposure-chip.active {
   border-color: var(--accent);
@@ -319,7 +399,7 @@ body {
 canvas#canvas {
   display: block;
   position: fixed;
-  top: 0;
+  top: var(--disclaimer-h, 0px);
   left: var(--sidebar-w);
   cursor: default;
 }
@@ -328,7 +408,7 @@ canvas#canvas {
   position: fixed;
   pointer-events: none;
   background: var(--bg2);
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid var(--border2);
   border-radius: 8px;
   padding: 12px 16px;
   font-size: 13px;
@@ -367,6 +447,237 @@ canvas#canvas {
   padding-top: 8px;
 }
 
+/* ── Theme toggle ─────────────────────────────────────── */
+.theme-toggle {
+  background: var(--hover);
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--fg2);
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  color: var(--fg);
+  border-color: var(--accent);
+  background: rgba(107,138,253,0.08);
+}
+
+/* ── View toggle ──────────────────────────────────────── */
+.view-toggle {
+  display: flex;
+  gap: 4px;
+}
+.view-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 5px 6px;
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  background: var(--bg3);
+  color: var(--fg2);
+  font-size: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.view-btn:hover {
+  border-color: var(--accent);
+  color: var(--fg);
+}
+.view-btn.active {
+  border-color: var(--accent);
+  color: var(--fg);
+  background: rgba(107,138,253,0.12);
+}
+
+/* ── Table view ──────────────────────────────────────── */
+#tableView {
+  position: fixed;
+  top: var(--disclaimer-h, 0px);
+  left: var(--sidebar-w);
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  background: var(--bg);
+  padding: 12px;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+#dataTable thead {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+#dataTable th {
+  background: var(--bg2);
+  color: var(--fg2);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  user-select: none;
+}
+#dataTable th:hover {
+  color: var(--fg);
+}
+#dataTable th.sorted-asc::after { content: " \u25B2"; font-size: 8px; }
+#dataTable th.sorted-desc::after { content: " \u25BC"; font-size: 8px; }
+
+#dataTable td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  color: var(--fg);
+  vertical-align: middle;
+}
+#dataTable tr:hover td {
+  background: rgba(255,255,255,0.03);
+}
+#dataTable .exposure-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+#dataTable .exposure-bar-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 3px;
+  overflow: hidden;
+  min-width: 60px;
+}
+#dataTable .exposure-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+#dataTable .exposure-bar-val {
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 20px;
+}
+#dataTable .rationale-row td {
+  padding: 0 10px 10px 36px;
+  font-size: 11px;
+  color: var(--fg2);
+  line-height: 1.4;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+#dataTable .toggle-rationale {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+/* ── Cards view ──────────────────────────────────────── */
+#cardsView {
+  position: fixed;
+  top: var(--disclaimer-h, 0px);
+  left: var(--sidebar-w);
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  background: var(--bg);
+  padding: 16px;
+}
+
+#cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.occ-card {
+  background: var(--bg2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 14px 16px;
+  transition: border-color 0.15s;
+}
+.occ-card:hover {
+  border-color: rgba(255,255,255,0.15);
+}
+.occ-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--fg);
+  margin-bottom: 8px;
+}
+.occ-card-exposure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.occ-card-exposure-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.occ-card-exposure-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+.occ-card-exposure-val {
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 32px;
+}
+.occ-card-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 10px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.occ-card-meta .label { color: var(--fg2); }
+.occ-card-meta .value { color: var(--fg); }
+.occ-card-rationale {
+  font-size: 11px;
+  color: var(--fg2);
+  line-height: 1.45;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 8px;
+}
+
+/* ── Mobile views ────────────────────────────────────── */
+@media (max-width: 768px) {
+  #tableView, #cardsView {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    min-height: 70vh;
+  }
+  #cardsGrid {
+    grid-template-columns: 1fr;
+  }
+  #dataTable { font-size: 11px; }
+  #dataTable th, #dataTable td { padding: 5px 6px; }
+}
+
 /* ── Author bar (sticky bottom of sidebar) ────────────── */
 #author-bar {
   position: fixed;
@@ -374,7 +685,7 @@ canvas#canvas {
   left: 0;
   width: var(--sidebar-w);
   background: var(--bg2);
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid var(--border2);
   padding: 10px 14px;
   display: flex;
   align-items: center;
@@ -415,9 +726,9 @@ canvas#canvas {
   top: 0;
   left: var(--sidebar-w);
   right: 0;
-  background: rgba(30, 28, 10, 0.95);
-  border-bottom: 1px solid rgba(255, 200, 50, 0.2);
-  color: #d4c47a;
+  background: var(--disclaimer-bg);
+  border-bottom: 1px solid var(--disclaimer-border);
+  color: var(--disclaimer-color);
   font-size: 10px;
   padding: 6px 14px;
   z-index: 15;
@@ -430,8 +741,8 @@ canvas#canvas {
 #disclaimer .close-btn {
   margin-left: auto;
   background: none;
-  border: 1px solid rgba(255,200,50,0.3);
-  color: #d4c47a;
+  border: 1px solid var(--disclaimer-border);
+  color: var(--disclaimer-color);
   border-radius: 3px;
   padding: 2px 8px;
   font-size: 9px;
@@ -488,14 +799,31 @@ canvas#canvas {
 
 <div id="sidebar">
   <div>
-    <h1>AI Exposure of Pakistan's Job Market</h1>
+    <h1><svg class="pk-flag" width="22" height="15" viewBox="0 0 900 600" style="vertical-align:-2px;margin-right:6px;border-radius:2px;"><rect width="900" height="600" fill="#01411C"/><rect width="225" height="600" fill="#fff"/><circle cx="530" cy="300" r="175" fill="#fff"/><circle cx="565" cy="300" r="145" fill="#01411C"/><polygon points="650,195 670,260 740,260 683,300 703,365 650,328 597,365 617,300 560,260 630,260" fill="#fff"/></svg>AI Exposure of Pakistan's Job Market</h1>
     <div class="subtitle">206 occupations &middot; area = employment &middot; color = AI exposure<br>Data: <a href="https://www.pbs.gov.pk">PBS</a>, <a href="https://www.finance.gov.pk/survey_2025.html">Economic Survey 2024-25</a>, PMC, PNC, PSEB<br>Analyzed by <span class="model-name">loading...</span> (Anthropic)<br><span style="opacity:0.7;">Last updated: April 2026</span></div>
   </div>
 
   <!-- FILTERS -->
   <div class="filter-section">
     <h3>Filters <span class="filter-count" id="filterCount">206 of 206</span></h3>
-    <input type="text" class="filter-search" id="filterSearch" placeholder="Search occupations...">
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="treemap" title="Treemap view">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><rect x="0" y="0" width="6" height="8" rx="1"/><rect x="7" y="0" width="7" height="4" rx="1"/><rect x="7" y="5" width="7" height="3" rx="1"/><rect x="0" y="9" width="4" height="5" rx="1"/><rect x="5" y="9" width="9" height="5" rx="1"/></svg>
+        <span>Treemap</span>
+      </button>
+      <button class="view-btn" data-view="table" title="Table view">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><rect x="0" y="0" width="14" height="2" rx="0.5"/><rect x="0" y="4" width="14" height="2" rx="0.5"/><rect x="0" y="8" width="14" height="2" rx="0.5"/><rect x="0" y="12" width="14" height="2" rx="0.5"/></svg>
+        <span>Table</span>
+      </button>
+      <button class="view-btn" data-view="cards" title="Card view">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/><rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/></svg>
+        <span>Cards</span>
+      </button>
+    </div>
+    <div class="search-wrap">
+      <input type="text" class="filter-search" id="filterSearch" placeholder="Search occupations...">
+      <button class="search-clear" id="searchClear" title="Clear search">&times;</button>
+    </div>
     <div class="filter-row">
       <label>Industry</label>
       <select class="filter-select" id="filterIndustry"><option value="">All (PBS)</option></select>
@@ -598,7 +926,7 @@ canvas#canvas {
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Box sizing</td><td style="padding:2px 0;">PSCO-weighted within each PBS industry (not equal share)</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Pipeline</td><td style="padding:2px 0;">104 government &amp; institutional sources collected</td></tr>
     </table>
-    <div style="font-size:8px;color:var(--fg2);margin-top:6px;line-height:1.4;opacity:0.7;">
+    <div style="font-size:10px;color:var(--fg2);margin-top:6px;line-height:1.5;opacity:0.8;">
       <strong>Limitations:</strong> Industry % from LFS 2020-21 (latest detailed breakdown); total (77.2M) from LFS 2024-25. Per-occupation salary not available. ~70% informal workforce. PEC (engineers), PBC (lawyers), HEC (faculty), SBP (banking) data not yet integrated. PSCO follows ISCO-08.
     </div>
   </div>
@@ -608,9 +936,13 @@ canvas#canvas {
   <a href="https://github.com/imsaeedafzal/AI-Impact-on-Pakistan-Jobs" target="_blank" title="View on GitHub">
     <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
   </a>
-  <div>
+  <div style="flex:1;">
     <span>Built by <a href="https://saeedafzal.com" target="_blank">Saeed Afzal</a></span>
   </div>
+  <button id="themeToggle" class="theme-toggle" title="Toggle light/dark mode">
+    <span class="theme-icon-dark">&#9790;</span>
+    <span class="theme-icon-light" style="display:none;">&#9728;</span>
+  </button>
 </div>
 
 <div id="disclaimer">
@@ -620,6 +952,26 @@ canvas#canvas {
 </div>
 
 <canvas id="canvas" role="img" aria-label="Interactive treemap visualization of AI exposure across 206 Pakistani occupations. Hover over rectangles for details."></canvas>
+
+<div id="tableView" style="display:none;">
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th data-sort="index">#</th>
+        <th data-sort="title">Occupation</th>
+        <th data-sort="industry_name">PBS Industry</th>
+        <th data-sort="education">Education</th>
+        <th data-sort="exposure">AI Exposure</th>
+        <th data-sort="jobs">Est. Jobs</th>
+      </tr>
+    </thead>
+    <tbody id="dataTableBody"></tbody>
+  </table>
+</div>
+
+<div id="cardsView" style="display:none;">
+  <div id="cardsGrid"></div>
+</div>
 
 <div id="tooltip">
   <div class="tt-title"></div>
@@ -816,8 +1168,16 @@ function applyFilters() {
   }
 
   computeStats(filteredData);
-  layout();
-  draw();
+
+  // Render the active view
+  if (currentView === "treemap") {
+    layout();
+    draw();
+  } else if (currentView === "table") {
+    renderTable();
+  } else if (currentView === "cards") {
+    renderCards();
+  }
 }
 
 function populateFilterDropdowns() {
@@ -872,9 +1232,24 @@ function wireFilterEvents() {
     });
   });
 
+  // Search clear button
+  const searchInput = document.getElementById("filterSearch");
+  const searchClear = document.getElementById("searchClear");
+  const searchWrap = searchInput.parentElement;
+
+  searchInput.addEventListener("input", () => {
+    searchWrap.classList.toggle("has-text", searchInput.value.length > 0);
+  });
+  searchClear.addEventListener("click", () => {
+    searchInput.value = "";
+    searchWrap.classList.remove("has-text");
+    applyFilters();
+  });
+
   // Reset button
   document.getElementById("btnReset").addEventListener("click", () => {
     document.getElementById("filterSearch").value = "";
+    document.getElementById("filterSearch").parentElement.classList.remove("has-text");
     document.getElementById("filterType").value = "";
     document.getElementById("filterIndustry").value = "";
     document.getElementById("filterEdu").value = "";
@@ -893,8 +1268,7 @@ function wireFilterEvents() {
 function layout() {
   const isMobile = window.innerWidth <= 768;
   const sidebarW = isMobile ? 0 : parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-w'));
-  const disclaimer = document.getElementById("disclaimer");
-  const disclaimerH = (!isMobile && disclaimer && disclaimer.offsetHeight && disclaimer.style.display !== 'none') ? disclaimer.offsetHeight : 0;
+  const disclaimerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--disclaimer-h')) || 0;
   const w = isMobile ? window.innerWidth : (window.innerWidth - sidebarW);
   const h = isMobile ? (window.innerHeight * 0.7) : (window.innerHeight - disclaimerH);
 
@@ -902,9 +1276,6 @@ function layout() {
   canvas.height = h * dpr;
   canvas.style.width = w + "px";
   canvas.style.height = h + "px";
-  if (!isMobile) {
-    canvas.style.top = disclaimerH + "px";
-  }
 
   const tx = MARGIN;
   const ty = MARGIN;
@@ -956,11 +1327,12 @@ function draw() {
   const w = canvas.width;
   const h = canvas.height;
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  ctx.fillStyle = "#0a0a0f";
+  const canvasBg = getComputedStyle(document.documentElement).getPropertyValue("--canvas-bg").trim() || "#0a0a0f";
+  ctx.fillStyle = canvasBg;
   ctx.fillRect(0, 0, w / dpr, h / dpr);
 
   if (rects.length === 0) {
-    ctx.fillStyle = "rgba(255,255,255,0.3)";
+    ctx.fillStyle = getTheme() === "light" ? "rgba(0,0,0,0.3)" : "rgba(255,255,255,0.3)";
     ctx.font = "14px -apple-system, system-ui, sans-serif";
     ctx.textAlign = "center";
     ctx.fillText("No occupations match filters", (w / dpr) / 2, (h / dpr) / 2);
@@ -984,7 +1356,7 @@ function draw() {
     ctx.fillRect(rx, ry, rw, rh);
 
     if (isHovered) {
-      ctx.strokeStyle = "#fff";
+      ctx.strokeStyle = getTheme() === "light" ? "#000" : "#fff";
       ctx.lineWidth = 2;
       ctx.strokeRect(rx, ry, rw, rh);
     }
@@ -999,7 +1371,8 @@ function draw() {
 
       const fontSize = Math.min(13, Math.max(9, Math.min(rw / 10, rh / 3)));
       ctx.font = `500 ${fontSize}px -apple-system, system-ui, sans-serif`;
-      ctx.fillStyle = isHovered ? "#fff" : "rgba(255,255,255,0.85)";
+      const isLight = getTheme() === "light";
+      ctx.fillStyle = isHovered ? (isLight ? "#000" : "#fff") : (isLight ? "rgba(0,0,0,0.85)" : "rgba(255,255,255,0.85)");
       ctx.textBaseline = "top";
       ctx.fillText(r.title, rx + 5, ry + 4);
 
@@ -1007,7 +1380,7 @@ function draw() {
         const info = (r.exposure != null ? r.exposure + "/10" : "") +
                      (r.jobs ? " \u00b7 " + formatNumber(r.jobs) + " jobs" : "");
         ctx.font = `400 ${Math.max(8, fontSize - 2)}px -apple-system, system-ui, sans-serif`;
-        ctx.fillStyle = "rgba(255,255,255,0.5)";
+        ctx.fillStyle = isLight ? "rgba(0,0,0,0.5)" : "rgba(255,255,255,0.5)";
         ctx.fillText(info, rx + 5, ry + 4 + fontSize + 2);
       }
 
@@ -1019,8 +1392,7 @@ function draw() {
 function hitTest(mx, my) {
   const isMobile = window.innerWidth <= 768;
   const sidebarW = isMobile ? 0 : parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sidebar-w'));
-  const disclaimer = document.getElementById("disclaimer");
-  const disclaimerH = (!isMobile && disclaimer && disclaimer.offsetHeight && disclaimer.style.display !== 'none') ? disclaimer.offsetHeight : 0;
+  const disclaimerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--disclaimer-h')) || 0;
   const cx = mx - sidebarW;
   const cy = my - disclaimerH;
   for (let i = rects.length - 1; i >= 0; i--) {
@@ -1216,19 +1588,25 @@ function computeStats(data) {
 
 // ── Events ─────────────────────────────────────────────────────────────
 
+// Throttled hover — only process every 16ms (~60fps)
+let hoverRAF = null;
 canvas.addEventListener("mousemove", (e) => {
-  const hit = hitTest(e.clientX, e.clientY);
-  if (hit !== hovered) {
-    hovered = hit;
-    draw();
-  }
-  if (hovered) {
-    showTooltip(hovered, e.clientX, e.clientY);
-    canvas.style.cursor = "pointer";
-  } else {
-    hideTooltip();
-    canvas.style.cursor = "default";
-  }
+  if (hoverRAF) return;
+  hoverRAF = requestAnimationFrame(() => {
+    hoverRAF = null;
+    const hit = hitTest(e.clientX, e.clientY);
+    if (hit !== hovered) {
+      hovered = hit;
+      draw();
+    }
+    if (hovered) {
+      showTooltip(hovered, e.clientX, e.clientY);
+      canvas.style.cursor = "pointer";
+    } else {
+      hideTooltip();
+      canvas.style.cursor = "default";
+    }
+  });
 });
 
 canvas.addEventListener("mouseleave", () => {
@@ -1290,6 +1668,221 @@ function applyMetadataToUI() {
     el.textContent = modelShort;
   });
 }
+
+// ── View switching ─────────────────────────────────────────────────
+
+// ── Theme switching ────────────────────────────────────────────────
+
+function getTheme() {
+  return localStorage.getItem("theme") || "dark";
+}
+
+function setTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
+
+  const darkIcon = document.querySelector(".theme-icon-dark");
+  const lightIcon = document.querySelector(".theme-icon-light");
+  darkIcon.style.display = theme === "dark" ? "inline" : "none";
+  lightIcon.style.display = theme === "light" ? "inline" : "none";
+
+  // Update canvas background for current theme
+  if (typeof draw === "function" && rects.length > 0) {
+    draw();
+  }
+}
+
+// Initialize theme
+setTheme(getTheme());
+
+document.getElementById("themeToggle").addEventListener("click", () => {
+  setTheme(getTheme() === "dark" ? "light" : "dark");
+});
+
+// ── View switching ─────────────────────────────────────────────────
+
+let currentView = "treemap";
+
+// Keep --disclaimer-h CSS variable updated so all views avoid overlap
+function updateDisclaimerHeight() {
+  const d = document.getElementById("disclaimer");
+  const h = (d && d.style.display !== "none") ? d.offsetHeight : 0;
+  document.documentElement.style.setProperty("--disclaimer-h", h + "px");
+}
+// Run on load and when disclaimer is dismissed
+new MutationObserver(updateDisclaimerHeight).observe(
+  document.getElementById("disclaimer"),
+  { attributes: true, attributeFilter: ["style"] }
+);
+window.addEventListener("load", updateDisclaimerHeight);
+window.addEventListener("resize", updateDisclaimerHeight);
+
+function switchView(view) {
+  currentView = view;
+
+  // Toggle active button
+  document.querySelectorAll(".view-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.view === view);
+  });
+
+  // Show/hide containers
+  document.getElementById("canvas").style.display = view === "treemap" ? "block" : "none";
+  document.getElementById("tableView").style.display = view === "table" ? "block" : "none";
+  document.getElementById("cardsView").style.display = view === "cards" ? "block" : "none";
+  document.getElementById("tooltip").style.display = view === "treemap" ? "" : "none";
+
+  // Show/hide treemap-only filters
+  const sizeByRow = document.getElementById("filterSizeBy").closest(".filter-row");
+  sizeByRow.style.display = view === "treemap" ? "flex" : "none";
+
+  // Render the active view
+  if (view === "treemap") {
+    resize();
+  } else if (view === "table") {
+    renderTable();
+  } else if (view === "cards") {
+    renderCards();
+  }
+}
+
+// ── Table view rendering ──────────────────────────────────────────
+
+let tableSortKey = "exposure";
+let tableSortDir = "desc";
+
+function renderTable() {
+  const tbody = document.getElementById("dataTableBody");
+  const sorted = [...filteredData];
+
+  // Sort
+  sorted.sort((a, b) => {
+    let va = a[tableSortKey], vb = b[tableSortKey];
+    if (tableSortKey === "title" || tableSortKey === "industry_name" || tableSortKey === "education") {
+      va = (va || "").toLowerCase();
+      vb = (vb || "").toLowerCase();
+      return tableSortDir === "asc" ? va.localeCompare(vb) : vb.localeCompare(va);
+    }
+    va = va ?? -1;
+    vb = vb ?? -1;
+    return tableSortDir === "asc" ? va - vb : vb - va;
+  });
+
+  // Update header sort indicators
+  document.querySelectorAll("#dataTable th").forEach(th => {
+    th.classList.remove("sorted-asc", "sorted-desc");
+    if (th.dataset.sort === tableSortKey) {
+      th.classList.add(tableSortDir === "asc" ? "sorted-asc" : "sorted-desc");
+    }
+  });
+
+  // Render rows
+  let html = "";
+  sorted.forEach((d, i) => {
+    const exp = d.exposure ?? 0;
+    const color = exposureColorCSS(exp, 0.9);
+    const pct = (exp / 10) * 100;
+
+    html += `<tr class="data-row" data-idx="${i}">
+      <td style="color:var(--fg2);font-size:10px;">${i + 1}</td>
+      <td>
+        <strong>${d.title}</strong>
+        <span class="toggle-rationale" data-idx="${i}">[?]</span>
+      </td>
+      <td style="font-size:11px;color:var(--fg2);">${d.industry_name || ""}</td>
+      <td style="font-size:11px;color:var(--fg2);">${d.education || ""}</td>
+      <td>
+        <div class="exposure-bar">
+          <span class="exposure-bar-val" style="color:${color}">${exp}</span>
+          <div class="exposure-bar-track">
+            <div class="exposure-bar-fill" style="width:${pct}%;background:${color}"></div>
+          </div>
+        </div>
+      </td>
+      <td style="text-align:right;white-space:nowrap;">${formatNumber(d.jobs)}</td>
+    </tr>`;
+
+    // Hidden rationale row
+    html += `<tr class="rationale-row" id="rationale-${i}" style="display:none;">
+      <td colspan="6">${d.exposure_rationale || "No rationale available."}</td>
+    </tr>`;
+  });
+
+  tbody.innerHTML = html;
+
+  // Wire rationale toggles
+  tbody.querySelectorAll(".toggle-rationale").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const idx = btn.dataset.idx;
+      const row = document.getElementById("rationale-" + idx);
+      const visible = row.style.display !== "none";
+      row.style.display = visible ? "none" : "table-row";
+      btn.textContent = visible ? "[?]" : "[x]";
+    });
+  });
+
+}
+
+// Wire table header sorting
+document.querySelectorAll("#dataTable th[data-sort]").forEach(th => {
+  th.addEventListener("click", () => {
+    const key = th.dataset.sort;
+    if (key === "index") return;
+    if (tableSortKey === key) {
+      tableSortDir = tableSortDir === "asc" ? "desc" : "asc";
+    } else {
+      tableSortKey = key;
+      tableSortDir = (key === "title" || key === "industry_name" || key === "education") ? "asc" : "desc";
+    }
+    renderTable();
+  });
+});
+
+// ── Cards view rendering ──────────────────────────────────────────
+
+function renderCards() {
+  const grid = document.getElementById("cardsGrid");
+
+  const sorted = [...filteredData].sort((a, b) => (b.exposure ?? 0) - (a.exposure ?? 0));
+
+  grid.innerHTML = sorted.map(d => {
+    const exp = d.exposure ?? 0;
+    const color = exposureColorCSS(exp, 0.9);
+    const pct = (exp / 10) * 100;
+    const label = exp <= 1 ? "Minimal AI impact" :
+                  exp <= 3 ? "Low exposure" :
+                  exp <= 5 ? "Moderate exposure" :
+                  exp <= 7 ? "High exposure" :
+                  exp <= 9 ? "Very high exposure" :
+                  "Fully automatable";
+
+    return `<div class="occ-card">
+      <div class="occ-card-title">${d.title}</div>
+      <div class="occ-card-exposure">
+        <span class="occ-card-exposure-val" style="color:${color}">${exp}/10</span>
+        <div class="occ-card-exposure-bar">
+          <div class="occ-card-exposure-fill" style="width:${pct}%;background:${color}"></div>
+        </div>
+        <span style="font-size:10px;color:var(--fg2);">${label}</span>
+      </div>
+      <div class="occ-card-meta">
+        <span class="label">Industry</span><span class="value">${d.industry_name || "\u2014"}</span>
+        <span class="label">Education</span><span class="value">${d.education || "\u2014"}</span>
+        <span class="label">Est. jobs</span><span class="value">${formatNumber(d.jobs)}</span>
+        <span class="label">Source</span><span class="value" style="font-size:9px;">${d.data_source ? d.data_source.split(",")[0] : "\u2014"}</span>
+      </div>
+      <div class="occ-card-rationale">${d.exposure_rationale || "No rationale available."}</div>
+    </div>`;
+  }).join("");
+}
+
+// ── Wire view toggle buttons ──────────────────────────────────────
+
+document.querySelectorAll(".view-btn").forEach(btn => {
+  btn.addEventListener("click", () => switchView(btn.dataset.view));
+});
+
+// ── Init ──────────────────────────────────────────────────────────
 
 function init() {
   filteredData = [...allData];
