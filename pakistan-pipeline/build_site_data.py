@@ -99,14 +99,35 @@ INDUSTRY_EMPLOYMENT = {
 # From Pakistan Economic Survey 2024-25 and sector regulators
 # =============================================================================
 
-# Healthcare workforce (Table 11.3, PMC/PNC data, calendar year 2024)
-HEALTHCARE_VERIFIED = {
-    "doctor-mbbs": {"jobs": 319_572, "source": "PMC registered doctors 2024 (Econ Survey Table 11.3)"},
-    "dentist": {"jobs": 39_088, "source": "PMC registered dentists 2024 (Econ Survey Table 11.3)"},
-    "nurse": {"jobs": 138_391, "source": "PNC registered nurses 2024 (Econ Survey Table 11.3)"},
-    "midwife-dai": {"jobs": 46_801, "source": "PNC registered midwives 2024 (Econ Survey Table 11.3)"},
-    "lady-health-worker": {"jobs": 29_163, "source": "PBS registered LHWs 2024 (Econ Survey Table 11.3)"},
+# Source URLs for Pakistan Economic Survey 2024-25 chapters
+SOURCE_URLS = {
+    "health": "https://www.finance.gov.pk/survey/chapter_25/11_Health_and_Nutrition.pdf",
+    "education": "https://www.finance.gov.pk/survey/chapter_25/10_Education.pdf",
+    "it": "https://www.finance.gov.pk/survey/chapter_25/15_Information_Technology.pdf",
+    "employment": "https://www.finance.gov.pk/survey/chapter_25/12_Population.pdf",
+    "pbs_lfs": "https://www.pbs.gov.pk/labour-force-statistics",
 }
+
+# Healthcare workforce (Table 11.3, PMC/PNC data, calendar year 2024)
+VERIFIED_DATA = {
+    "doctor-mbbs": {"jobs": 319_572, "source": "PMC registered doctors 2024 (Econ Survey Table 11.3)", "source_url": SOURCE_URLS["health"]},
+    "dentist": {"jobs": 39_088, "source": "PMC registered dentists 2024 (Econ Survey Table 11.3)", "source_url": SOURCE_URLS["health"]},
+    "nurse": {"jobs": 138_391, "source": "PNC registered nurses 2024 (Econ Survey Table 11.3)", "source_url": SOURCE_URLS["health"]},
+    "midwife-dai": {"jobs": 46_801, "source": "PNC registered midwives 2024 (Econ Survey Table 11.3)", "source_url": SOURCE_URLS["health"]},
+    "lady-health-worker": {"jobs": 29_163, "source": "PBS registered LHWs 2024 (Econ Survey Table 11.3)", "source_url": SOURCE_URLS["health"]},
+}
+
+# Education workforce (Table 10.3 & 10.7, Ministry of Education / HEC, FY 2023-24)
+EDUCATION_VERIFIED = {
+    "primary-school-teacher": {"jobs": 508_290, "source": "Ministry of Education, Primary teachers FY2024 (Econ Survey Table 10.3)", "source_url": SOURCE_URLS["education"]},
+    "secondary-school-teacher": {"jobs": 776_300, "source": "Ministry of Education, High school teachers FY2024 (Econ Survey Table 10.3)", "source_url": SOURCE_URLS["education"]},
+    "college-university-lecturer": {"jobs": 59_843, "source": "Ministry of Education, Degree college teachers FY2024 (Econ Survey Table 10.3)", "source_url": SOURCE_URLS["education"]},
+    "university-professor": {"jobs": 22_334, "source": "HEC, PhD faculty in universities FY2024 (Econ Survey Table 10.7)", "source_url": SOURCE_URLS["education"]},
+    "vocational-trainer": {"jobs": 51_077, "source": "Ministry of Education, Technical & vocational teachers FY2024 (Econ Survey Table 10.3)", "source_url": SOURCE_URLS["education"]},
+}
+
+# Combined verified data lookup
+VERIFIED_DATA = {**VERIFIED_DATA, **EDUCATION_VERIFIED}
 
 # IT sector (Chapter 15, PSEB/SECP data FY2025)
 # Total IT employment estimated from: 0.5% of 77.2M = 386,000 (Info & Communication)
@@ -519,13 +540,24 @@ def main():
         reader = csv.DictReader(f)
         rows = list(reader)
 
-    # Load types
+    # Load types and Urdu names from master CSV
     occ_types = {}
+    occ_urdu = {}
+    master_csv = os.path.join(PIPELINE_DIR, "data", "occupations_master.csv")
+    if os.path.exists(master_csv):
+        with open(master_csv, encoding="utf-8") as f:
+            for row_m in csv.DictReader(f):
+                slug_key = row_m.get("title", "").lower().strip()
+                occ_types[slug_key] = row_m.get("type", "")
+                occ_urdu[slug_key] = row_m.get("title_urdu", "")
+
+    # Also load from occupations.json for slug-based lookup
+    occ_types_by_slug = {}
     occ_json_path = os.path.join(OUTPUT_DIR, "occupations.json")
     if os.path.exists(occ_json_path):
         with open(occ_json_path, encoding="utf-8") as f:
             for o in json.load(f):
-                occ_types[o["slug"]] = o.get("type", "")
+                occ_types_by_slug[o["slug"]] = o.get("type", "")
 
     # PBS LFS PSCO major group employment (from LFS 2020-21, Table 12.9 context)
     # Used as WEIGHTS within each industry to proportionally size occupations
@@ -598,19 +630,25 @@ def main():
             continue
 
         # Priority: 1) Verified per-occupation 2) PSCO-weighted industry share
-        verified = HEALTHCARE_VERIFIED.get(slug)
+        verified = VERIFIED_DATA.get(slug)
         if verified:
             jobs = verified["jobs"]
             data_source = verified["source"]
+            source_url = verified.get("source_url", SOURCE_URLS["employment"])
+            is_verified = True
         else:
             jobs = occ_jobs.get(slug, 0)
             data_source = occ_sources.get(slug, "Unknown")
+            source_url = SOURCE_URLS["pbs_lfs"]
+            is_verified = False
 
+        title_key = row["title"].lower().strip()
         data.append({
             "title": row["title"],
+            "title_urdu": occ_urdu.get(title_key, ""),
             "slug": slug,
             "category": row["category"],
-            "type": occ_types.get(slug, ""),
+            "type": occ_types.get(title_key, "") or occ_types_by_slug.get(slug, ""),
             "industry": industry,
             "industry_name": INDUSTRY_NAMES.get(industry, industry),
             "industry_employment": INDUSTRY_EMPLOYMENT.get(industry, 0),
@@ -618,6 +656,8 @@ def main():
             "psco_group_name": PSCO_NAMES.get(psco, ""),
             "jobs": jobs,
             "data_source": data_source,
+            "source_url": source_url,
+            "is_verified": is_verified,
             "education": row.get("entry_education", ""),
             "exposure": score.get("exposure"),
             "exposure_rationale": score.get("rationale"),
@@ -654,7 +694,7 @@ def main():
     total_jobs = sum(d["jobs"] for d in data)
     print(f"Total jobs represented: {total_jobs:,}")
 
-    verified_count = sum(1 for d in data if d["slug"] in HEALTHCARE_VERIFIED)
+    verified_count = sum(1 for d in data if d["slug"] in VERIFIED_DATA)
     print(f"Per-occupation verified data: {verified_count} occupations (healthcare)")
 
     avg_exp = sum(d["exposure"] for d in data if d["exposure"] is not None) / len([d for d in data if d["exposure"] is not None])

@@ -1,6 +1,6 @@
-# AI Exposure of Pakistan's Job Market
+# AI Impact on Pakistan's Job Market
 
-Interactive treemap visualization analyzing how AI will reshape **206 Pakistani occupations** covering **77.2 million jobs**.
+Interactive visualization analyzing how AI will reshape **206 Pakistani occupations** covering **77.2 million jobs**.
 
 ## What This Shows
 
@@ -8,9 +8,10 @@ Each rectangle represents a Pakistani occupation. **Size** reflects estimated em
 
 - **206 occupations** across 20 PBS industry divisions
 - **77.2 million jobs** represented (PBS Labour Force Survey 2024-25)
-- **Average AI exposure: 3.8/10** (Pakistan's economy is heavily physical/agricultural)
+- **Average AI exposure: 4.4/10** (Pakistan's economy is heavily physical/agricultural)
 - **Most exposed:** Data Entry Operator (10), Medical Transcriptionist (10), Content Writer (9)
 - **Least exposed:** Rickshaw Driver (1), Barber (1), Agricultural Laborer (1)
+- **Urdu names** included for all 206 occupations
 
 ## Data Sources
 
@@ -20,19 +21,22 @@ All employment data comes from official Pakistani government publications:
 |--------|------|-----------|
 | **PBS Labour Force Survey 2024-25** | Total employed: 77.2M, sector distribution | [pbs.gov.pk](https://www.pbs.gov.pk/labour-force-statistics) |
 | **Pakistan Economic Survey 2024-25** | Employment by 21 industry divisions (Table 12.12) | [finance.gov.pk](https://www.finance.gov.pk/survey_2025.html) |
-| **Pakistan Medical & Dental Council** | 319,572 registered doctors, 39,088 dentists (2024) | Econ Survey Table 11.3 |
-| **Pakistan Nursing Council** | 138,391 nurses, 46,801 midwives, 29,163 LHWs (2024) | Econ Survey Table 11.3 |
-| **PSEB / SECP** | 30,000+ IT companies, $2.825B IT exports (FY25) | Econ Survey Chapter 15 |
+| **Pakistan Medical & Dental Council** | 319,572 registered doctors, 39,088 dentists (2024) | [Econ Survey Ch. 11](https://www.finance.gov.pk/survey/chapter_25/11_Health_and_Nutrition.pdf) |
+| **Pakistan Nursing Council** | 138,391 nurses, 46,801 midwives, 29,163 LHWs (2024) | [Econ Survey Ch. 11](https://www.finance.gov.pk/survey/chapter_25/11_Health_and_Nutrition.pdf) |
+| **Ministry of Education / HEC** | 508K primary teachers, 776K secondary, 60K college, 22K PhD faculty, 51K vocational (FY2024) | [Econ Survey Ch. 10](https://www.finance.gov.pk/survey/chapter_25/10_Education.pdf) |
+| **PSEB / SECP** | 30,000+ IT companies, US$2.825B IT exports (FY25) | [Econ Survey Ch. 15](https://www.finance.gov.pk/survey/chapter_25/15_Information_Technology.pdf) |
 | **104 institutional sources** | Collected via automated pipeline | See `pakistan-pipeline/data/sources.csv` |
 
-**AI exposure scores** (0-10) were analyzed by an Anthropic Claude model (see `scores.json` metadata for exact model used) for each occupation individually.
+**10 occupations** have exact verified counts from government registries (5 healthcare + 5 education). The remaining 196 use PSCO-weighted estimates from PBS industry totals and are clearly labeled as "estimated" in the visualization.
+
+**AI exposure scores** (0-10) were analyzed by Anthropic Claude (model recorded in `scores.json` metadata) for each occupation individually.
 
 **What is NOT included:** Per-occupation salary data is not shown because no verified official source exists for this in Pakistan.
 
 ## Project Structure
 
 ```
-AI-Impact-on-Pakistan/
+AI-Impact-on-Pakistan-Jobs/
 ├── site/                              # The visualization (static website)
 │   ├── index.html                     # Interactive treemap with filters
 │   └── data.json                      # 206 occupations with all data
@@ -41,14 +45,14 @@ AI-Impact-on-Pakistan/
 │   ├── config.py                      # Configuration, seed sources, sectors
 │   ├── collect.py                     # Source & occupation discovery
 │   ├── process.py                     # Extract data from collected sources
+│   ├── score.py                       # AI exposure scoring algorithm (LLM-based)
 │   ├── build_site_data.py             # Merge all data into site/data.json
-│   ├── requirements.txt               # Python dependencies
-│   ├── score.py                        # AI exposure scoring algorithm (LLM-based)
+│   ├── requirements.txt               # Python dependencies (httpx, bs4, dotenv)
 │   ├── data/
 │   │   ├── sources.csv                # 104 discovered data sources
-│   │   └── occupations_master.csv     # 206 Pakistani occupations
+│   │   └── occupations_master.csv     # 206 occupations with Urdu names
 │   └── output/
-│       ├── scores.json                # AI exposure scores (0-10) + rationales
+│       ├── scores.json                # AI exposure scores + model metadata
 │       ├── occupations.json           # Occupation list with metadata
 │       └── occupations.csv            # Occupation data for processing
 │
@@ -74,26 +78,30 @@ Fetches data from collected sources with rate limiting (2s global, 5s per-domain
 
 ### 3. AI Exposure Scoring
 ```bash
-# Option A: Re-score using an LLM API (requires API key)
-echo "OPENROUTER_API_KEY=your_key" > .env
+# Option A: Score using Anthropic API
+echo "API_URL=https://api.anthropic.com/v1/messages" > .env
+echo "API_KEY=sk-ant-..." >> .env
 python score.py                          # score all 206 occupations
 python score.py --start 0 --end 10       # test on first 10
-python score.py --model google/gemini-2.5-flash
 python score.py --dry-run                # preview without API calls
 
-# Option B: Score interactively using Claude Code (no API key needed)
+# Option B: Score using OpenRouter (supports Gemini, GPT, Claude, etc.)
+echo "OPENROUTER_API_KEY=sk-or-..." > .env
+python score.py --model google/gemini-2.5-flash
+
+# Option C: Score interactively using Claude Code (no API key needed)
 # Just ask Claude Code: "Score these occupations for AI exposure"
 
-# Option C: Edit scores manually
+# Option D: Edit scores manually
 # Directly edit output/scores.json with your own scores and rationales
 ```
-The model used is automatically recorded in `scores.json` metadata. The scoring rubric is in `score.py` -- contributors can modify it to improve accuracy, add Pakistan-specific factors, or use different models.
+The model used is automatically recorded in `scores.json` metadata and displayed dynamically in the visualization. The scoring rubric is in `score.py` -- contributors can modify it to improve accuracy, add Pakistan-specific factors, or use different models.
 
 ### 4. Build Site Data
 ```bash
 python build_site_data.py
 ```
-Merges occupation data, PBS employment figures, PMC/PNC healthcare registrations, and AI exposure scores into `site/data.json`.
+Merges occupation data, PBS employment figures, verified healthcare/education registrations, PSCO weighting, Urdu names, and AI exposure scores into `site/data.json`. The model name flows from `scores.json` metadata into `data.json` metadata automatically.
 
 ### 5. View Locally
 ```bash
@@ -104,14 +112,20 @@ python -m http.server 8000
 
 ## Features
 
-- **Interactive treemap** with hover tooltips showing exposure rationale and data sources
-- **Filters** by PBS industry, occupation type, education level, exposure range
-- **Size toggle** to view by Employment (PBS data), AI Exposure Score, or Equal
-- **Sort options** by employment, exposure (high/low), industry, alphabetical
-- **Sidebar stats** with job-weighted averages, histogram, breakdown by tier/education/industry
-- **Mobile responsive** layout for phones and tablets
-- **Full methodology panel** with source attribution for every data point
+- **Three view modes:** Treemap (area = employment, color = exposure), Table (sortable columns with [?] rationale), Cards (full rationale per occupation)
+- **Filters:** PBS industry, occupation type, education level, exposure range chips
+- **Size toggle:** Employment (PBS), AI Exposure Score, or Equal (treemap only)
+- **Sort options:** Employment, exposure (high/low), industry, alphabetical -- shared across all views
+- **Dark/light theme** with toggle and localStorage persistence
+- **Urdu names** for all 206 occupations (shown in tooltips and cards)
+- **Verified vs estimated labels:** 10 occupations show "Verified" with clickable source links to Economic Survey PDFs; 196 show "est." with link to PBS LFS
+- **Search** with clear button (X)
+- **Sidebar stats:** Job-weighted averages, histogram, breakdown by tier, education, and PBS industry (dynamically updates with filters)
+- **Mobile responsive** layout
+- **Pakistan flag** on title
+- **Methodology panel** with per-category source attribution
 - **Disclaimer banner** transparent about data limitations
+- **Author credit bar** with GitHub and website links
 
 ## How to Contribute
 
@@ -120,9 +134,9 @@ Contributions that improve data accuracy are especially welcome:
 - **Add more occupations** -- edit `pakistan-pipeline/data/occupations_master.csv`
 - **Add verified data sources** -- add to `pakistan-pipeline/config.py` SEED_SOURCES
 - **Improve AI exposure scores** -- edit `pakistan-pipeline/output/scores.json` with rationale
-- **Integrate new sector data** -- PEC (engineers), PBC (lawyers), HEC (faculty), SBP (banking) registrations are not yet integrated
+- **Integrate new sector data** -- PEC (engineers), PBC (lawyers), SBP (banking) exact registration counts are not yet integrated
 - **Add per-occupation employment** -- if you find verified data for specific occupations
-- **Add Urdu translations** -- `occupations_master.csv` has a `title_urdu` column (currently empty)
+- **Improve Urdu translations** -- review `occupations_master.csv` title_urdu column
 - **Fix bugs or improve the visualization** -- `site/index.html` is self-contained vanilla JS
 
 ### Data Accuracy Guidelines
@@ -147,14 +161,16 @@ Contributions that improve data accuracy are especially welcome:
 
 - **Industry percentages** are from PBS LFS 2020-21 (most recent detailed breakdown published); total employed (77.2M) is from LFS 2024-25
 - **Per-occupation employment** is estimated using PSCO-weighted distribution within each PBS industry, not actual per-occupation counts
+- **10 verified occupations** (5 healthcare, 5 education) have exact counts from PMC/PNC/HEC; the other 196 are estimates
 - **~70% of Pakistan's workforce** is in the informal sector; PBS LFS covers both but occupation-level data may skew toward formal employment
 - **Per-occupation salary** data is not available from any verified official Pakistani source
 - **AI exposure scores** are analytical assessments by an AI model, not empirical measurements
+- **PEC** (engineers), **PBC** (lawyers), **SBP** (banking) exact registration counts are not yet integrated -- community contributions welcome
 
 ## Credits
 
-- **Author**: Saeed Afzal
-- **Data**: Pakistan Bureau of Statistics, Pakistan Economic Survey 2024-25, Pakistan Medical & Dental Council, Pakistan Nursing Council, Pakistan Software Export Board, SECP
+- **Author**: Saeed Afzal -- [SaeedAfzal.com](https://saeedafzal.com)
+- **Data**: Pakistan Bureau of Statistics, Pakistan Economic Survey 2024-25, Pakistan Medical & Dental Council, Pakistan Nursing Council, Higher Education Commission, Ministry of Education, Pakistan Software Export Board, SECP
 - **Analysis**: Anthropic Claude (model recorded in `scores.json` metadata)
 - **PSCO**: Pakistan Standard Classification of Occupations (based on ISCO-08)
 

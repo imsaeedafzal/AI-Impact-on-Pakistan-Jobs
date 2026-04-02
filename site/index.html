@@ -447,6 +447,24 @@ canvas#canvas {
   padding-top: 8px;
 }
 
+/* ── External link icon ───────────────────────────────── */
+.ext-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.ext-link svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+.ext-link--verified { color: var(--accent); }
+.ext-link--verified:hover { text-decoration: underline; }
+.ext-link--muted { color: var(--fg2); }
+.ext-link--muted:hover { color: var(--fg); }
+
 /* ── Theme toggle ─────────────────────────────────────── */
 .theme-toggle {
   background: var(--hover);
@@ -914,11 +932,11 @@ canvas#canvas {
       <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:4px 0;vertical-align:top;color:var(--accent);padding-right:6px;font-weight:600;" colspan="2">Data Sources by Category</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">All sectors</td><td style="padding:2px 0;"><a href="https://www.pbs.gov.pk/labour-force-statistics" style="color:#8899cc;">PBS LFS 2024-25</a> (77.2M employed), industry % from <a href="https://www.finance.gov.pk/survey_2025.html" style="color:#8899cc;">Econ Survey 2024-25</a> Table 12.12</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Healthcare</td><td style="padding:2px 0;"><strong>PMC</strong> + <strong>PNC</strong> exact registrations (2024): 319K doctors, 39K dentists, 138K nurses, 47K midwives, 29K LHWs</td></tr>
-      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">IT &amp; Telecom</td><td style="padding:2px 0;"><strong>PSEB</strong> + <strong>SECP</strong>: 30K+ companies, $2.8B exports, $400M freelance (FY25)</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">IT &amp; Telecom</td><td style="padding:2px 0;"><strong>PSEB</strong> + <strong>SECP</strong>: 30K+ companies, US$2.8B exports, US$400M freelance (FY25)</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Agriculture</td><td style="padding:2px 0;">PBS LFS: 37.4% of employed (28.9M). No per-crop/livestock breakdown</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Manufacturing</td><td style="padding:2px 0;">PBS LFS: 14.9% of employed (11.5M). Incl. textiles, garments, food processing</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Construction</td><td style="padding:2px 0;">PBS LFS: 9.5% of employed (7.3M)</td></tr>
-      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Education</td><td style="padding:2px 0;">PBS LFS: 3.8% of employed (2.9M). HEC data not yet integrated</td></tr>
+      <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Education</td><td style="padding:2px 0;"><strong>Min. of Education</strong> + <strong>HEC</strong>: 508K primary, 776K secondary, 60K college, 22K PhD faculty, 51K vocational (Econ Survey Table 10.3 &amp; 10.7)</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Finance</td><td style="padding:2px 0;">PBS LFS: 0.5% of employed (386K). SBP data not yet integrated</td></tr>
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Public Admin</td><td style="padding:2px 0;">PBS LFS: 2.9% of employed (2.2M). Incl. defence, police, civil service</td></tr>
       <tr style="border-top:1px solid rgba(255,255,255,0.06);"><td style="padding:4px 0;vertical-align:top;color:var(--accent);padding-right:6px;font-weight:600;" colspan="2">Analysis</td></tr>
@@ -927,7 +945,7 @@ canvas#canvas {
       <tr><td style="padding:2px 0;vertical-align:top;white-space:nowrap;color:var(--fg);padding-right:6px;">Pipeline</td><td style="padding:2px 0;">104 government &amp; institutional sources collected</td></tr>
     </table>
     <div style="font-size:10px;color:var(--fg2);margin-top:6px;line-height:1.5;opacity:0.8;">
-      <strong>Limitations:</strong> Industry % from LFS 2020-21 (latest detailed breakdown); total (77.2M) from LFS 2024-25. Per-occupation salary not available. ~70% informal workforce. PEC (engineers), PBC (lawyers), HEC (faculty), SBP (banking) data not yet integrated. PSCO follows ISCO-08.
+      <strong>Limitations:</strong> Industry % from LFS 2020-21 (latest detailed breakdown); total (77.2M) from LFS 2024-25. Per-occupation salary not available. ~70% informal workforce. PEC (engineers), PBC (lawyers), SBP (banking) exact registration counts not yet integrated. PSCO follows ISCO-08.
     </div>
   </div>
 </div>
@@ -1415,6 +1433,9 @@ function showTooltip(d, mx, my) {
   const tt = document.getElementById("tooltip");
 
   tt.querySelector(".tt-title").textContent = d.title;
+  if (d.title_urdu) {
+    tt.querySelector(".tt-title").innerHTML = d.title + ' <span style="font-size:12px;color:var(--fg2);font-weight:400;direction:rtl;unicode-bidi:embed;">' + d.title_urdu + '</span>';
+  }
 
   const score = d.exposure != null ? d.exposure : null;
   if (score != null) {
@@ -1425,7 +1446,7 @@ function showTooltip(d, mx, my) {
                   `AI Exposure: ${score}/10`;
     tt.querySelector(".tt-exposure").innerHTML =
       `<span style="color:${color};font-weight:600;">${label}</span>` +
-      `<div style="margin-top:3px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;">` +
+      `<div style="margin-top:3px;height:4px;background:var(--border2);border-radius:2px;">` +
       `<div style="height:100%;width:${barWidth}%;background:${color};border-radius:2px;"></div></div>`;
   } else {
     tt.querySelector(".tt-exposure").innerHTML =
@@ -1438,18 +1459,24 @@ function showTooltip(d, mx, my) {
     <span class="label">Industry jobs</span><span class="value">${formatNumber(d.industry_employment)} (PBS LFS)</span>
     <span class="label">PSCO group</span><span class="value">${d.psco_group_name || '\u2014'}</span>
     <span class="label">Education</span><span class="value">${d.education || '\u2014'}</span>
-    <span class="label">Data source</span><span class="value" style="font-size:9px;max-width:180px;white-space:normal;">${d.data_source || '\u2014'}</span>
+    <span class="label">Data source</span><span class="value" style="font-size:9px;max-width:180px;white-space:normal;">${d.is_verified
+      ? d.data_source + ' ' + extLink(d.source_url, 'Verified', true)
+      : 'Estimated from PBS LFS (PSCO-weighted). Per-occupation count not published. ' + extLink(d.source_url, 'PBS LFS', false)
+    }</span>
   `;
 
   tt.querySelector(".tt-rationale").textContent =
     d.exposure_rationale || "";
 
   const pad = 16;
+  const ttWidth = window.innerWidth <= 768 ? 280 : 340;
   let tx = mx + pad;
   let ty = my - pad;
-  if (tx + 340 > window.innerWidth) tx = mx - 340 - pad;
+  if (tx + ttWidth > window.innerWidth) tx = mx - ttWidth - pad;
+  if (tx < 0) tx = 8;
   if (ty < 10) ty = my + pad;
   if (ty + 200 > window.innerHeight) ty = my - 200;
+  if (ty < 0) ty = 8;
 
   tt.style.left = tx + "px";
   tt.style.top = ty + "px";
@@ -1527,29 +1554,19 @@ function computeStats(data) {
     </div>`
   ).join("");
 
-  // Exposure by PBS industry (top industries by employment)
-  const industries = [
-    { key: "agriculture_forestry_fishing", label: "Agriculture" },
-    { key: "manufacturing", label: "Manufacturing" },
-    { key: "wholesale_retail_trade", label: "Trade" },
-    { key: "construction", label: "Construction" },
-    { key: "transport_storage", label: "Transport" },
-    { key: "education", label: "Education" },
-    { key: "public_admin_defence", label: "Public Admin" },
-    { key: "health_social_work", label: "Health" },
-    { key: "information_communication", label: "IT & Media" },
-    { key: "financial_insurance", label: "Finance" },
-  ];
+  // Exposure by PBS industry (dynamic from filtered data)
+  const indMap = {};
+  for (const d of data) {
+    if (d.exposure != null && d.jobs && d.industry) {
+      if (!indMap[d.industry]) indMap[d.industry] = { key: d.industry, label: (d.industry_name || d.industry).replace(/,.*$/, ""), wSum: 0, wCount: 0 };
+      indMap[d.industry].wSum += d.exposure * d.jobs;
+      indMap[d.industry].wCount += d.jobs;
+    }
+  }
+  const industries = Object.values(indMap).sort((a, b) => b.wCount - a.wCount).slice(0, 12);
   const industryChartEl = document.getElementById("industryChart");
   industryChartEl.innerHTML = industries.map(grp => {
-    let wSum = 0, wCount = 0;
-    for (const d of data) {
-      if (d.exposure != null && d.jobs && d.industry === grp.key) {
-        wSum += d.exposure * d.jobs;
-        wCount += d.jobs;
-      }
-    }
-    const avg = wCount > 0 ? wSum / wCount : 0;
+    const avg = grp.wCount > 0 ? grp.wSum / grp.wCount : 0;
     const pct = avg / 10 * 100;
     return `<div class="hbar-row">
       <span class="hbar-label">${grp.label}</span>
@@ -1670,6 +1687,16 @@ function applyMetadataToUI() {
 }
 
 // ── View switching ─────────────────────────────────────────────────
+
+// ── External link icon helper ──────────────────────────────────────
+
+const EXT_ICON = '<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 1.5H2a.5.5 0 00-.5.5v8a.5.5 0 00.5.5h8a.5.5 0 00.5-.5V7.5"/><path d="M7 1.5h3.5V5"/><path d="M5.5 6.5L10.5 1.5"/></svg>';
+
+function extLink(url, label, verified) {
+  const cls = verified ? 'ext-link ext-link--verified' : 'ext-link ext-link--muted';
+  const title = verified ? 'Verified — view source document' : 'PBS Labour Force Statistics';
+  return `<a href="${url}" target="_blank" class="${cls}" title="${title}">${label ? '<span>' + label + '</span>' : ''}${EXT_ICON}</a>`;
+}
 
 // ── Theme switching ────────────────────────────────────────────────
 
@@ -1798,7 +1825,10 @@ function renderTable() {
           </div>
         </div>
       </td>
-      <td style="text-align:right;white-space:nowrap;">${formatNumber(d.jobs)}</td>
+      <td style="text-align:right;white-space:nowrap;">${formatNumber(d.jobs)} ${d.is_verified
+        ? extLink(d.source_url, '', true)
+        : '<span style="color:var(--fg2);font-size:9px;" title="Estimated from PBS LFS industry data (PSCO-weighted)">est.</span>'
+      }</td>
     </tr>`;
 
     // Hidden rationale row
@@ -1843,7 +1873,25 @@ document.querySelectorAll("#dataTable th[data-sort]").forEach(th => {
 function renderCards() {
   const grid = document.getElementById("cardsGrid");
 
-  const sorted = [...filteredData].sort((a, b) => (b.exposure ?? 0) - (a.exposure ?? 0));
+  // Respect sidebar sort filter
+  const sortKey = getFilters().sort;
+  const sorted = [...filteredData];
+  switch (sortKey) {
+    case "exposure-asc":
+      sorted.sort((a, b) => (a.exposure ?? 99) - (b.exposure ?? 99));
+      break;
+    case "industry":
+      sorted.sort((a, b) => (a.industry || "").localeCompare(b.industry || ""));
+      break;
+    case "alpha":
+      sorted.sort((a, b) => a.title.localeCompare(b.title));
+      break;
+    case "jobs":
+      sorted.sort((a, b) => (b.jobs ?? 0) - (a.jobs ?? 0));
+      break;
+    default: // exposure-desc
+      sorted.sort((a, b) => (b.exposure ?? 0) - (a.exposure ?? 0));
+  }
 
   grid.innerHTML = sorted.map(d => {
     const exp = d.exposure ?? 0;
@@ -1857,7 +1905,7 @@ function renderCards() {
                   "Fully automatable";
 
     return `<div class="occ-card">
-      <div class="occ-card-title">${d.title}</div>
+      <div class="occ-card-title">${d.title}${d.title_urdu ? ' <span style="font-size:12px;color:var(--fg2);font-weight:400;direction:rtl;unicode-bidi:embed;">' + d.title_urdu + '</span>' : ''}</div>
       <div class="occ-card-exposure">
         <span class="occ-card-exposure-val" style="color:${color}">${exp}/10</span>
         <div class="occ-card-exposure-bar">
@@ -1869,7 +1917,10 @@ function renderCards() {
         <span class="label">Industry</span><span class="value">${d.industry_name || "\u2014"}</span>
         <span class="label">Education</span><span class="value">${d.education || "\u2014"}</span>
         <span class="label">Est. jobs</span><span class="value">${formatNumber(d.jobs)}</span>
-        <span class="label">Source</span><span class="value" style="font-size:9px;">${d.data_source ? d.data_source.split(",")[0] : "\u2014"}</span>
+        <span class="label">Source</span><span class="value" style="font-size:9px;">${d.is_verified
+          ? d.data_source.split(",")[0] + ' ' + extLink(d.source_url, 'Verified', true)
+          : 'Estimated from PBS LFS ' + extLink(d.source_url, '', false)
+        }</span>
       </div>
       <div class="occ-card-rationale">${d.exposure_rationale || "No rationale available."}</div>
     </div>`;
