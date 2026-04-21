@@ -174,7 +174,7 @@ Contributions that improve data accuracy are especially welcome:
 - **Analysis**: Anthropic Claude (model recorded in `scores.json` metadata)
 - **PSCO**: Pakistan Standard Classification of Occupations (based on ISCO-08)
 
-Contribution is welcome to help people about AI Impact on Pakistan.
+*Contribution* is welcome to help people about AI Impact on Pakistan.
 
 ## License
 
